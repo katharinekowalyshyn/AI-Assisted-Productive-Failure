@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TutorChat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="app-title">
+          <span class="dot dot-primary"></span>
+          <h1>TutorChat</h1>
+        </div>
+        <p class="app-subtitle">
+          Experimental language tutor powered by LLMProxy.
+        </p>
+      </header>
+
+      <main class="app-main">
+        <section class="chat-panel">
+          <div id="chat-log" class="chat-log" aria-live="polite"></div>
+          <form id="chat-form" class="chat-form">
+            <textarea
+              id="chat-input"
+              class="chat-input"
+              rows="2"
+              placeholder="Ask a question or practice a sentence…"
+              required
+            ></textarea>
+            <div class="chat-actions">
+              <button id="send-btn" type="submit" class="btn primary">
+                Send
+              </button>
+              <button id="reset-btn" type="button" class="btn ghost">
+                New session
+              </button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="side-panel">
+          <h2>Session</h2>
+          <div class="session-info">
+            <div class="session-row">
+              <span class="label">Session ID</span>
+              <span id="session-id" class="value muted">–</span>
+            </div>
+          </div>
+          <p class="hint">
+            This UI talks to the backend at
+            <code>/api/chat/</code>. You can change the base URL in
+            <code>app.js</code>.
+          </p>
+        </aside>
+      </main>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+  </html>
+

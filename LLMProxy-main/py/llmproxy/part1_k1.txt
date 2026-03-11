@@ -1,0 +1,19 @@
+======================================================================
+PART 1: Exploring Memory (lastk = 1)
+======================================================================
+Session: HW4_Memory_lastk1
+Type your questions one at a time. Type 'exit' to move on.
+
+Enter your query or type EXIT to stop: what is the capital of france?
+
+Response: The capital of France is Paris.
+
+Enter your query or type EXIT to stop: what is its population?
+
+Response: As of 2023, the population of Paris is approximately 2.1 million people within the city proper. The larger metropolitan area has a population of around 12 million. Please note that these figures can fluctuate.
+
+Enter your query or type EXIT to stop: how many immigrants are there?
+
+Response: As of recent estimates, about 20% of the population of Paris is made up of immigrants. This translates to approximately 400,000 to 500,000 immigrants living in the city. However, exact numbers can vary based on definitions and sources.
+
+Enter your query or type EXIT to stop: EXIT

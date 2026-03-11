@@ -1,0 +1,84 @@
+======================================================================
+PART 1: Exploring Memory (lastk = 2)
+======================================================================
+Session: HW4_Memory_lastk2
+Type your questions one at a time. Type 'exit' to move on.
+
+Enter your query or type EXIT to stop: what is the capital of france? 
+
+Response: The capital of France is Paris.
+
+Enter your query or type EXIT to stop: what is its population?
+
+Response: As of 2023, the population of Paris is approximately 2.1 million people. However, the larger metropolitan area has a population of around 12 million. Please check the latest statistics for the most current figures.
+
+Enter your query or type EXIT to stop: how many immigrants are there?
+
+Response: As of recent estimates, about 20% of the population of Paris is made up of immigrants. This translates to approximately 400,000 to 500,000 immigrants living in the city. The broader Île-de-France region, which includes Paris, has a higher number of immigrants. For the most accurate and up-to-date statistics, it's best to consult official demographic reports or studies.
+
+Enter your query or type EXIT to stop: what other cities are there?
+
+Response: Here are some major cities around the world:
+
+1. **New York City, USA**
+2. **Tokyo, Japan**
+3. **London, UK**
+4. **Berlin, Germany**
+5. **Sydney, Australia**
+6. **Toronto, Canada**
+7. **Beijing, China**
+8. **Mumbai, India**
+9. **São Paulo, Brazil**
+10. **Mexico City, Mexico**
+
+If you are looking for cities in a specific country or region, please let me know!
+
+Enter your query or type EXIT to stop: what is the distribution of immigrants by nationality?
+
+Response: The distribution of immigrants by nationality can vary significantly by country and region. Here are some general trends based on various countries:
+
+1. **United States**:
+   - Mexico
+   - China
+   - India
+   - Philippines
+   - El Salvador
+
+2. **Canada**:
+   - India
+   - China
+   - Philippines
+   - United Kingdom
+   - Pakistan
+
+3. **United Kingdom**:
+   - India
+   - Poland
+   - Romania
+   - Pakistan
+   - Bangladesh
+
+4. **Australia**:
+   - England
+   - New Zealand
+   - China
+   - India
+   - Philippines
+
+5. **Germany**:
+   - Turkey
+   - Poland
+   - Syria
+   - Romania
+   - Italy
+
+6. **France**:
+   - Algeria
+   - Morocco
+   - Tunisia
+   - Portugal
+   - Italy
+
+These trends are subject to change due to factors like migration policies, economic opportunities, and global events. For the most accurate and detailed statistics, it's advisable to refer to government immigration data or reports from international organizations like the UN or OECD.
+
+Enter your query or type EXIT to stop: EXIT

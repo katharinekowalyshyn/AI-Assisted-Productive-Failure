@@ -1,0 +1,6 @@
+fastapi==0.115.5
+uvicorn[standard]==0.32.0
+python-dotenv==1.0.1
+# Install llmproxy from local py/ directory or git per LLMProxy docs, e.g.:
+# llmproxy @ git+https://github.com/Tufts-University/LLMProxy.git@py-v0.1.3#subdirectory=py
+pydantic-settings

@@ -1,0 +1,17 @@
+======================================================================
+PART 1: Exploring Memory (lastk = 0)
+======================================================================
+Session: HW4_Memory_lastk0
+Type your questions one at a time. Type 'exit' to move on.
+
+Enter your query or type EXIT to stop: What is the capital of France?
+
+Response: The capital of France is Paris.
+
+Enter your query or type EXIT to stop: what is its population?
+
+Response: Could you please specify which location or entity you are referring to for the population information?
+
+Enter your query or type EXIT to stop: France. 
+
+Response: France is a country located in Western Europe, known for its rich history, culture, and influence in various fields such as art, fashion, and cuisine. The capital city is Paris, famous for landmarks like the Eiffel Tower, the Louvre Museum, and Notre-Dame Cathedral. France is also known for its diverse landscapes, including the French Riviera, the Alps, and the wine regions like Bordeaux and Champagne. The country has a strong cultural heritage, being the birthplace of movements such as Impressionism and a hub for philosophy and literature. France is a member of the European Union and is known for its contributions to global politics and economics. If you have specific questions or topics about France you'd like to explore, feel free to ask!

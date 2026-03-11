@@ -1,0 +1,34 @@
+Question,Type,Expected Answer / Criteria,Actual Answer,Score,Why It Failed (if applicable)
+How many courses do master's students need to complete?,Factual,10 courses,"Master's students in the Computer Science program at Tufts University need to complete at least 10 regular courses, each worth 3 or more SHUs, to earn a total of 30 SHUs.",[FILL IN AFTER REVIEW],[FILL IN AFTER REVIEW]
+What are the core competency requirements for the PhD degree?,Factual,"4 core courses: Algorithms, Operating Systems, Theory of Computation, and Programming Languages","The core competency requirements for the PhD degree in Computer Science at Tufts University include the following:
+
+1. **Completion of Courses**: By your last semester at Tufts, you must have completed at least one class in each of the four areas listed in Appendix E of the handbook.
+
+2. **Timing for Completion**: 
+   - Students without an M.S. must finish their core competencies by the end of their third or fourth semester, and before taking the qualifying exam.
+   - You must certify your background in the required areas before taking the qualifying exam.
+
+3. **Documentation**: Students need to document how they have covered (or plan to cover) the core competence requirement. This involves completing a form with the Grad Coordinator if all competencies are taken at Tufts, or seeking approval for non-Tufts courses from core competency faculty reviewers.
+
+4. **Minimum Grade Requirement**: You must have earned at least a B- in any course used to satisfy the core competency requirement, whether taken at Tufts or elsewhere.
+
+5. **Graduate Course Credit**: You will not receive graduate course credit for any course numbered less than 100.
+
+6. **Certification Sessions**: Designated faculty will hold core competency certification sessions during the first seven days of each semester to approve and advise students on the completion of this requirement.
+
+These requirements ensure that PhD students have a solid foundation in essential areas of computer science before advancing in their studies.",[FILL IN AFTER REVIEW],[FILL IN AFTER REVIEW]
+What advice would you give a new master's student about choosing between the thesis and non-thesis track?,Non-factual,"Relevance to handbook content, mentions both tracks, provides useful guidance","When advising a new master's student at Tufts University on choosing between the thesis and non-thesis track, here are some key points to consider:
+
+1. **Research Experience**: If you are interested in gaining significant research experience, the thesis track may be more suitable. It involves a commitment of two semesters and culminates in a formal defense of your research. This path is ideal if you plan to pursue a Ph.D. later, as it provides a substantial research project that can enhance your academic profile.
+
+2. **Career Goals**: Consider your long-term career goals. If you aim to work in academia or a research-intensive role, a thesis can demonstrate your ability to conduct independent research. Conversely, if you are more focused on industry roles where practical skills are prioritized, the non-thesis option may be sufficient.
+
+3. **Time Commitment**: The thesis track requires a more significant time commitment, as you will need to enroll in CS 295 and CS 296 over two semesters. If you prefer to complete your degree more quickly or have other commitments, the non-thesis option, which involves a one-semester M.S. Project (CS 293), might be more appealing.
+
+4. **Advisor Support**: For the thesis track, you will need to find a faculty advisor who is willing to supervise your work. If you have a specific faculty member in mind whose research aligns with your interests, this could facilitate your transition to the thesis track. If not, the M.S. Project allows for flexibility in choosing an advisor and may be less demanding in terms of finding a suitable match.
+
+5. **Project Scope**: The M.S. Project allows you to conduct research without the extensive requirements of a thesis. If you want to engage in research but prefer a less formal structure, this option might be ideal. You will still need to agree on the project and any write-up requirements with your advisor.
+
+Ultimately, your decision should align with your academic interests, career aspirations, and personal circumstances. It may also be beneficial to discuss your options with faculty members or current students to gain further insights into each track.",[FILL IN AFTER REVIEW],[FILL IN AFTER REVIEW]
+Summarize the academic probation policy.,Non-factual,"Completeness (covers triggers, consequences, timeline), accuracy to handbook","The academic probation policy for graduate students in the Computer Science program at Tufts University requires students to maintain a grade average of at least a B. Students are allowed to earn no more than one grade below B-, and they must also make continuous progress toward graduation. Additionally, courses that do not count toward degree requirements must still meet the B- grade requirement. Failure to meet these standards may result in academic probation.",[FILL IN AFTER REVIEW],[FILL IN AFTER REVIEW]
+What programming languages are used in the required coursework?,Factual (Unanswerable),The handbook does not specify programming languages for coursework,"The provided context does not specify the exact programming languages used in the required coursework for the Computer Science program at Tufts University. However, it does mention courses related to programming languages, such as CS 105 (Programming Languages) and CS 21 (Concurrent Programming), which may involve various programming languages. For more specific information about the programming languages used in each course, you may need to refer to the course descriptions or syllabi.",[FILL IN AFTER REVIEW],[FILL IN AFTER REVIEW]
