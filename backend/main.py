@@ -1,8 +1,14 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.api.chat import router as chat_router
-from backend.core.config import settings
+from api.chat import router as chat_router
+from core.config import settings
+
+from pf.router import router as pf_router
+from instructor.router import router as instructor_router
+
+
+
 
 
 def create_app() -> FastAPI:
@@ -24,6 +30,8 @@ def create_app() -> FastAPI:
 
     api_v1 = FastAPI()
     api_v1.include_router(chat_router)
+    api_v1.include_router(pf_router) 
+    api_v1.include_router(instructor_router)
 
     app.mount(settings.api_v1_prefix, api_v1)
 

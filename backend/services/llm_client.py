@@ -1,10 +1,15 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 from typing import List, Optional
 from uuid import uuid4
 
 from llmproxy import LLMProxy
 
-from backend.core.config import settings
-from backend.models.chat import ChatMessage, ChatRequest, ChatResponse
+from core.config import settings
+from models.chat import ChatMessage, ChatRequest, ChatResponse
+
+
 
 
 class LLMTutorClient:

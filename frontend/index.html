@@ -1,63 +1,178 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>TutorChat</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="app-shell">
-      <header class="app-header">
-        <div class="app-title">
-          <span class="dot dot-primary"></span>
-          <h1>TutorChat</h1>
-        </div>
-        <p class="app-subtitle">
-          Experimental language tutor powered by LLMProxy.
-        </p>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>TutorChat Learning Lab</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
-      <main class="app-main">
-        <section class="chat-panel">
-          <div id="chat-log" class="chat-log" aria-live="polite"></div>
+<body>
+  <div class="app-shell">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <h1>TutorChat Learning Lab</h1>
+      <p>Interactive AI Tutor with Productive Failure Mode</p>
+    </header>
+
+    <!-- CONTROL BAR -->
+    <section class="control-bar">
+      <div class="control-group">
+        <label>Learning Mode</label>
+        <select id="learningMode">
+          <option value="normal">Normal Tutor</option>
+          <option value="pf">Productive Failure</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label>Struggle Timer</label>
+        <select id="timerSelect">
+          <option value="300">5 Minutes</option>
+          <option value="420">7 Minutes</option>
+          <option value="600" selected>10 Minutes</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label>Session</label>
+        <span id="session-id">–</span>
+      </div>
+    </section>
+
+    <!-- MAIN SPLIT LAYOUT -->
+    <main class="main-layout">
+
+      <!-- LEFT WORKSPACE -->
+      <section class="workspace">
+
+        <!-- TABS -->
+        <div class="tabs">
+          <button class="tab-btn active" data-tab="normalTab">💬 Normal Tutor</button>
+          <button class="tab-btn" data-tab="pfTab">🧩 Productive Failure</button>
+          <button class="tab-btn" data-tab="instructorTab">📚 Instructor Portal</button>
+        </div>
+
+        <!-- NORMAL TUTOR TAB -->
+        <div id="normalTab" class="tab-content active">
+          <div id="chat-log" class="chat-log"></div>
+
           <form id="chat-form" class="chat-form">
-            <textarea
-              id="chat-input"
-              class="chat-input"
-              rows="2"
-              placeholder="Ask a question or practice a sentence…"
-              required
-            ></textarea>
+            <textarea id="chat-input" placeholder="Ask your tutor..." required></textarea>
             <div class="chat-actions">
-              <button id="send-btn" type="submit" class="btn primary">
-                Send
-              </button>
-              <button id="reset-btn" type="button" class="btn ghost">
-                New session
-              </button>
+              <button type="submit" id="send-btn" class="btn primary">Send</button>
+              <button type="button" id="reset-btn" class="btn ghost">New Session</button>
             </div>
           </form>
-        </section>
+        </div>
 
-        <aside class="side-panel">
-          <h2>Session</h2>
-          <div class="session-info">
-            <div class="session-row">
-              <span class="label">Session ID</span>
-              <span id="session-id" class="value muted">–</span>
+        <!-- PRODUCTIVE FAILURE TAB -->
+        <div id="pfTab" class="tab-content">
+
+          <div class="problem-box">
+            <h3>Practice Problem</h3>
+            <p id="problemText">Problem will appear here...</p>
+          </div>
+
+          <div class="pf-grid">
+            <div class="pf-left">
+              <textarea id="attemptBox" placeholder="Write your solution attempt here..."></textarea>
+              <button id="submitAttempt" class="btn primary large">Submit Attempt</button>
+
+              <div class="attempt-panel">
+                Attempts: <span id="attemptCount">0</span>
+                <span id="attemptWarning"></span>
+              </div>
+            </div>
+
+            <div class="pf-right">
+              <div class="timer-box">
+                ⏱ Time Remaining
+                <div id="timerDisplay">10:00</div>
+              </div>
+
+              <div class="hints-box">
+                <h4>Hints</h4>
+                <button class="hintBtn" data-level="1" disabled>Hint 1</button>
+                <button class="hintBtn" data-level="2" disabled>Hint 2</button>
+                <button class="hintBtn" data-level="3" disabled>Hint 3</button>
+                <button class="hintBtn" data-level="4" disabled>Expert Solution</button>
+              </div>
             </div>
           </div>
-          <p class="hint">
-            This UI talks to the backend at
-            <code>/api/chat/</code>. You can change the base URL in
-            <code>app.js</code>.
-          </p>
-        </aside>
-      </main>
-    </div>
 
-    <script type="module" src="./app.js"></script>
-  </body>
-  </html>
+          <div id="comparisonPanel" class="panel hidden"></div>
 
+          <div id="reflectionPanel" class="panel hidden">
+            <h3>Reflection</h3>
+            <textarea id="reflectionText" placeholder="What did you misunderstand?"></textarea>
+            <button id="submitReflection" class="btn success">Submit Reflection</button>
+          </div>
+
+        </div>
+
+        <!-- INSTRUCTOR PORTAL TAB -->
+        <div id="instructorTab" class="tab-content">
+          <div class="instructor-panel">
+
+            <h2>Instructor Knowledge Upload</h2>
+            <p class="muted">
+              Upload solution guides, lecture notes, or worked examples.
+              The AI will use these for hints and expert solutions.
+            </p>
+
+            <div class="upload-card">
+              <input type="file" id="materialFile" accept=".pdf,.txt,.docx" />
+              <button id="uploadMaterialBtn" class="btn primary">Upload Material</button>
+              <p id="uploadStatus" class="upload-status"></p>
+            </div>
+
+            <div class="upload-info">
+              <h4>Supported Files</h4>
+              <ul>
+                <li>PDF lecture notes</li>
+                <li>Worked examples</li>
+                <li>Solution manuals</li>
+                <li>Concept summaries</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- RIGHT ANALYTICS PANEL -->
+      <aside class="analytics-panel">
+        <h3>Learning Analytics</h3>
+
+        <div class="metric">
+          <span>Total Attempts</span>
+          <strong id="metricAttempts">0</strong>
+        </div>
+
+        <div class="metric">
+          <span>Time Spent</span>
+          <strong id="metricTime">0 min</strong>
+        </div>
+
+        <div class="metric">
+          <span>Hints Used</span>
+          <strong id="metricHints">0</strong>
+        </div>
+
+        <div class="metric">
+          <span>Problems Completed</span>
+          <strong id="metricProblems">0</strong>
+        </div>
+
+        <button id="exportCSV" class="btn ghost full">Export CSV</button>
+      </aside>
+
+    </main>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

@@ -15,10 +15,14 @@ class Settings(BaseSettings):
     llm_model: str = Field(default="4o-mini")
     llm_system_prompt: str = Field(
         default=(
-            "You are a supportive language tutor. "
+            "You are a supportive  tutor. "
             "Ask clarifying questions, give concise explanations, and provide examples."
         )
     )
+
+    LLMPROXY_API_KEY: str 
+    LLMPROXY_ENDPOINT: str 
+    
 
     # Optional: namespace for future RAG or multi-tenant setups
     default_session_prefix: str = Field(default="tutor-session-")

@@ -1,159 +1,362 @@
 class TutorChatApp {
   constructor(options) {
     this.apiBaseUrl = options.apiBaseUrl.replace(/\/+$/, "");
-    this.elements = {
+
+    /* ---------------- UI ELEMENTS ---------------- */
+    this.ui = {
+      learningMode: document.getElementById("learningMode"),
+      tabButtons: document.querySelectorAll(".tab-btn"),
+      tabContents: document.querySelectorAll(".tab-content"),
+
       chatLog: document.getElementById("chat-log"),
-      form: document.getElementById("chat-form"),
-      input: document.getElementById("chat-input"),
+      chatForm: document.getElementById("chat-form"),
+      chatInput: document.getElementById("chat-input"),
       sendBtn: document.getElementById("send-btn"),
       resetBtn: document.getElementById("reset-btn"),
       sessionId: document.getElementById("session-id"),
+
+      problemText: document.getElementById("problemText"),
+      attemptBox: document.getElementById("attemptBox"),
+      submitAttempt: document.getElementById("submitAttempt"),
+      attemptCount: document.getElementById("attemptCount"),
+      attemptWarning: document.getElementById("attemptWarning"),
+      timerDisplay: document.getElementById("timerDisplay"),
+      timerSelect: document.getElementById("timerSelect"),
+      hintBtns: document.querySelectorAll(".hintBtn"),
+
+      comparisonPanel: document.getElementById("comparisonPanel"),
+      reflectionPanel: document.getElementById("reflectionPanel"),
+      reflectionText: document.getElementById("reflectionText"),
+      submitReflection: document.getElementById("submitReflection"),
+
+      metricAttempts: document.getElementById("metricAttempts"),
+      metricHints: document.getElementById("metricHints"),
+      metricTime: document.getElementById("metricTime"),
+      metricProblems: document.getElementById("metricProblems"),
+      exportCSV: document.getElementById("exportCSV"),
+
+      uploadBtn: document.getElementById("uploadMaterialBtn"),
+      uploadInput: document.getElementById("materialFile"),
+      uploadStatus: document.getElementById("uploadStatus"),
     };
 
+    /* ---------------- STATE ---------------- */
     this.state = {
+      mode: "normal",
       sessionId: null,
       history: [],
       sending: false,
+
+      attempts: 0,
+      hintsUsed: 0,
+      problemsSolved: 0,
+      totalTimeSpent: 0,
+      timerSeconds: 600,
+      timerRemaining: 600,
+      timerInterval: null,
+      analyticsLog: [],
     };
 
     this._bindEvents();
-    this._addSystemMessage(
-      "This is a demo tutor. Messages are not persisted and this UI is for development only."
-    );
+    this._addSystemMessage("Welcome to TutorChat Learning Lab.");
   }
+
+  /* ---------------- EVENT BINDINGS ---------------- */
 
   _bindEvents() {
-    this.elements.form.addEventListener("submit", (e) => {
+    this.ui.chatForm.addEventListener("submit", e => {
       e.preventDefault();
-      this._handleSubmit();
+      this._handleChatSubmit();
     });
 
-    this.elements.resetBtn.addEventListener("click", () => {
-      this._resetSession();
+    this.ui.resetBtn.addEventListener("click", () => this._resetSession());
+
+    this.ui.tabButtons.forEach(btn =>
+      btn.addEventListener("click", () => this._switchTab(btn.dataset.tab))
+    );
+
+    this.ui.learningMode.addEventListener("change", e => {
+      this.state.mode = e.target.value;
+      if (this.state.mode === "pf") this._enterPFMode();
+      else this._switchTab("normalTab");
     });
+
+    this.ui.submitAttempt.addEventListener("click", () => this._submitAttempt());
+    this.ui.timerSelect.addEventListener("change", e => this._changeTimer(e));
+    this.ui.exportCSV.addEventListener("click", () => this._exportCSV());
+
+    this.ui.hintBtns.forEach(btn =>
+      btn.addEventListener("click", () => this._useHint(btn))
+    );
+
+    /* Instructor Upload */
+    this.ui.uploadBtn.addEventListener("click", () => this._handleUpload());
   }
 
-  async _handleSubmit() {
-    const text = this.elements.input.value.trim();
+  /* ---------------- TAB SYSTEM ---------------- */
+
+  _switchTab(tabId) {
+    this.ui.tabContents.forEach(t => t.classList.remove("active"));
+    this.ui.tabButtons.forEach(b => b.classList.remove("active"));
+    document.getElementById(tabId).classList.add("active");
+    document.querySelector(`[data-tab="${tabId}"]`).classList.add("active");
+  }
+
+  _enterPFMode() {
+    this._switchTab("pfTab");
+    this.ui.problemText.textContent =
+      "Solve: If 3x + 5 = 20, find x.";
+    this._resetPFState();
+  }
+
+  /* ---------------- CHAT ---------------- */
+
+  async _handleChatSubmit() {
+    const text = this.ui.chatInput.value.trim();
     if (!text || this.state.sending) return;
 
-    this._setSending(true);
     this._appendMessage("user", text);
-    this.elements.input.value = "";
+    this.ui.chatInput.value = "";
+    this._setSending(true);
 
     try {
-      const response = await this._sendToApi(text);
-      this._applyResponse(response);
-    } catch (error) {
-      console.error(error);
-      this._appendMessage(
-        "system",
-        "There was a problem talking to the backend. Check the console and backend logs."
-      );
-    } finally {
-      this._setSending(false);
-      this.elements.input.focus();
+      const res = await fetch(`${this.apiBaseUrl}/chat/`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          session_id: this.state.sessionId,
+          user_message: text,
+          history: this.state.history
+        })
+      });
+      const data = await res.json();
+      this._appendMessage("assistant", data.reply);
+    } catch {
+      this._appendMessage("system", "Backend error.");
     }
+
+    this._setSending(false);
   }
 
-  async _sendToApi(userMessage) {
-    const payload = {
-      session_id: this.state.sessionId,
-      user_message: userMessage,
-      history: this.state.history,
-    };
+  /* ---------------- PF SYSTEM ---------------- */
 
-    const res = await fetch(`${this.apiBaseUrl}/chat/`, {
+  async _submitAttempt() {
+  const answer = this.ui.attemptBox.value.trim();
+  if (!answer) return;
+
+  this.ui.attemptWarning.textContent = "Evaluating attempt...";
+
+  try {
+    const res = await fetch(`${this.apiBaseUrl}/pf/attempt`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
+      body: JSON.stringify({
+        session_id: this.state.sessionId || "default",
+        problem_text: this.ui.problemText.textContent,
+        student_answer: answer
+      })
     });
 
-    if (!res.ok) {
-      throw new Error(`API error: ${res.status}`);
-    }
-    return res.json();
+    const data = await res.json();
+
+    this.ui.comparisonPanel.classList.remove("hidden");
+    this.ui.comparisonPanel.innerHTML = `
+      <h3>AI Evaluation</h3>
+      <div class="feedback-box">${data.evaluation}</div>
+    `;
+
+    this.ui.attemptWarning.textContent = "Feedback generated.";
+  } catch (err) {
+    this.ui.attemptWarning.textContent = "Evaluation failed.";
+  }
+}
+
+  _changeTimer(e) {
+    this.state.timerSeconds = parseInt(e.target.value);
+    this._resetTimer();
   }
 
-  _applyResponse(data) {
-    const { session_id, reply } = data;
-    if (!this.state.sessionId && session_id) {
-      this.state.sessionId = session_id;
-      this.elements.sessionId.textContent = session_id;
-    }
+  _startTimer() {
+    this.state.timerRemaining = this.state.timerSeconds;
+    this._updateTimerDisplay();
 
-    if (reply) {
-      this._appendMessage("assistant", reply);
-    }
+    this.state.timerInterval = setInterval(() => {
+      this.state.timerRemaining--;
+      this._updateTimerDisplay();
 
-    // Update history used for subsequent requests
-    const lastUser = this._lastUserMessage();
-    if (lastUser) {
-      this.state.history.push({ role: "user", content: lastUser });
-    }
-    if (reply) {
-      this.state.history.push({ role: "assistant", content: reply });
+      if (this.state.timerRemaining <= 0) {
+        clearInterval(this.state.timerInterval);
+        this._unlockNextHint();
+      }
+    }, 1000);
+  }
+
+  _resetTimer() {
+    clearInterval(this.state.timerInterval);
+    this._startTimer();
+  }
+
+  _updateTimerDisplay() {
+    const m = Math.floor(this.state.timerRemaining / 60);
+    const s = this.state.timerRemaining % 60;
+    this.ui.timerDisplay.textContent =
+      `${m}:${s.toString().padStart(2, "0")}`;
+  }
+
+  _unlockNextHint() {
+    for (const btn of this.ui.hintBtns) {
+      if (btn.disabled) {
+        btn.disabled = false;
+        break;
+      }
     }
   }
 
-  _lastUserMessage() {
-    const items = this.elements.chatLog.querySelectorAll(
-      ".chat-bubble.user .chat-body"
-    );
-    if (!items.length) return null;
-    return items[items.length - 1].textContent || null;
+ async _useHint(btn) {
+  const level = parseInt(btn.dataset.level);
+
+  btn.disabled = true;
+  btn.textContent = "Loading...";
+
+  try {
+    const res = await fetch(`${this.apiBaseUrl}/pf/hint`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        session_id: this.state.sessionId || "default",
+        problem_text: this.ui.problemText.textContent,
+        student_answer: this.ui.attemptBox.value || "No answer",
+        hint_level: level
+      })
+    });
+
+    const data = await res.json();
+
+    alert(`Hint Level ${level}:\n\n${data.hint}`);
+    btn.textContent = `Hint ${level}`;
+  } catch {
+    alert("Hint failed");
+    btn.textContent = `Hint ${level}`;
+  }
+}
+
+  _resetPFState() {
+    this.state.attempts = 0;
+    this.ui.attemptCount.textContent = 0;
+    this.ui.attemptWarning.textContent = "";
+    this.ui.hintBtns.forEach(b => (b.disabled = true));
+    this._resetTimer();
   }
 
-  _appendMessage(role, content) {
-    const container = document.createElement("div");
-    container.className = `chat-bubble ${role}`;
+  async _submitReflection() {
+  const text = this.ui.reflectionText.value.trim();
+  if (!text) return;
 
-    if (role !== "system") {
-      const meta = document.createElement("div");
-      meta.className = "chat-meta";
-      meta.textContent = role === "user" ? "You" : "Tutor";
-      container.appendChild(meta);
+  try {
+    const res = await fetch(`${this.apiBaseUrl}/pf/reflection`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        session_id: this.state.sessionId || "default",
+        problem_text: this.ui.problemText.textContent,
+        student_reflection: text
+      })
+    });
+
+    const data = await res.json();
+    alert("Reflection Analysis:\n\n" + data.evaluation);
+  } catch {
+    alert("Reflection failed");
+  }
+}
+
+  /* ---------------- ANALYTICS ---------------- */
+
+  _logAnalytics(type) {
+    this.state.analyticsLog.push({
+      type,
+      attempts: this.state.attempts,
+      hints: this.state.hintsUsed,
+      timeSpent: this.state.totalTimeSpent,
+      timestamp: new Date().toISOString()
+    });
+
+    this.ui.metricAttempts.textContent = this.state.attempts;
+    this.ui.metricTime.textContent =
+      Math.floor(this.state.totalTimeSpent / 60) + " min";
+  }
+
+  _exportCSV() {
+    const rows = [
+      ["Type", "Attempts", "HintsUsed", "TimeSpent", "Timestamp"],
+      ...this.state.analyticsLog.map(r =>
+        [r.type, r.attempts, r.hints, r.timeSpent, r.timestamp]
+      )
+    ];
+
+    const csv = rows.map(r => r.join(",")).join("\n");
+    const blob = new Blob([csv], { type: "text/csv" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "learning_analytics.csv";
+    a.click();
+  }
+
+  /* ---------------- INSTRUCTOR UPLOAD ---------------- */
+
+  async _handleUpload() {
+    if (!this.ui.uploadInput.files.length) return;
+
+    const file = this.ui.uploadInput.files[0];
+    const formData = new FormData();
+    formData.append("file", file);
+
+    this.ui.uploadStatus.textContent = "Uploading...";
+
+    try {
+      const res = await fetch(`${this.apiBaseUrl}/instructor/upload`, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!res.ok) throw new Error();
+
+      const data = await res.json();
+      this.ui.uploadStatus.textContent = `Uploaded: ${data.filename}`;
+    } catch {
+      this.ui.uploadStatus.textContent = "Upload failed";
     }
-
-    const body = document.createElement("div");
-    body.className = "chat-body";
-    body.textContent = content;
-    container.appendChild(body);
-
-    this.elements.chatLog.appendChild(container);
-    this.elements.chatLog.scrollTop = this.elements.chatLog.scrollHeight;
   }
 
-  _addSystemMessage(text) {
-    this._appendMessage("system", text);
+  /* ---------------- UTIL ---------------- */
+
+  _appendMessage(role, text) {
+    const div = document.createElement("div");
+    div.className = `chat-bubble ${role}`;
+    div.textContent = `${role.toUpperCase()}: ${text}`;
+    this.ui.chatLog.appendChild(div);
+    this.ui.chatLog.scrollTop = this.ui.chatLog.scrollHeight;
   }
 
-  _setSending(isSending) {
-    this.state.sending = isSending;
-    this.elements.sendBtn.disabled = isSending;
-    this.elements.sendBtn.textContent = isSending ? "Sending…" : "Send";
+  _addSystemMessage(msg) { this._appendMessage("system", msg); }
+
+  _setSending(s) {
+    this.state.sending = s;
+    this.ui.sendBtn.disabled = s;
+    this.ui.sendBtn.textContent = s ? "Sending…" : "Send";
   }
 
   _resetSession() {
     this.state.sessionId = null;
     this.state.history = [];
-    this.elements.sessionId.textContent = "–";
-    this.elements.chatLog.innerHTML = "";
-    this._addSystemMessage(
-      "Started a new session. Your next message will create a new conversation with the backend."
-    );
+    this.ui.chatLog.innerHTML = "";
+    this._addSystemMessage("New session started.");
   }
 }
 
-// Initialize app once DOM is ready
+/* INIT */
 window.addEventListener("DOMContentLoaded", () => {
-  /**
-   * Default backend URL assumes FastAPI is running on port 8000.
-   * Adjust this if you deploy the backend elsewhere.
-   */
   const apiBaseUrl =
     window.TUTORCHAT_API_BASE_URL || "http://localhost:8000/api";
-
   new TutorChatApp({ apiBaseUrl });
 });
-

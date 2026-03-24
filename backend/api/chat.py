@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 
-from backend.models.chat import ChatRequest, ChatResponse
-from backend.services.llm_client import LLMTutorClient
-from backend.services.rag import RAGService
+from models.chat import ChatRequest, ChatResponse
+from services.llm_client import LLMTutorClient
+from services.rag import RAGService
 
 router = APIRouter(prefix="/chat", tags=["chat"])
 

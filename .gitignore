@@ -216,3 +216,9 @@ dist/
 
 # Cursor editor metadata
 .cursor/
+
+#venv and .env
+
+backend/venv/
+backend/.env/
+backend/__pycache__/
