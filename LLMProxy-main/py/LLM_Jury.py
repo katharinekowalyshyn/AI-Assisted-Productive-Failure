@@ -100,6 +100,8 @@ class Magi:
     
         """
         As stated previously, this is the ChatGPT member of Jury.
+        Its personality is supposed to be more severe than the other
+        two judges.
 
         Input:
 
@@ -108,7 +110,17 @@ class Magi:
 
         melchior_maxim = self.client.generate(
             model = "4o-mini",
-            system = "You are a severe, yet helpful member of an academic jury.",
+            system = """
+            You are a strict academic juror. Evaluate the results critically
+            and provide arguments pointing out the flaws. You must give a veredict
+            shaped like this:
+            
+            {
+                "verdict": "APPROVE" | "REJECT",
+                "confidence": 0-1,
+                "reasoning": "..."
+            } 
+            """,
             query = "",
             temperature= 0.5,
             lastk= 3,
@@ -129,7 +141,17 @@ class Magi:
 
             casper_maxim = self.client.generate(
                 model = "us.anthropic.claude-3-haiku-20240307-v1:0",
-                system = "You are a benevolent, yet helpful member of an academic jury.",
+                system =  """
+            You are a benevolent academic juror. Evaluate the results with optimism
+            and provide arguments pointing out how to improve. 
+            You must give a veredict shaped like this:
+            
+            {
+                "verdict": "APPROVE" | "REJECT",
+                "confidence": 0-1,
+                "reasoning": "..."
+            } 
+            """,
                 query = "",
                 temperature= 0.5,
                 lastk= 3,
@@ -150,7 +172,17 @@ class Magi:
 
             balthazar_maxim = self.client.generate(
                 model = "Loremipsum",
-                system = "You are a benevolent, yet helpful member of an academic jury.",
+                system = """
+            You are an impartial academic juror. Evaluate the results with balance
+            and provide arguments behind your reasoning. 
+            You must give a veredict shaped like this:
+            
+            {
+                "verdict": "APPROVE" | "REJECT",
+                "confidence": 0-1,
+                "reasoning": "..."
+            } 
+            """,
                 query = "",
                 temperature= 0.5,
                 lastk= 3,
@@ -158,3 +190,64 @@ class Magi:
                 rag_usage= True
             )
             return balthazar_maxim
+    
+    def deliberate(self, opinions:dict) -> str:
+
+        """
+        This function creates the logic which behind the deliberation
+        system. It uses a binary logic since it should be impossible for
+        it to get into a deadlock
+        
+        Input: 
+        
+        * Opiniona: dictionary with the veredict of all three members 
+        of the panel.
+
+        Output:
+
+        * str with the final deliverance.  
+        """
+        
+        votes = {"APPROVE": 0, "REJECT": 0}
+        
+        for juror, response in opinions.items():
+            t = response.get("output", "").upper()
+
+            if "APPROVE" in t:
+                votes["APPROVE"] += 1
+            elif "REJECT" in t:
+                votes["REJECT"] += 1
+        
+        if votes["APPROVE"] > votes["REJECT"]:
+            return "Final Veredict: APPROVED"
+        else:
+            return "Final Veredict: REJECTED"
+
+    
+    def juror_panel(self)-> dict:
+
+        """
+        This function operates the models
+        Input:
+
+        Output:
+        """
+
+        case = self.query_context(context_string=None)
+
+        melchior = self.Melchior()
+        casper = self.Casper()
+        balthazar = self.Balthazar()
+        
+        opinions = {
+            "Melchior" : melchior,
+            "Casper" : casper,
+            "Balthazar" : balthazar
+            }
+        
+        veredict = self.deliberate(opinions)
+        
+        
+        return {"case": case,
+                "opinion": opinions,
+                "veredict" :veredict}
