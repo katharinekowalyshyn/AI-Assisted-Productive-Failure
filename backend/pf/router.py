@@ -1,21 +1,61 @@
 from fastapi import APIRouter
-from .models import *
+from pydantic import BaseModel
 from .service import PFService
 
 router = APIRouter(prefix="/pf", tags=["Productive Failure"])
 service = PFService()
 
 
-@router.post("/attempt", response_model=PFResponse)
-def evaluate_attempt(req: AttemptRequest):
-    return service.evaluate_attempt(req)
+class StartRequest(BaseModel):
+    session_id: str
+    topic: str = "general"
+    level: str = "intermediate"
 
 
-@router.post("/hint", response_model=PFResponse)
-def generate_hint(req: HintRequest):
-    return service.generate_hint(req)
+class AttemptRequest(BaseModel):
+    session_id: str
+    answer: str
+    attempt_number: int = None
 
 
-@router.post("/reflection", response_model=PFResponse)
-def analyze_reflection(req: ReflectionRequest):
-    return service.analyze_reflection(req)
+class HintRequest(BaseModel):
+    session_id: str
+    problem_text: str
+    hint_level: int
+
+
+@router.post("/start")
+def start(req: StartRequest):
+    problem = service.start_session(
+        session_id=req.session_id,
+        topic=req.topic,
+        level=req.level
+    )
+    return problem
+    
+@router.post("/attempt")
+def attempt(req: AttemptRequest):
+    reply = service.handle_attempt(req.session_id, req.answer)
+    return {"reply": reply}
+
+@router.post("/hint")
+def hint(req: HintRequest):
+    hint = service.get_hint(req.session_id, req.problem_text, req.hint_level)
+    return {"hint": hint}
+
+
+"""
+for debugging purposes:
+print(f"DEBUG: Received start request: session_id={req.session_id}, topic={req.topic}, level={req.level}")  # ADD
+    try:
+        problem = service.start_session(
+            session_id=req.session_id,
+            topic=req.topic,
+            level=req.level
+        )
+        print(f"DEBUG: Generated problem: {problem}")  # ADD
+        return {"problem": problem}
+    except Exception as e:
+        print(f"ERROR in /start: {e}")  # ADD
+        return {"error": str(e), "problem": "Error generating problem"}
+"""

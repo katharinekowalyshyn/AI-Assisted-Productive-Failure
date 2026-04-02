@@ -9,167 +9,113 @@
 
 <body>
   <div class="app-shell">
-
-    <!-- HEADER -->
     <header class="app-header">
-      <h1>TutorChat Learning Lab</h1>
-      <p>Interactive AI Tutor with Productive Failure Mode</p>
+      <div>
+        <h1>TutorChat Learning Lab</h1>
+        <p>Productive Failure with Adaptive Scaffolding</p>
+      </div>
+      <div class="header-actions">
+        <button id="themeToggle" class="btn ghost">☀️/🌙</button>
+        <div id="timerBadge" class="timer-badge hidden" title="Problem timer running">⏱</div>
+      </div>
     </header>
 
-    <!-- CONTROL BAR -->
     <section class="control-bar">
       <div class="control-group">
-        <label>Learning Mode</label>
-        <select id="learningMode">
-          <option value="normal">Normal Tutor</option>
-          <option value="pf">Productive Failure</option>
+        <label>Auto-level</label>
+        <select id="levelSelect">
+          <option value="auto">Auto-assess</option>
+          <option value="novice">Novice</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
         </select>
       </div>
-
       <div class="control-group">
-        <label>Struggle Timer</label>
+        <label>Problem Duration</label>
         <select id="timerSelect">
-          <option value="300">5 Minutes</option>
-          <option value="420">7 Minutes</option>
-          <option value="600" selected>10 Minutes</option>
+          <option value="1200">20 min</option>
+          <option value="1500">25 min</option>
+          <option value="1800">30 min</option>
         </select>
       </div>
-
       <div class="control-group">
         <label>Session</label>
         <span id="session-id">–</span>
       </div>
     </section>
 
-    <!-- MAIN SPLIT LAYOUT -->
     <main class="main-layout">
-
-      <!-- LEFT WORKSPACE -->
       <section class="workspace">
-
-        <!-- TABS -->
         <div class="tabs">
-          <button class="tab-btn active" data-tab="normalTab">💬 Normal Tutor</button>
-          <button class="tab-btn" data-tab="pfTab">🧩 Productive Failure</button>
-          <button class="tab-btn" data-tab="instructorTab">📚 Instructor Portal</button>
+          <button class="tab-btn active" data-tab="problemHubTab">📁 Problem Hub</button>
+          <button class="tab-btn" data-tab="learningTab">🧩 Learning Space</button>
+          <button class="tab-btn" data-tab="analyticsTab">📊 Analytics</button>
         </div>
 
-        <!-- NORMAL TUTOR TAB -->
-        <div id="normalTab" class="tab-content active">
-          <div id="chat-log" class="chat-log"></div>
-
-          <form id="chat-form" class="chat-form">
-            <textarea id="chat-input" placeholder="Ask your tutor..." required></textarea>
-            <div class="chat-actions">
-              <button type="submit" id="send-btn" class="btn primary">Send</button>
-              <button type="button" id="reset-btn" class="btn ghost">New Session</button>
-            </div>
-          </form>
+        <div id="problemHubTab" class="tab-content active">
+          <h2>Upload Materials + Level Survey</h2>
+          <p class="help-text">Upload lecture notes or solution docs to seed hints</p>
+          <div class="upload-card">
+            <input type="file" id="materialFile" accept=".pdf,.txt,.docx" />
+            <button id="uploadMaterialBtn" class="btn primary">Upload Material</button>
+            <p id="uploadStatus" class="upload-status"></p>
+          </div>
+          <div class="survey-card">
+            <h3>Quick Diagnostic</h3>
+            <p>Select topically what you'd like to practice:</p>
+            <select id="topicSelect">
+              <option value="algebra">Algebra</option>
+              <option value="calculus">Calculus</option>
+              <option value="probability">Probability</option>
+            </select>
+            <p>Confidence:</p>
+            <input type="range" id="selfConfidence" min="1" max="5" value="3"/>
+            <button id="runDiagnosticBtn" class="btn success">Run Learning Level Check</button>
+            <p id="diagnosticResult"></p>
+          </div>
         </div>
 
-        <!-- PRODUCTIVE FAILURE TAB -->
-        <div id="pfTab" class="tab-content">
-
+        <div id="learningTab" class="tab-content">
           <div class="problem-box">
-            <h3>Practice Problem</h3>
-            <p id="problemText">Problem will appear here...</p>
+            <h3>Problem</h3>
+            <p id="problemText">Click “Present Problem” to start.</p>
+            <button id="presentProblemBtn" class="btn primary large">Present Problem</button>
           </div>
 
-          <div class="pf-grid">
-            <div class="pf-left">
-              <textarea id="attemptBox" placeholder="Write your solution attempt here..."></textarea>
-              <button id="submitAttempt" class="btn primary large">Submit Attempt</button>
+          <div id="conversationLog" class="conversation-log"></div>
 
-              <div class="attempt-panel">
-                Attempts: <span id="attemptCount">0</span>
-                <span id="attemptWarning"></span>
-              </div>
-            </div>
-
-            <div class="pf-right">
-              <div class="timer-box">
-                ⏱ Time Remaining
-                <div id="timerDisplay">10:00</div>
-              </div>
-
-              <div class="hints-box">
-                <h4>Hints</h4>
-                <button class="hintBtn" data-level="1" disabled>Hint 1</button>
-                <button class="hintBtn" data-level="2" disabled>Hint 2</button>
-                <button class="hintBtn" data-level="3" disabled>Hint 3</button>
-                <button class="hintBtn" data-level="4" disabled>Expert Solution</button>
-              </div>
-            </div>
+          <div class="attempt-box-wrap">
+            <textarea id="attemptBox" placeholder="Type your attempt..." rows="4"></textarea>
+            <button id="submitAttempt" class="btn primary large">Submit Attempt</button>
+          </div>
+          <div class="attempt-panel">
+            Attempts: <span id="attemptCount">0</span> / 10
+            <span id="attemptWarning"></span>
           </div>
 
-          <div id="comparisonPanel" class="panel hidden"></div>
-
-          <div id="reflectionPanel" class="panel hidden">
-            <h3>Reflection</h3>
-            <textarea id="reflectionText" placeholder="What did you misunderstand?"></textarea>
-            <button id="submitReflection" class="btn success">Submit Reflection</button>
-          </div>
-
-        </div>
-
-        <!-- INSTRUCTOR PORTAL TAB -->
-        <div id="instructorTab" class="tab-content">
-          <div class="instructor-panel">
-
-            <h2>Instructor Knowledge Upload</h2>
-            <p class="muted">
-              Upload solution guides, lecture notes, or worked examples.
-              The AI will use these for hints and expert solutions.
-            </p>
-
-            <div class="upload-card">
-              <input type="file" id="materialFile" accept=".pdf,.txt,.docx" />
-              <button id="uploadMaterialBtn" class="btn primary">Upload Material</button>
-              <p id="uploadStatus" class="upload-status"></p>
-            </div>
-
-            <div class="upload-info">
-              <h4>Supported Files</h4>
-              <ul>
-                <li>PDF lecture notes</li>
-                <li>Worked examples</li>
-                <li>Solution manuals</li>
-                <li>Concept summaries</li>
-              </ul>
-            </div>
-
+          <div class="hints-box">
+            <h4>Hints (Random unlocks)</h4>
+            <button class="hintBtn" data-level="1" disabled>Hint 1</button>
+            <button class="hintBtn" data-level="2" disabled>Hint 2</button>
+            <button class="hintBtn" data-level="3" disabled>Hint 3</button>
+            <button class="hintBtn" data-level="4" disabled>Expert Suggestion</button>
           </div>
         </div>
 
+        <div id="analyticsTab" class="tab-content">
+          <h2>Learning Analytics</h2>
+          <div id="analyticsSummary"></div>
+          <canvas id="analyticsChart" width="640" height="260"></canvas>
+        </div>
       </section>
 
-      <!-- RIGHT ANALYTICS PANEL -->
       <aside class="analytics-panel">
-        <h3>Learning Analytics</h3>
-
-        <div class="metric">
-          <span>Total Attempts</span>
-          <strong id="metricAttempts">0</strong>
-        </div>
-
-        <div class="metric">
-          <span>Time Spent</span>
-          <strong id="metricTime">0 min</strong>
-        </div>
-
-        <div class="metric">
-          <span>Hints Used</span>
-          <strong id="metricHints">0</strong>
-        </div>
-
-        <div class="metric">
-          <span>Problems Completed</span>
-          <strong id="metricProblems">0</strong>
-        </div>
-
-        <button id="exportCSV" class="btn ghost full">Export CSV</button>
+        <h3>Live Metrics</h3>
+        <div class="metric"><span>Total Attempts</span><strong id="metricAttempts">0</strong></div>
+        <div class="metric"><span>Hints Used</span><strong id="hintsUsed">0</strong></div>
+        <div class="metric"><span>Problems Solved</span><strong id="metricProblems">0</strong></div>
+        <div class="metric"><span>Time Elapsed</span><strong id="metricTime">0:00</strong></div>
       </aside>
-
     </main>
   </div>
 

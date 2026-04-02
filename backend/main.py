@@ -1,25 +1,27 @@
+from dotenv import load_dotenv
+import os
+
+# Load .env file BEFORE any other imports
+load_dotenv()
+
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.chat import router as chat_router
 from core.config import settings
-
 from pf.router import router as pf_router
 from instructor.router import router as instructor_router
-
-
-
 
 
 def create_app() -> FastAPI:
     app = FastAPI(title=settings.app_name)
 
-    # CORS: allow local dev frontends; tighten this as needed.
+    # CORS configuration
     app.add_middleware(
         CORSMiddleware,
         allow_origins=[
-            "http://localhost:5173",  # Vite default
-            "http://localhost:3000",
+            "http://localhost:5173",  # Vite
+            "http://localhost:3000",  # Node frontend
             "http://localhost:8000",
             "http://127.0.0.1:8000",
         ],
@@ -28,12 +30,9 @@ def create_app() -> FastAPI:
         allow_headers=["*"],
     )
 
-    api_v1 = FastAPI()
-    api_v1.include_router(chat_router)
-    api_v1.include_router(pf_router) 
-    api_v1.include_router(instructor_router)
-
-    app.mount(settings.api_v1_prefix, api_v1)
+    # Include routers directly with prefix
+    app.include_router(pf_router, prefix=settings.api_v1_prefix)
+    app.include_router(instructor_router, prefix=settings.api_v1_prefix)
 
     @app.get("/health")
     async def health() -> dict:
@@ -43,4 +42,3 @@ def create_app() -> FastAPI:
 
 
 app = create_app()
-

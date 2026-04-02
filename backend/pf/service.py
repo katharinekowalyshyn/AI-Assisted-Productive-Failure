@@ -1,132 +1,151 @@
 from services.llm_client import LLMTutorClient
 from services.rag import RAGService
-from .models import *
+from instructor.service import InstructorService  # ADD: To access uploads
 from .analytics import AnalyticsLogger
+
+from llmproxy import LLMProxy
+from core.config import settings
 
 
 class PFService:
     def __init__(self):
-        self.llm = LLMTutorClient()
-        self.rag = RAGService()
-        self.logger = AnalyticsLogger()
+        self.llm = LLMProxy()
+        self.rag = RAGService()  # ADD: Instantiate RAG
+        self.instructor = InstructorService()  # ADD: Access uploads
+        self.sessions = {}  # store session state
 
-    # -------------------------------
-    # 1️⃣ Evaluate Student Attempt
-    # -------------------------------
-    def evaluate_attempt(self, req: AttemptRequest) -> PFResponse:
-        # 🔹 RAG uses BOTH problem and student reasoning
-        query = f"{req.problem_text}\nStudent solution:\n{req.student_answer}"
-        context = self.rag.retrieve_context(query)
-
-        prompt = f"""
-You are an expert tutor analyzing a student's solution.
-
-PROBLEM:
-{req.problem_text}
-
-STUDENT ANSWER:
-{req.student_answer}
-
-RETRIEVED EXPERT CONTEXT:
-{context}
-
-TASK:
-1. Identify misconceptions
-2. Evaluate correctness
-3. Suggest improvement strategy
-4. Reference expert method where helpful
-"""
-
-        reply = self.llm.generate(prompt)
-
-        # 🔹 Log analytics AFTER evaluation
-        self.logger.log_attempt(
-            session_id=req.session_id,
-            problem=req.problem_text,
-            attempt=req.student_answer,
-            evaluation=reply
-        )
-
-        return PFResponse(
-            message="Attempt evaluated",
-            evaluation=reply
-        )
-
-    # -------------------------------
-    #  Generate Progressive Hints
-    # -------------------------------
-    def generate_hint(self, req: HintRequest) -> PFResponse:
-        #  Retrieval grounded in problem type
-        query = f"{req.problem_text}\nStudent attempt:\n{req.student_answer}"
-        context = self.rag.retrieve_context(query)
-
-        hint_levels = {
-            1: "Give a conceptual clue without revealing steps.",
-            2: "Give a structural hint showing the approach.",
-            3: "Give a near-complete method with minor gaps.",
-            4: "Provide the full expert solution clearly."
+    def start_session(self, session_id: str, topic: str = "general", level: str = "intermediate"):
+        """Generate a problem based on topic, level, and uploaded material via RAG."""
+        
+        # Retrieve uploaded material for this session
+        uploaded_content = self.instructor.get_session_material(session_id)
+        
+        # Difficulty-based prompt engineering
+        difficulty_hints = {
+            "novice": "Create a simple, introductory problem",
+            "intermediate": "Create a moderately challenging problem that requires some steps",
+            "advanced": "Create a complex, multi-step problem requiring deep reasoning",
         }
 
-        prompt = f"""
-You are guiding a struggling student using Productive Failure pedagogy.
+        # Build prompt with RAG context
+        context = f"Reference this uploaded material if relevant: {uploaded_content}" if uploaded_content else "No uploaded material available."
+        
+        prompt = f"""{context}
 
-PROBLEM:
-{req.problem_text}
+Generate a single {topic} problem for a student at {level} level.
+        
+{difficulty_hints.get(level, difficulty_hints['intermediate'])}
 
-STUDENT ANSWER:
-{req.student_answer}
+Requirements:
+- ONE clear problem statement only
+- No solution or hints
+- Make it challenging but solvable with effort
+- Format: Just the problem text, nothing else
 
-RETRIEVED EXPERT CONTEXT:
-{context}
+Problem:"""
 
-HINT LEVEL: {req.hint_level}
-INSTRUCTION: {hint_levels[req.hint_level]}
+        try:
+            response = self.llm.generate(
+                model=settings.llm_model,
+                system="You are an expert problem generator for productive failure learning. Use provided context to tailor problems.",
+                query=prompt,
+                session_id=session_id,
+                temperature=0.7,
+                rag_usage=True,  # ENABLE RAG
+            )
+            
+            problem = response.get("result", "Solve: 2x + 5 = 15")
+            
+            # Store session state
+            self.sessions[session_id] = {
+                "problem": problem,
+                "topic": topic,
+                "level": level,
+                "attempts": [],
+                "uploaded_content": uploaded_content,  # Store for later RAG use
+            }
+            
+            return problem
+            
+        except Exception as e:
+            print(f"Error generating problem: {e}")
+            return f"Problem generation failed: {str(e)}"
 
-Keep tone supportive. Do not shame mistakes.
-"""
+    def handle_attempt(self, session_id: str, answer: str):
+        """Evaluate student attempt using PF pedagogy, with RAG context."""
+        if session_id not in self.sessions:
+            return "Session not found. Start a new problem."
+        
+        session = self.sessions[session_id]
+        problem = session["problem"]
+        uploaded_content = session.get("uploaded_content", "")
+        
+        # Store attempt
+        session["attempts"].append(answer)
+        
+        # Build PF prompt with RAG context
+        context = f"Reference this uploaded material for feedback: {uploaded_content}" if uploaded_content else ""
+        
+        pf_prompt = f"""{context}
 
-        reply = self.llm.generate(prompt)
+You are a tutor using Productive Failure pedagogy.
 
-        self.logger.log_hint(
-            session_id=req.session_id,
-            hint_level=req.hint_level,
-            hint=reply
-        )
+Student's attempt #{len(session['attempts'])}: {answer}
 
-        return PFResponse(message="Hint generated", hint=reply)
+Problem was: {problem}
 
-    # -------------------------------
-    # 3️⃣ Analyze Student Reflection
-    # -------------------------------
-    def analyze_reflection(self, req: ReflectionRequest) -> PFResponse:
-        # 🔹 RAG finds expert explanations about topic gaps
-        context = self.rag.retrieve_context(req.problem_text)
+Rules:
+1. DO NOT give the solution
+2. Acknowledge their thinking
+3. Ask clarifying questions
+4. After 3+ failed attempts, give ONE hint
+5. Keep response brief (2-3 sentences)
 
-        prompt = f"""
-Analyze the student reflection for learning gaps.
+Feedback:"""
 
-PROBLEM CONTEXT:
-{req.problem_text}
-
-STUDENT REFLECTION:
-{req.student_reflection}
-
-RETRIEVED EXPERT CONTEXT:
-{context}
-
-Identify:
-• misunderstanding
-• emotional state
-• knowledge gaps
-• recommended exercises
-"""
-
-        reply = self.llm.generate(prompt)
-
-        self.logger.log_reflection(
-            session_id=req.session_id,
-            reflection=req.student_reflection,
-            analysis=reply
-        )
-
-        return PFResponse(message="Reflection analyzed", evaluation=reply)
+        try:
+            response = self.llm.generate(
+                model=settings.llm_model,
+                system=settings.llm_system_prompt,
+                query=pf_prompt,
+                session_id=session_id,
+                temperature=0.5,
+                rag_usage=True,  # ENABLE RAG for feedback too
+            )
+            
+            return response.get("result", "Keep trying!")
+            
+        except Exception as e:
+            print(f"Error evaluating attempt: {e}")
+            return f"Evaluation failed: {str(e)}"
+        
+        def get_hint(self, session_id: str, problem_text: str, hint_level: int):
+            """Generate a hint based on problem and level, with RAG."""
+            if session_id not in self.sessions:
+                return "Session not found."
+            
+            uploaded_content = self.sessions[session_id].get("uploaded_content", "")
+            context = f"Reference this uploaded material: {uploaded_content}" if uploaded_content else ""
+            
+            hint_prompt = f"""{context}
+    
+    Problem: {problem_text}
+    Hint level: {hint_level}
+    
+    Generate a helpful hint that guides without revealing the solution."""
+            
+            try:
+                response = self.llm.generate(
+                    model=settings.llm_model,
+                    system="You are a helpful tutor providing hints for students struggling with problems. Use any provided context to tailor your hint.",
+                    query=hint_prompt,
+                    session_id=session_id,
+                    temperature=0.5,
+                    rag_usage=True,  # ENABLE RAG for hints
+                )
+                
+                return response.get("result", "Here's a hint: Think about the underlying concepts.")
+                
+            except Exception as e:
+                print(f"Error generating hint: {e}")
+                return f"Hint generation failed: {str(e)}"
