@@ -1,0 +1,49 @@
+{
+  "problem": "English: I eat red apples.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [
+    "Como rojo manzanas.",
+    "Como rojo manzanas."
+  ],
+  "uploaded_content": "",
+  "problems_completed": 0,
+  "student_name": "katie",
+  "problem_id": "prob_0ebd9d0207",
+  "problem_started_at": "2026-04-15T14:16:43.846495",
+  "total_attempts": 2,
+  "hints_used": 0,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-15T14:16:43.846540",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-15T14:16:52.752237",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Como rojo manzanas."
+    },
+    {
+      "timestamp": "2026-04-15T14:16:59.460536",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great effort! You used \"como\" for \"I eat,\" which is correct. Can you think about how to say \"red apples\" in a way that matches the words you need in Spanish?"
+    },
+    {
+      "timestamp": "2026-04-15T14:17:03.929913",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Como rojo manzanas."
+    },
+    {
+      "timestamp": "2026-04-15T14:17:10.087412",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great effort with \"Como\" for \"I eat\"! However, there are a couple of things that need adjusting. Can you think about how to correctly describe \"red apples\" in Spanish?"
+    }
+  ],
+  "session_started_at": "2026-04-15T14:16:43.846521"
+}

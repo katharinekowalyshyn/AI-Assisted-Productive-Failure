@@ -1,8 +1,8 @@
 from fastapi import APIRouter, UploadFile, File, Form
-from .service import InstructorService
+from .service import instructor_service
 
 router = APIRouter(prefix="/instructor", tags=["Instructor"])
-service = InstructorService()
+service = instructor_service
 
 
 @router.post("/upload")

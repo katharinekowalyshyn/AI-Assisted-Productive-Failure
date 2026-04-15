@@ -2,121 +2,164 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>TutorChat Learning Lab</title>
+  <title>TutorChat — Spanish Practice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
-  <div class="app-shell">
-    <header class="app-header">
-      <div>
-        <h1>TutorChat Learning Lab</h1>
-        <p>Productive Failure with Adaptive Scaffolding</p>
+
+  <!-- ═══════════════════════════════════════════
+       Screen 1 — Setup
+  ════════════════════════════════════════════════ -->
+  <div id="setupScreen" class="screen">
+    <div class="setup-card">
+      <div class="brand">
+        <h1>TutorChat</h1>
+        <p>Spanish Practice &middot; A1/A2 &middot; Productive Failure</p>
       </div>
-      <div class="header-actions">
-        <button id="themeToggle" class="btn ghost">☀️/🌙</button>
-        <div id="timerBadge" class="timer-badge hidden" title="Problem timer running">⏱</div>
+
+      <div class="picker-section">
+        <label class="picker-label" for="studentNameInput">Your name</label>
+        <input id="studentNameInput" type="text" placeholder="Enter your name" />
+      </div>
+
+      <!-- Exercise type -->
+      <div class="picker-section">
+        <label class="picker-label">What would you like to practise?</label>
+        <div class="picker-grid" id="taskPicker">
+          <button class="picker-card selected" data-value="translation">
+            <span class="picker-icon">🔤</span>
+            <strong>Translation</strong>
+            <small>English → Spanish</small>
+          </button>
+          <button class="picker-card" data-value="error_correction">
+            <span class="picker-icon">✏️</span>
+            <strong>Error Correction</strong>
+            <small>Find the mistakes</small>
+          </button>
+          <button class="picker-card" data-value="conversation_completion">
+            <span class="picker-icon">💬</span>
+            <strong>Conversation</strong>
+            <small>Complete the dialogue</small>
+          </button>
+        </div>
+      </div>
+
+      <!-- Level -->
+      <div class="picker-section">
+        <label class="picker-label">How confident are you in Spanish?</label>
+        <div class="picker-grid" id="levelPicker">
+          <button class="picker-card" data-value="1">
+            <span class="picker-icon">🌱</span>
+            <strong>Beginner</strong>
+            <small>Just starting out</small>
+          </button>
+          <button class="picker-card selected" data-value="2">
+            <span class="picker-icon">📗</span>
+            <strong>Elementary</strong>
+            <small>Know some basics</small>
+          </button>
+          <button class="picker-card" data-value="3">
+            <span class="picker-icon">⭐</span>
+            <strong>Pre-Intermediate</strong>
+            <small>Comfortable with present tense</small>
+          </button>
+        </div>
+      </div>
+
+      <!-- Upload (optional, collapsed) -->
+      <details class="upload-section">
+        <summary>📎 Upload study materials <span class="optional-tag">optional</span></summary>
+        <div class="upload-inner">
+          <input type="file" id="materialFile" accept=".pdf,.txt,.docx" />
+          <button id="uploadMaterialBtn" class="btn secondary small">Upload</button>
+          <span id="uploadStatus" class="upload-status"></span>
+        </div>
+      </details>
+
+      <button id="startLearningBtn" class="btn primary large">Start Learning →</button>
+      <p id="setupError" class="setup-error"></p>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       Screen 2 — Learning
+  ════════════════════════════════════════════════ -->
+  <div id="learningScreen" class="screen hidden">
+    <header class="learn-header">
+      <div class="learn-brand">TutorChat</div>
+      <div class="header-right">
+        <span id="sessionIdDisplay" class="session-badge"></span>
+        <button id="endSessionBtn" class="btn ghost small">End Session</button>
       </div>
     </header>
 
-    <section class="control-bar">
-      <div class="control-group">
-        <label>Auto-level</label>
-        <select id="levelSelect">
-          <option value="auto">Auto-assess</option>
-          <option value="novice">Novice</option>
-          <option value="intermediate">Intermediate</option>
-          <option value="advanced">Advanced</option>
-        </select>
+    <main class="learn-main">
+
+      <!-- Exercise card -->
+      <div class="exercise-card">
+        <div class="exercise-label" id="exerciseLabel">Exercise</div>
+        <div class="exercise-label hidden" id="consolidationLabel">Consolidation</div>
+        <p id="problemText" class="exercise-text">Loading your first exercise…</p>
+        <div id="consolidationCard" class="hidden"></div>
+        <div class="exercise-actions">
+          <button id="nextProblemBtn" class="btn success hidden">Next Exercise →</button>
+        </div>
       </div>
-      <div class="control-group">
-        <label>Problem Duration</label>
-        <select id="timerSelect">
-          <option value="1200">20 min</option>
-          <option value="1500">25 min</option>
-          <option value="1800">30 min</option>
-        </select>
+
+      <!-- Chat conversation -->
+      <div id="conversationLog" class="chat-log"></div>
+
+      <!-- Status / warning line -->
+      <p id="attemptWarning" class="status-line"></p>
+
+      <!-- Hint buttons -->
+      <div class="hints-row">
+        <button class="hintBtn btn ghost small" data-level="1" disabled>Hint 1</button>
+        <button class="hintBtn btn ghost small" data-level="2" disabled>Hint 2</button>
+        <button class="hintBtn btn ghost small" data-level="3" disabled>Hint 3</button>
+        <button class="hintBtn btn ghost small" data-level="4" disabled>Grammar Guide</button>
       </div>
-      <div class="control-group">
-        <label>Session</label>
-        <span id="session-id">–</span>
+
+      <!-- Answer input -->
+      <div class="input-row">
+        <textarea id="attemptBox" placeholder="Type your answer…" rows="3"></textarea>
+        <button id="submitAttempt" class="btn primary submit-btn">Submit</button>
       </div>
-    </section>
 
-    <main class="main-layout">
-      <section class="workspace">
-        <div class="tabs">
-          <button class="tab-btn active" data-tab="problemHubTab">📁 Problem Hub</button>
-          <button class="tab-btn" data-tab="learningTab">🧩 Learning Space</button>
-          <button class="tab-btn" data-tab="analyticsTab">📊 Analytics</button>
-        </div>
-
-        <div id="problemHubTab" class="tab-content active">
-          <h2>Upload Materials + Level Survey</h2>
-          <p class="help-text">Upload lecture notes or solution docs to seed hints</p>
-          <div class="upload-card">
-            <input type="file" id="materialFile" accept=".pdf,.txt,.docx" />
-            <button id="uploadMaterialBtn" class="btn primary">Upload Material</button>
-            <p id="uploadStatus" class="upload-status"></p>
-          </div>
-          <div class="survey-card">
-            <h3>Quick Diagnostic</h3>
-            <p>Select topically what you'd like to practice:</p>
-            <select id="topicSelect">
-              <option value="algebra">Algebra</option>
-              <option value="calculus">Calculus</option>
-              <option value="probability">Probability</option>
-            </select>
-            <p>Confidence:</p>
-            <input type="range" id="selfConfidence" min="1" max="5" value="3"/>
-            <button id="runDiagnosticBtn" class="btn success">Run Learning Level Check</button>
-            <p id="diagnosticResult"></p>
-          </div>
-        </div>
-
-        <div id="learningTab" class="tab-content">
-          <div class="problem-box">
-            <h3>Problem</h3>
-            <p id="problemText">Click “Present Problem” to start.</p>
-            <button id="presentProblemBtn" class="btn primary large">Present Problem</button>
-          </div>
-
-          <div id="conversationLog" class="conversation-log"></div>
-
-          <div class="attempt-box-wrap">
-            <textarea id="attemptBox" placeholder="Type your attempt..." rows="4"></textarea>
-            <button id="submitAttempt" class="btn primary large">Submit Attempt</button>
-          </div>
-          <div class="attempt-panel">
-            Attempts: <span id="attemptCount">0</span> / 10
-            <span id="attemptWarning"></span>
-          </div>
-
-          <div class="hints-box">
-            <h4>Hints (Random unlocks)</h4>
-            <button class="hintBtn" data-level="1" disabled>Hint 1</button>
-            <button class="hintBtn" data-level="2" disabled>Hint 2</button>
-            <button class="hintBtn" data-level="3" disabled>Hint 3</button>
-            <button class="hintBtn" data-level="4" disabled>Expert Suggestion</button>
-          </div>
-        </div>
-
-        <div id="analyticsTab" class="tab-content">
-          <h2>Learning Analytics</h2>
-          <div id="analyticsSummary"></div>
-          <canvas id="analyticsChart" width="640" height="260"></canvas>
-        </div>
-      </section>
-
-      <aside class="analytics-panel">
-        <h3>Live Metrics</h3>
-        <div class="metric"><span>Total Attempts</span><strong id="metricAttempts">0</strong></div>
-        <div class="metric"><span>Hints Used</span><strong id="hintsUsed">0</strong></div>
-        <div class="metric"><span>Problems Solved</span><strong id="metricProblems">0</strong></div>
-        <div class="metric"><span>Time Elapsed</span><strong id="metricTime">0:00</strong></div>
-      </aside>
     </main>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       Analytics Modal
+  ════════════════════════════════════════════════ -->
+  <div id="analyticsModal" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <h2>Session Summary</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <strong id="statExercises">0</strong>
+          <span>Exercises</span>
+        </div>
+        <div class="stat-item">
+          <strong id="statAttempts">0</strong>
+          <span>Total Attempts</span>
+        </div>
+        <div class="stat-item">
+          <strong id="statHints">0</strong>
+          <span>Hints Used</span>
+        </div>
+        <div class="stat-item">
+          <strong id="statTime">0:00</strong>
+          <span>Time Elapsed</span>
+        </div>
+      </div>
+      <canvas id="analyticsChart" width="440" height="180"></canvas>
+      <div class="modal-actions">
+        <button id="newSessionBtn" class="btn primary">Start New Session</button>
+        <button id="closeModalBtn" class="btn ghost">Close</button>
+      </div>
+    </div>
   </div>
 
   <script type="module" src="./app.js"></script>

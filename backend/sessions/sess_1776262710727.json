@@ -1,0 +1,143 @@
+{
+  "problem": "English: What time do you wake up in the morning?",
+  "task_type": "translation",
+  "difficulty_score": 3,
+  "attempts": [
+    "Que hora despiertas por la manana?",
+    "no se",
+    "Cuando despiertas?",
+    "Que hora",
+    "Que hora te despiertas por la manana?",
+    "A que hora despiertas por la manana?"
+  ],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "katie",
+  "problem_id": "prob_59e734528c",
+  "problem_started_at": "2026-04-15T14:18:54.824856",
+  "total_attempts": 7,
+  "hints_used": 1,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-15T14:18:36.411954",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-15T14:18:41.180497",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Quiero ir al parque"
+    },
+    {
+      "timestamp": "2026-04-15T14:18:45.434186",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job with \"Quiero\" and \"ir\"! You\u2019re really close. Can you think about how to express \"to the park\" in Spanish?"
+    },
+    {
+      "timestamp": "2026-04-15T14:18:52.667972",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-15T14:18:54.824884",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-15T14:19:09.196722",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Que hora despiertas por la manana?"
+    },
+    {
+      "timestamp": "2026-04-15T14:19:14.215904",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job using \"que hora\" and \"despiertas\"! That's a good start. Can you think about how to ask this question in a more natural way in Spanish?"
+    },
+    {
+      "timestamp": "2026-04-15T14:19:31.412255",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no se"
+    },
+    {
+      "timestamp": "2026-04-15T14:19:36.386825",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you started with \"no se,\" which shows you're thinking about how to express something in Spanish! Can you think of how to ask a question about the time someone wakes up?"
+    },
+    {
+      "timestamp": "2026-04-15T14:19:52.028815",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Cuando despiertas?"
+    },
+    {
+      "timestamp": "2026-04-15T14:20:00.500710",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job with \"Cuando despiertas!\" You\u2019ve got the right idea by using \"despiertas,\" which means \"you wake up.\" Can you think of how to include \"what time\" in your question?"
+    },
+    {
+      "timestamp": "2026-04-15T14:20:09.376668",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Que hora"
+    },
+    {
+      "timestamp": "2026-04-15T14:20:16.393475",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job starting with \"Que hora\"! You're on the right track thinking about time. Can you think of how to ask who is waking up in the morning?"
+    },
+    {
+      "timestamp": "2026-04-15T14:20:34.945970",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Que hora te despiertas por la manana?"
+    },
+    {
+      "timestamp": "2026-04-15T14:20:44.225569",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in strong effort. Let's consolidate this one now so you can move on."
+    },
+    {
+      "timestamp": "2026-04-15T14:20:44.225596",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation answer: Correct answer: \u00bfA qu\u00e9 hora te despiertas por la ma\u00f1ana?\n\nWhy this is correct: In Spanish, when asking about a specific time, we use \"a qu\u00e9 hora\" instead of \"que hora.\" Additionally, remember to include the inverted question mark at the beginning of the question, which is standard in Spanish punctuation. The rest of your sentence is correct!"
+    },
+    {
+      "timestamp": "2026-04-15T14:20:53.441579",
+      "role": "tutor",
+      "event_type": "hint",
+      "content": "The first word of the answer is \"\u00bfA qu\u00e9\". This phrase is used to ask about the time something happens. In this case, you're inquiring about the time someone wakes up, so it's appropriate to start with this phrase. Now think about how you would say \"you wake up\" in Spanish!"
+    },
+    {
+      "timestamp": "2026-04-15T14:21:06.579876",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "A que hora despiertas por la manana?"
+    },
+    {
+      "timestamp": "2026-04-15T14:21:14.426400",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in strong effort. Let's consolidate this one now so you can move on."
+    },
+    {
+      "timestamp": "2026-04-15T14:21:14.426423",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation answer: Correct answer: \u00bfA qu\u00e9 hora te despiertas por la ma\u00f1ana?\n\nWhy this is correct: The phrase \"te despiertas\" uses the correct reflexive verb form for \"you wake up\" in the second person singular (t\u00fa). Additionally, remember to include the inverted question mark at the beginning of the question in Spanish."
+    }
+  ],
+  "session_started_at": "2026-04-15T14:18:36.411935"
+}

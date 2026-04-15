@@ -11,6 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from core.config import settings
 from pf.router import router as pf_router
 from instructor.router import router as instructor_router
+from instructor.service import instructor_service
 
 
 def create_app() -> FastAPI:
@@ -37,6 +38,10 @@ def create_app() -> FastAPI:
     @app.get("/health")
     async def health() -> dict:
         return {"status": "ok", "app": settings.app_name}
+
+    @app.on_event("startup")
+    async def startup_tasks():
+        instructor_service.ensure_shared_grammar_uploaded()
 
     return app
 

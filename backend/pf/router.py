@@ -1,5 +1,7 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
+from typing import Optional
+
 from .service import PFService
 
 router = APIRouter(prefix="/pf", tags=["Productive Failure"])
@@ -8,14 +10,15 @@ service = PFService()
 
 class StartRequest(BaseModel):
     session_id: str
-    topic: str = "general"
-    level: str = "intermediate"
+    student_name: str
+    task_type: str = "translation"   # translation | error_correction | conversation_completion
+    difficulty_score: Optional[int] = None  # 1–5; None = use session default or 2
 
 
 class AttemptRequest(BaseModel):
     session_id: str
     answer: str
-    attempt_number: int = None
+    attempt_number: Optional[int] = None
 
 
 class HintRequest(BaseModel):
@@ -24,38 +27,47 @@ class HintRequest(BaseModel):
     hint_level: int
 
 
+class NextRequest(BaseModel):
+    session_id: str
+    task_type: Optional[str] = None  # if None, reuse the current task type
+
+
 @router.post("/start")
 def start(req: StartRequest):
+    """Generate the first (or a manually-reset) problem for a session."""
     problem = service.start_session(
         session_id=req.session_id,
-        topic=req.topic,
-        level=req.level
+        task_type=req.task_type,
+        difficulty_score=req.difficulty_score,
+        student_name=req.student_name,
     )
     return problem
-    
+
+
 @router.post("/attempt")
 def attempt(req: AttemptRequest):
-    reply = service.handle_attempt(req.session_id, req.answer)
-    return {"reply": reply}
+    """Evaluate a student attempt and return PF-style feedback."""
+    result = service.handle_attempt(req.session_id, req.answer)
+    if isinstance(result, dict):
+        return result
+    return {"reply": result}
+
 
 @router.post("/hint")
 def hint(req: HintRequest):
-    hint = service.get_hint(req.session_id, req.problem_text, req.hint_level)
-    return {"hint": hint}
+    """Return a scaffolded hint at the requested level (1–4)."""
+    result = service.get_hint(req.session_id, req.problem_text, req.hint_level)
+    return {"hint": result}
 
 
-"""
-for debugging purposes:
-print(f"DEBUG: Received start request: session_id={req.session_id}, topic={req.topic}, level={req.level}")  # ADD
-    try:
-        problem = service.start_session(
-            session_id=req.session_id,
-            topic=req.topic,
-            level=req.level
-        )
-        print(f"DEBUG: Generated problem: {problem}")  # ADD
-        return {"problem": problem}
-    except Exception as e:
-        print(f"ERROR in /start: {e}")  # ADD
-        return {"error": str(e), "problem": "Error generating problem"}
-"""
+@router.post("/next")
+def next_problem(req: NextRequest):
+    """
+    Run the LLM jury on the completed problem, silently adjust difficulty,
+    and return the next generated problem.
+    """
+    problem = service.next_problem(
+        session_id=req.session_id,
+        task_type=req.task_type,
+    )
+    return problem
