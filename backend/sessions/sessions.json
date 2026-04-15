@@ -190,5 +190,493 @@
       }
     ],
     "session_started_at": "2026-04-15T14:18:36.411935"
+  },
+  "sess_1776262965235": {
+    "problem": "Find and correct the error(s): Ella es un estudiante inteligente.",
+    "task_type": "error_correction",
+    "difficulty_score": 2,
+    "attempts": [
+      "esta not es",
+      "Esta is for when the state is temporary"
+    ],
+    "uploaded_content": "",
+    "problems_completed": 0,
+    "student_name": "katie",
+    "problem_id": "prob_b495a642c6",
+    "problem_started_at": "2026-04-15T14:22:55.055962",
+    "total_attempts": 2,
+    "hints_used": 0,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-15T14:22:55.056007",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (error_correction, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-15T14:23:03.682879",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "esta not es"
+      },
+      {
+        "timestamp": "2026-04-15T14:23:08.667868",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job noticing that \"es\" might not be the right choice! Can you think about when we use \"es\" versus when we might use \"est\u00e1\"?"
+      },
+      {
+        "timestamp": "2026-04-15T14:23:26.512308",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Esta is for when the state is temporary"
+      },
+      {
+        "timestamp": "2026-04-15T14:23:31.361793",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You're right that \"est\u00e1\" is used for temporary states! Now, can you think about whether \"es\" might be appropriate for describing someone's character or profession?"
+      }
+    ],
+    "session_started_at": "2026-04-15T14:22:55.055986"
+  },
+  "sess_1776263454639": {
+    "problem": "English: I see a red apple.",
+    "task_type": "translation",
+    "difficulty_score": 1,
+    "attempts": [
+      "I don't know what I see is but I know red apple is rojo manzana.",
+      "I dont know",
+      "no"
+    ],
+    "uploaded_content": "",
+    "problems_completed": 0,
+    "student_name": "Katie",
+    "problem_id": "prob_a1f5aa5e29",
+    "problem_started_at": "2026-04-15T14:31:04.715778",
+    "total_attempts": 3,
+    "hints_used": 3,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-15T14:31:04.715823",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 1)."
+      },
+      {
+        "timestamp": "2026-04-15T14:31:26.335883",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "I don't know what I see is but I know red apple is rojo manzana."
+      },
+      {
+        "timestamp": "2026-04-15T14:31:31.834728",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I see that you correctly identified \"rojo\" for red and \"manzana\" for apple! That's a great start. Can you think about how to express \"I see\" in Spanish?"
+      },
+      {
+        "timestamp": "2026-04-15T14:31:40.882913",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "I dont know"
+      },
+      {
+        "timestamp": "2026-04-15T14:31:46.796735",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "It's okay not to know right now; that's part of the learning process! Can you think of how to say \"I see\" in Spanish?"
+      },
+      {
+        "timestamp": "2026-04-15T14:31:58.533635",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "no"
+      },
+      {
+        "timestamp": "2026-04-15T14:32:03.522245",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your effort! It looks like you might be feeling unsure about this one. Can you try to think about how you would express \"I see\" in Spanish?"
+      },
+      {
+        "timestamp": "2026-04-15T14:32:10.282459",
+        "role": "tutor",
+        "event_type": "hint",
+        "content": "In Spanish, the verb \"to see\" translates to a specific verb form that typically does not change with the subject. Remember that adjectives usually come after the noun in Spanish, so think about the order of \"apple\" and \"red\" in your translation."
+      },
+      {
+        "timestamp": "2026-04-15T14:32:12.013879",
+        "role": "tutor",
+        "event_type": "hint",
+        "content": "In Spanish, the verb \"to see\" translates to a different verb that has an irregular conjugation in the present tense. Also, remember that adjectives in Spanish need to agree in gender and number with the noun they describe. Think about the word for \"apple\" and its gender."
+      },
+      {
+        "timestamp": "2026-04-15T14:32:21.443276",
+        "role": "tutor",
+        "event_type": "hint",
+        "content": "The first word of the translation is \"Yo.\" This is the subject pronoun used for \"I\" in Spanish. It\u2019s important to include the subject pronoun in this case to clarify who is seeing the apple. Now, think about how to express \"see\" in Spanish and what comes next!"
+      }
+    ],
+    "session_started_at": "2026-04-15T14:31:04.715805"
+  },
+  "sess_1776263723268": {
+    "problem": "English: I want to go to the park.",
+    "task_type": "translation",
+    "difficulty_score": 2,
+    "attempts": [
+      "quiero ir al parque",
+      "youre wrong I said it correctly",
+      "quiero and ir",
+      "quiero a ir al parque."
+    ],
+    "uploaded_content": "",
+    "problems_completed": 0,
+    "student_name": "Katie",
+    "problem_id": "prob_365797fb4b",
+    "problem_started_at": "2026-04-15T14:35:32.796234",
+    "total_attempts": 4,
+    "hints_used": 0,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-15T14:35:32.796281",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-15T14:35:37.615698",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "quiero ir al parque"
+      },
+      {
+        "timestamp": "2026-04-15T14:35:42.217190",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job with \"quiero\" and \"ir\"! You're really close. Can you think about how to express \"the\" in Spanish for \"the park\"?"
+      },
+      {
+        "timestamp": "2026-04-15T14:35:55.149826",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "youre wrong I said it correctly"
+      },
+      {
+        "timestamp": "2026-04-15T14:35:59.311424",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your confidence in your answer! Let's think about the verb \"want\" in Spanish; it starts with \"q.\" What do you think the word for \"go\" might be? It starts with \"i.\""
+      },
+      {
+        "timestamp": "2026-04-15T14:36:07.997090",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "quiero and ir"
+      },
+      {
+        "timestamp": "2026-04-15T14:36:13.301770",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job with \"quiero\" and \"ir\"! You're on the right track. What do you think you need to say before \"ir\" to complete your thought? Remember, it starts with \"a.\""
+      },
+      {
+        "timestamp": "2026-04-15T14:36:35.931500",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "quiero a ir al parque."
+      },
+      {
+        "timestamp": "2026-04-15T14:36:40.176108",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job using \"quiero\" and \"parque\"! Now, think about how you connect \"quiero\" to \"ir.\" What do you remember about using \"ir\" after a verb like \"quiero\"?"
+      }
+    ],
+    "session_started_at": "2026-04-15T14:35:32.796256"
+  },
+  "sess_1776264048052": {
+    "problem": "English: She bought the dress yesterday.",
+    "task_type": "translation",
+    "difficulty_score": 4,
+    "attempts": [],
+    "uploaded_content": "",
+    "problems_completed": 2,
+    "student_name": "katie",
+    "problem_id": "prob_d3482c6f5d",
+    "problem_started_at": "2026-04-15T14:41:36.494608",
+    "total_attempts": 2,
+    "hints_used": 0,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-15T14:40:53.106115",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-15T14:40:57.598706",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "quiero ir al parque"
+      },
+      {
+        "timestamp": "2026-04-15T14:41:01.473136",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Nice work - that's correct. Click Next Exercise when you're ready for a new one."
+      },
+      {
+        "timestamp": "2026-04-15T14:41:08.262051",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-15T14:41:10.924184",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 3)."
+      },
+      {
+        "timestamp": "2026-04-15T14:41:22.166834",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Que necesitas para tu clase ma\u00f1ana?"
+      },
+      {
+        "timestamp": "2026-04-15T14:41:24.233867",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Nice work - that's correct. Click Next Exercise when you're ready for a new one."
+      },
+      {
+        "timestamp": "2026-04-15T14:41:34.887633",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-15T14:41:36.494632",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 4)."
+      }
+    ],
+    "session_started_at": "2026-04-15T14:40:53.106100"
+  },
+  "sess_1776264436700": {
+    "problem": "Find and correct the error(s): A Mar\u00eda le gustan los libros, pero yo no le gusta leer.",
+    "task_type": "error_correction",
+    "difficulty_score": 5,
+    "attempts": [],
+    "uploaded_content": "",
+    "problems_completed": 4,
+    "student_name": "Katie",
+    "problem_id": "prob_8e6728956a",
+    "problem_started_at": "2026-04-15T14:51:02.990097",
+    "total_attempts": 8,
+    "hints_used": 1,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-15T14:47:38.764615",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-15T14:47:47.030932",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "quiero ir al parque"
+      },
+      {
+        "timestamp": "2026-04-15T14:47:49.220472",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Nice work - that's correct. Click Next Exercise when you're ready for a new one."
+      },
+      {
+        "timestamp": "2026-04-15T14:47:54.937963",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-15T14:47:56.698365",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 3)."
+      },
+      {
+        "timestamp": "2026-04-15T14:48:18.938653",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-15T14:48:20.637874",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (error_correction, difficulty 4)."
+      },
+      {
+        "timestamp": "2026-04-15T14:48:37.361397",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "there is no error"
+      },
+      {
+        "timestamp": "2026-04-15T14:48:43.024373",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "It's great that you believe there might not be an error! Can you think about the meaning of the sentence and whether the actions described make sense together?"
+      },
+      {
+        "timestamp": "2026-04-15T14:48:58.248105",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "ya it seems right"
+      },
+      {
+        "timestamp": "2026-04-15T14:49:00.844210",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Nice work - that's correct. Click Next Exercise when you're ready for a new one."
+      },
+      {
+        "timestamp": "2026-04-15T14:49:20.094011",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-15T14:49:22.824636",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (error_correction, difficulty 5)."
+      },
+      {
+        "timestamp": "2026-04-15T14:49:30.964026",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "dont see an error"
+      },
+      {
+        "timestamp": "2026-04-15T14:49:35.321561",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your observation that you don't see an error! Let's think about the subject and verb agreement in your sentence. Can you identify if \"las\" is the correct form to use with \"gustar\"?"
+      },
+      {
+        "timestamp": "2026-04-15T14:50:00.064994",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "would it be la ?"
+      },
+      {
+        "timestamp": "2026-04-15T14:50:03.862208",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job noticing that \"las\" might need to change! Now, can you think about how to match the article with the noun it describes?"
+      },
+      {
+        "timestamp": "2026-04-15T14:50:13.464555",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "les ?"
+      },
+      {
+        "timestamp": "2026-04-15T14:50:19.291320",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your attempt! You\u2019re on the right track thinking about the pronouns. Can you think about what the subject of the sentence is and how it relates to the verb \"gustar\"?"
+      },
+      {
+        "timestamp": "2026-04-15T14:50:24.780424",
+        "role": "tutor",
+        "event_type": "hint",
+        "content": "Start by focusing on the phrase \"me gusta.\" It is important to remember that \"gusta\" agrees with the subject of the sentence. Think about what you are talking about\u2014how many movies are there? This will help you choose the correct form of the verb. What would you use for one movie versus multiple movies?"
+      },
+      {
+        "timestamp": "2026-04-15T14:50:35.812773",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Me gustan"
+      },
+      {
+        "timestamp": "2026-04-15T14:50:40.888468",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job trying \"Me gustan\"! You're on the right track with the verb form. Can you think about how the subject of the sentence affects the verb you choose?"
+      },
+      {
+        "timestamp": "2026-04-15T14:50:49.098770",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "I dont know"
+      },
+      {
+        "timestamp": "2026-04-15T14:50:57.170542",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in strong effort. Let's consolidate this one now so you can move on."
+      },
+      {
+        "timestamp": "2026-04-15T14:50:57.170561",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation answer: Correct answer: A m\u00ed me gustan las pel\u00edculas de terror, pero no las veo a menudo.\n\nWhy this is correct: The subject \"las pel\u00edculas\" is plural, so the verb \"gustar\" must also be in the plural form, which is \"gustan\" instead of \"gusta.\" This ensures subject-verb agreement in Spanish."
+      },
+      {
+        "timestamp": "2026-04-15T14:51:00.362943",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-15T14:51:02.990121",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (error_correction, difficulty 5)."
+      }
+    ],
+    "session_started_at": "2026-04-15T14:47:38.764603"
+  },
+  "sess_1776264676307": {
+    "problem": "Find and correct the error(s): Yo estoy un perro rojo.",
+    "task_type": "error_correction",
+    "difficulty_score": 2,
+    "attempts": [
+      "hi"
+    ],
+    "uploaded_content": "",
+    "problems_completed": 0,
+    "student_name": "Katie",
+    "problem_id": "prob_585a3ea169",
+    "problem_started_at": "2026-04-15T14:51:24.661084",
+    "total_attempts": 1,
+    "hints_used": 0,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-15T14:51:24.661114",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (error_correction, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-15T14:51:25.328192",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "hi"
+      },
+      {
+        "timestamp": "2026-04-15T14:51:30.524241",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "It's great that you're engaging with the sentence! Can you think about what \"un perro rojo\" means and how it fits with \"Yo estoy\"? What might you want to change to make it sound more natural?"
+      }
+    ],
+    "session_started_at": "2026-04-15T14:51:24.661102"
   }
 }

@@ -1,0 +1,80 @@
+{
+  "problem": "English: I see a red apple.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [
+    "I don't know what I see is but I know red apple is rojo manzana.",
+    "I dont know",
+    "no"
+  ],
+  "uploaded_content": "",
+  "problems_completed": 0,
+  "student_name": "Katie",
+  "problem_id": "prob_a1f5aa5e29",
+  "problem_started_at": "2026-04-15T14:31:04.715778",
+  "total_attempts": 3,
+  "hints_used": 3,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-15T14:31:04.715823",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-15T14:31:26.335883",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "I don't know what I see is but I know red apple is rojo manzana."
+    },
+    {
+      "timestamp": "2026-04-15T14:31:31.834728",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see that you correctly identified \"rojo\" for red and \"manzana\" for apple! That's a great start. Can you think about how to express \"I see\" in Spanish?"
+    },
+    {
+      "timestamp": "2026-04-15T14:31:40.882913",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "I dont know"
+    },
+    {
+      "timestamp": "2026-04-15T14:31:46.796735",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay not to know right now; that's part of the learning process! Can you think of how to say \"I see\" in Spanish?"
+    },
+    {
+      "timestamp": "2026-04-15T14:31:58.533635",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no"
+    },
+    {
+      "timestamp": "2026-04-15T14:32:03.522245",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your effort! It looks like you might be feeling unsure about this one. Can you try to think about how you would express \"I see\" in Spanish?"
+    },
+    {
+      "timestamp": "2026-04-15T14:32:10.282459",
+      "role": "tutor",
+      "event_type": "hint",
+      "content": "In Spanish, the verb \"to see\" translates to a specific verb form that typically does not change with the subject. Remember that adjectives usually come after the noun in Spanish, so think about the order of \"apple\" and \"red\" in your translation."
+    },
+    {
+      "timestamp": "2026-04-15T14:32:12.013879",
+      "role": "tutor",
+      "event_type": "hint",
+      "content": "In Spanish, the verb \"to see\" translates to a different verb that has an irregular conjugation in the present tense. Also, remember that adjectives in Spanish need to agree in gender and number with the noun they describe. Think about the word for \"apple\" and its gender."
+    },
+    {
+      "timestamp": "2026-04-15T14:32:21.443276",
+      "role": "tutor",
+      "event_type": "hint",
+      "content": "The first word of the translation is \"Yo.\" This is the subject pronoun used for \"I\" in Spanish. It\u2019s important to include the subject pronoun in this case to clarify who is seeing the apple. Now, think about how to express \"see\" in Spanish and what comes next!"
+    }
+  ],
+  "session_started_at": "2026-04-15T14:31:04.715805"
+}

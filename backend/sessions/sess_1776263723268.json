@@ -1,0 +1,75 @@
+{
+  "problem": "English: I want to go to the park.",
+  "task_type": "translation",
+  "difficulty_score": 2,
+  "attempts": [
+    "quiero ir al parque",
+    "youre wrong I said it correctly",
+    "quiero and ir",
+    "quiero a ir al parque."
+  ],
+  "uploaded_content": "",
+  "problems_completed": 0,
+  "student_name": "Katie",
+  "problem_id": "prob_365797fb4b",
+  "problem_started_at": "2026-04-15T14:35:32.796234",
+  "total_attempts": 4,
+  "hints_used": 0,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-15T14:35:32.796281",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-15T14:35:37.615698",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir al parque"
+    },
+    {
+      "timestamp": "2026-04-15T14:35:42.217190",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job with \"quiero\" and \"ir\"! You're really close. Can you think about how to express \"the\" in Spanish for \"the park\"?"
+    },
+    {
+      "timestamp": "2026-04-15T14:35:55.149826",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "youre wrong I said it correctly"
+    },
+    {
+      "timestamp": "2026-04-15T14:35:59.311424",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your confidence in your answer! Let's think about the verb \"want\" in Spanish; it starts with \"q.\" What do you think the word for \"go\" might be? It starts with \"i.\""
+    },
+    {
+      "timestamp": "2026-04-15T14:36:07.997090",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero and ir"
+    },
+    {
+      "timestamp": "2026-04-15T14:36:13.301770",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job with \"quiero\" and \"ir\"! You're on the right track. What do you think you need to say before \"ir\" to complete your thought? Remember, it starts with \"a.\""
+    },
+    {
+      "timestamp": "2026-04-15T14:36:35.931500",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero a ir al parque."
+    },
+    {
+      "timestamp": "2026-04-15T14:36:40.176108",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job using \"quiero\" and \"parque\"! Now, think about how you connect \"quiero\" to \"ir.\" What do you remember about using \"ir\" after a verb like \"quiero\"?"
+    }
+  ],
+  "session_started_at": "2026-04-15T14:35:32.796256"
+}

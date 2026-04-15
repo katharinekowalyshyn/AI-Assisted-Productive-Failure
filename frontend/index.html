@@ -89,16 +89,31 @@
     <header class="learn-header">
       <div class="learn-brand">TutorChat</div>
       <div class="header-right">
-        <span id="sessionIdDisplay" class="session-badge"></span>
         <button id="endSessionBtn" class="btn ghost small">End Session</button>
       </div>
     </header>
 
-    <main class="learn-main">
+    <div class="learning-layout">
+      <aside class="history-sidebar">
+        <h3 id="historySidebarTitle">Your Sessions</h3>
+        <div id="historyList" class="history-list"></div>
+        <p id="historyEmpty" class="history-empty">No previous sessions yet.</p>
+      </aside>
+
+      <main class="learn-main">
 
       <!-- Exercise card -->
       <div class="exercise-card">
         <div class="exercise-label" id="exerciseLabel">Exercise</div>
+        <div class="mode-switcher">
+          <span class="mode-switcher-label">Switch mode</span>
+          <div id="learningTaskSwitcher" class="mode-switcher-buttons">
+            <button class="mode-switch-btn selected" data-value="translation">Translation</button>
+            <button class="mode-switch-btn" data-value="error_correction">Error Correction</button>
+            <button class="mode-switch-btn" data-value="conversation_completion">Conversation</button>
+          </div>
+          <button id="switchModeBtn" class="btn ghost small">Switch Mode</button>
+        </div>
         <div class="exercise-label hidden" id="consolidationLabel">Consolidation</div>
         <p id="problemText" class="exercise-text">Loading your first exercise…</p>
         <div id="consolidationCard" class="hidden"></div>
@@ -127,7 +142,19 @@
         <button id="submitAttempt" class="btn primary submit-btn">Submit</button>
       </div>
 
-    </main>
+      </main>
+    </div>
+  </div>
+
+  <div id="historyModal" class="modal-backdrop hidden">
+    <div class="modal-card history-modal-card">
+      <h2 id="historyModalTitle">Previous Conversation</h2>
+      <div id="historyModalMeta" class="history-modal-meta"></div>
+      <div id="historyConversationContent" class="history-conversation"></div>
+      <div class="modal-actions">
+        <button id="closeHistoryModalBtn" class="btn ghost">Close</button>
+      </div>
+    </div>
   </div>
 
   <!-- ═══════════════════════════════════════════

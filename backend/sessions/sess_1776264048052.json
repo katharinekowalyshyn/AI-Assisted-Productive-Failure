@@ -1,0 +1,70 @@
+{
+  "problem": "English: She bought the dress yesterday.",
+  "task_type": "translation",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "katie",
+  "problem_id": "prob_d3482c6f5d",
+  "problem_started_at": "2026-04-15T14:41:36.494608",
+  "total_attempts": 2,
+  "hints_used": 0,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-15T14:40:53.106115",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-15T14:40:57.598706",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir al parque"
+    },
+    {
+      "timestamp": "2026-04-15T14:41:01.473136",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work - that's correct. Click Next Exercise when you're ready for a new one."
+    },
+    {
+      "timestamp": "2026-04-15T14:41:08.262051",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-15T14:41:10.924184",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-15T14:41:22.166834",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Que necesitas para tu clase ma\u00f1ana?"
+    },
+    {
+      "timestamp": "2026-04-15T14:41:24.233867",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work - that's correct. Click Next Exercise when you're ready for a new one."
+    },
+    {
+      "timestamp": "2026-04-15T14:41:34.887633",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-15T14:41:36.494632",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    }
+  ],
+  "session_started_at": "2026-04-15T14:40:53.106100"
+}

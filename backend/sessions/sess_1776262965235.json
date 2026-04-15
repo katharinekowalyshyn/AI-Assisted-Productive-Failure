@@ -1,0 +1,49 @@
+{
+  "problem": "Find and correct the error(s): Ella es un estudiante inteligente.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [
+    "esta not es",
+    "Esta is for when the state is temporary"
+  ],
+  "uploaded_content": "",
+  "problems_completed": 0,
+  "student_name": "katie",
+  "problem_id": "prob_b495a642c6",
+  "problem_started_at": "2026-04-15T14:22:55.055962",
+  "total_attempts": 2,
+  "hints_used": 0,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-15T14:22:55.056007",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-15T14:23:03.682879",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "esta not es"
+    },
+    {
+      "timestamp": "2026-04-15T14:23:08.667868",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job noticing that \"es\" might not be the right choice! Can you think about when we use \"es\" versus when we might use \"est\u00e1\"?"
+    },
+    {
+      "timestamp": "2026-04-15T14:23:26.512308",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Esta is for when the state is temporary"
+    },
+    {
+      "timestamp": "2026-04-15T14:23:31.361793",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're right that \"est\u00e1\" is used for temporary states! Now, can you think about whether \"es\" might be appropriate for describing someone's character or profession?"
+    }
+  ],
+  "session_started_at": "2026-04-15T14:22:55.055986"
+}

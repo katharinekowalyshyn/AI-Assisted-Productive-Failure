@@ -22,6 +22,7 @@ Difficulty scale:
 from __future__ import annotations
 
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 from uuid import uuid4
@@ -305,6 +306,31 @@ Generate the exercise now:"""
             "conversation_completion": "The student is completing a Spanish conversation.",
         }
         task_context = task_context_map.get(task_type, "The student is working on a Spanish language task.")
+        answer_lower = answer.lower()
+        stuck_signal = any(token in answer_lower for token in ["i dont know", "i don't know", "no", "idk"])
+
+        adaptive_scaffold = (
+            "- Keep guidance light and ask one guiding question.\n"
+            "- Do not reveal the full answer."
+        )
+        if task_type == "translation":
+            if attempt_number >= 1:
+                adaptive_scaffold = (
+                    "- Give one concrete scaffold (for example, first letter of an important missing word).\n"
+                    "- Ask one short follow-up question.\n"
+                    "- Do not reveal the full answer."
+                )
+            if attempt_number >= 2 or stuck_signal:
+                adaptive_scaffold = (
+                    "- Give stronger scaffold: provide ONE key Spanish word the student needs.\n"
+                    "- Also provide the first letter of another missing word.\n"
+                    "- Keep it brief and still do not give the full sentence."
+                )
+            if attempt_number >= 4:
+                adaptive_scaffold = (
+                    "- Give maximal scaffold without full solution: provide 2 key words plus one grammar/order reminder.\n"
+                    "- Keep it to 2-3 sentences; do not provide the complete translated sentence."
+                )
 
         pf_prompt = f"""{context}
 
@@ -318,11 +344,27 @@ Rules:
 - DO NOT provide the correct answer, translation, or corrected sentence.
 - Acknowledge anything correct or partially correct in their attempt.
 - Ask one guiding question to help them think further.
-- After attempt 3 or beyond, you may give a small grammar/structure hint (not the answer).
 - Respond entirely in English — students are A1/A2 level.
 - Keep your response to 2–3 sentences maximum.
+- Adaptive support based on attempt number:
+{adaptive_scaffold}
 
 Feedback:"""
+
+        correctness_rules = """
+Grading rules:
+- Be meaning-focused, not literal-wording-focused.
+- Accept valid Spanish variants, including omitted subject pronouns (e.g., 'quiero' vs 'yo quiero').
+- Ignore capitalization, punctuation, and minor spacing.
+- For translation tasks, accept equivalent grammar/word order if meaning is correct.
+- Do not mark correct answers as wrong just because they are shorter.
+"""
+        if task_type == "translation":
+            correctness_rules += """
+Translation-specific examples:
+- If prompt is "I want to go to the park.", "quiero ir al parque" IS correct.
+- "yo quiero ir al parque" is also correct.
+"""
 
         correctness_prompt = f"""
 Problem: {problem}
@@ -330,6 +372,7 @@ Task type: {task_type}
 Student answer: {answer}
 
 Determine whether the student's answer is acceptably correct.
+{correctness_rules}
 Respond ONLY as valid JSON:
 {{
   "is_correct": true or false,
@@ -348,15 +391,20 @@ Respond ONLY as valid JSON:
             )
             is_correct = self._parse_is_correct(correctness_response.get("result", ""))
 
-            response = self.llm.generate(
-                model=settings.llm_model,
-                system=settings.llm_system_prompt,
-                query=pf_prompt,
-                session_id=self.rag_session_id,
-                temperature=0.5,
-                rag_usage=True,
-            )
-            reply = response.get("result", "Good effort! What part are you most unsure about?")
+            if is_correct:
+                reply = (
+                    "Nice work - that's correct. Click Next Exercise when you're ready for a new one."
+                )
+            else:
+                response = self.llm.generate(
+                    model=settings.llm_model,
+                    system=settings.llm_system_prompt,
+                    query=pf_prompt,
+                    session_id=self.rag_session_id,
+                    temperature=0.5,
+                    rag_usage=True,
+                )
+                reply = response.get("result", "Good effort! What part are you most unsure about?")
             show_consolidation = (not is_correct) and attempt_number >= MAX_ATTEMPTS
             consolidation = None
             can_advance = is_correct or show_consolidation
@@ -531,9 +579,10 @@ Respond in English. Do not give the full solution."""
 
     def _persist_result_snapshot(self, session_id: str):
         session = self.sessions.get(session_id, {})
+        student_name = session.get("student_name", "Unknown Student")
         payload = {
             "session_id": session_id,
-            "student_name": session.get("student_name", "Unknown Student"),
+            "student_name": student_name,
             "task_type": session.get("task_type"),
             "difficulty_score": session.get("difficulty_score"),
             "problem_id": session.get("problem_id"),
@@ -548,8 +597,54 @@ Respond in English. Do not give the full solution."""
             "conversation_history": session.get("conversation_history", []),
             "last_updated_at": datetime.utcnow().isoformat(),
         }
-        result_path = self.results_dir / f"{session_id}.json"
+        safe_name = self._safe_filename_component(student_name)
+        result_path = self.results_dir / f"{safe_name}__{session_id}.json"
         result_path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+    def _safe_filename_component(self, value: str) -> str:
+        cleaned = (value or "unknown_user").strip().lower()
+        cleaned = re.sub(r"[^a-z0-9]+", "_", cleaned)
+        cleaned = cleaned.strip("_")
+        return cleaned or "unknown_user"
+
+    def list_history_for_student(self, student_name: str) -> list[dict]:
+        safe_name = self._safe_filename_component(student_name)
+        entries: list[dict] = []
+        for path in self.results_dir.glob(f"{safe_name}__*.json"):
+            try:
+                data = json.loads(path.read_text(encoding="utf-8"))
+                entries.append(
+                    {
+                        "session_id": data.get("session_id"),
+                        "student_name": data.get("student_name"),
+                        "task_type": data.get("task_type"),
+                        "difficulty_score": data.get("difficulty_score"),
+                        "stats": data.get("stats", {}),
+                        "last_updated_at": data.get("last_updated_at"),
+                    }
+                )
+            except Exception as exc:
+                print(f"[PFService] Skipping unreadable history file {path.name}: {exc}")
+
+        entries.sort(key=lambda item: item.get("last_updated_at") or "", reverse=True)
+        return entries
+
+    def get_history_session(self, session_id: str, student_name: str | None = None) -> dict | None:
+        if student_name:
+            safe_name = self._safe_filename_component(student_name)
+            candidate = self.results_dir / f"{safe_name}__{session_id}.json"
+            if candidate.exists():
+                try:
+                    return json.loads(candidate.read_text(encoding="utf-8"))
+                except Exception:
+                    return None
+
+        for path in self.results_dir.glob(f"*__{session_id}.json"):
+            try:
+                return json.loads(path.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+        return None
 
     def _append_event(self, session_id: str, role: str, content: str, event_type: str):
         session = self.sessions.get(session_id)

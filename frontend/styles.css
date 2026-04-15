@@ -183,6 +183,60 @@ body {
   overflow: hidden;
 }
 
+.learning-layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.history-sidebar {
+  width: 280px;
+  border-right: 1px solid var(--border);
+  background: var(--surface);
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.history-sidebar h3 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  cursor: pointer;
+  background: var(--surface-2);
+}
+
+.history-item.active {
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.history-item-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.history-item-meta {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.history-empty {
+  color: var(--text-light);
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
 .learn-header {
   display: flex;
   justify-content: space-between;
@@ -242,6 +296,42 @@ body {
   line-height: 1.65;
 }
 .exercise-actions { margin-top: 18px; }
+
+.mode-switcher {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mode-switcher-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.mode-switcher-buttons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.mode-switch-btn {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-muted);
+  padding: 5px 10px;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.mode-switch-btn.selected {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+}
 
 #consolidationCard {
   margin-top: 12px;
@@ -463,8 +553,45 @@ body {
   justify-content: flex-end;
 }
 
+.history-modal-card {
+  max-width: 720px;
+}
+
+.history-modal-meta {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.history-conversation {
+  max-height: 380px;
+  overflow-y: auto;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.history-msg {
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  white-space: pre-wrap;
+}
+
+.history-msg-role {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
 /* ─── Responsive ────────────────────────────────────────────────────── */
 @media (max-width: 640px) {
+  .learning-layout { flex-direction: column; }
+  .history-sidebar { width: 100%; border-right: none; border-bottom: 1px solid var(--border); }
   .setup-card  { padding: 32px 22px; gap: 28px; }
   .picker-grid { grid-template-columns: 1fr; }
   .learn-main  { padding: 18px 16px 32px; }

@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel
 from typing import Optional
 
@@ -71,3 +71,18 @@ def next_problem(req: NextRequest):
         task_type=req.task_type,
     )
     return problem
+
+
+@router.get("/history")
+def history(student_name: str = Query(..., min_length=1)):
+    """List previous saved sessions for a student name."""
+    return service.list_history_for_student(student_name)
+
+
+@router.get("/history/{session_id}")
+def history_session(session_id: str, student_name: Optional[str] = Query(default=None)):
+    """Fetch one saved session detail including conversation history."""
+    payload = service.get_history_session(session_id=session_id, student_name=student_name)
+    if not payload:
+        raise HTTPException(status_code=404, detail="Session history not found.")
+    return payload

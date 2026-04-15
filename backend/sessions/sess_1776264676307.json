@@ -1,0 +1,36 @@
+{
+  "problem": "Find and correct the error(s): Yo estoy un perro rojo.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [
+    "hi"
+  ],
+  "uploaded_content": "",
+  "problems_completed": 0,
+  "student_name": "Katie",
+  "problem_id": "prob_585a3ea169",
+  "problem_started_at": "2026-04-15T14:51:24.661084",
+  "total_attempts": 1,
+  "hints_used": 0,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-15T14:51:24.661114",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-15T14:51:25.328192",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "hi"
+    },
+    {
+      "timestamp": "2026-04-15T14:51:30.524241",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's great that you're engaging with the sentence! Can you think about what \"un perro rojo\" means and how it fits with \"Yo estoy\"? What might you want to change to make it sound more natural?"
+    }
+  ],
+  "session_started_at": "2026-04-15T14:51:24.661102"
+}

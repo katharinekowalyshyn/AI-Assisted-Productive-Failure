@@ -15,9 +15,13 @@ class TutorChatApp {
       setupError:        document.getElementById("setupError"),
       // Learning
       learningScreen:    document.getElementById("learningScreen"),
-      sessionIdDisplay:  document.getElementById("sessionIdDisplay"),
+      historySidebarTitle: document.getElementById("historySidebarTitle"),
+      historyList:       document.getElementById("historyList"),
+      historyEmpty:      document.getElementById("historyEmpty"),
       endSessionBtn:     document.getElementById("endSessionBtn"),
       exerciseLabel:     document.getElementById("exerciseLabel"),
+      learningTaskSwitcher: document.getElementById("learningTaskSwitcher"),
+      switchModeBtn:     document.getElementById("switchModeBtn"),
       consolidationLabel: document.getElementById("consolidationLabel"),
       consolidationCard: document.getElementById("consolidationCard"),
       problemText:       document.getElementById("problemText"),
@@ -36,12 +40,18 @@ class TutorChatApp {
       analyticsChart:    document.getElementById("analyticsChart"),
       newSessionBtn:     document.getElementById("newSessionBtn"),
       closeModalBtn:     document.getElementById("closeModalBtn"),
+      historyModal:      document.getElementById("historyModal"),
+      historyModalTitle: document.getElementById("historyModalTitle"),
+      historyModalMeta:  document.getElementById("historyModalMeta"),
+      historyConversationContent: document.getElementById("historyConversationContent"),
+      closeHistoryModalBtn: document.getElementById("closeHistoryModalBtn"),
     };
 
     this.state = {
       sessionId:       `sess_${Date.now()}`,
       studentName:     "",
       taskType:        "translation",
+      pendingTaskType: "translation",
       difficultyScore: 2,
       problemActive:   false,
       loadingProblem:  false,
@@ -53,6 +63,7 @@ class TutorChatApp {
       startedAt:       null,
       elapsedInterval: null,
       analyticsHistory: [],
+      historySessions: [],
     };
 
     this._bindEvents();
@@ -83,13 +94,23 @@ class TutorChatApp {
     this.ui.startLearningBtn.addEventListener("click",   () => this._startSession());
     this.ui.endSessionBtn.addEventListener("click",      () => this._endSession());
     this.ui.nextProblemBtn.addEventListener("click",     () => this._nextProblem());
+    this.ui.switchModeBtn.addEventListener("click",      () => this._switchMode());
     this.ui.submitAttempt.addEventListener("click",      () => this._submitAttempt());
     this.ui.newSessionBtn.addEventListener("click",      () => this._newSession());
     this.ui.closeModalBtn.addEventListener("click",      () => this.ui.analyticsModal.classList.add("hidden"));
+    this.ui.closeHistoryModalBtn.addEventListener("click", () => this.ui.historyModal.classList.add("hidden"));
 
     this.ui.hintBtns.forEach(btn =>
       btn.addEventListener("click", () => this._useHint(btn.dataset.level))
     );
+
+    this.ui.learningTaskSwitcher.querySelectorAll(".mode-switch-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        this.ui.learningTaskSwitcher.querySelectorAll(".mode-switch-btn").forEach(b => b.classList.remove("selected"));
+        btn.classList.add("selected");
+        this.state.pendingTaskType = btn.dataset.value;
+      });
+    });
 
     // Cmd/Ctrl+Enter submits
     this.ui.attemptBox.addEventListener("keydown", e => {
@@ -119,7 +140,10 @@ class TutorChatApp {
     // Switch to learning screen immediately so the user sees progress
     this.ui.setupScreen.classList.add("hidden");
     this.ui.learningScreen.classList.remove("hidden");
-    this.ui.sessionIdDisplay.textContent = this.state.sessionId;
+    this.ui.historySidebarTitle.textContent = `${this.state.studentName}'s sessions`;
+    this.state.pendingTaskType = this.state.taskType;
+    this._syncLearningModeButtons();
+    await this._loadHistorySidebar();
     this._updateExerciseLabel();
 
     try {
@@ -146,6 +170,7 @@ class TutorChatApp {
     Object.assign(this.state, {
       sessionId:       `sess_${Date.now()}`,
       studentName:     "",
+      pendingTaskType: "translation",
       problemActive:   false,
       loadingProblem:  false,
       problemText:     "",
@@ -159,7 +184,11 @@ class TutorChatApp {
     });
     this.ui.conversationLog.innerHTML = "";
     this.ui.studentNameInput.value = "";
+    this.state.historySessions = [];
+    this._renderHistorySidebar();
+    this._syncLearningModeButtons();
     this.ui.analyticsModal.classList.add("hidden");
+    this.ui.historyModal.classList.add("hidden");
     this._showSetup();
   }
 
@@ -195,6 +224,7 @@ class TutorChatApp {
       this._startElapsedTimer();
       this._resetHints();
       this.state.analyticsHistory.push({ type: "problem_start", timestamp: new Date().toISOString() });
+      await this._loadHistorySidebar();
     } catch (err) {
       console.error("_presentProblem:", err);
       this.ui.problemText.textContent = "Could not load exercise — is the backend running?";
@@ -237,6 +267,7 @@ class TutorChatApp {
       this._startElapsedTimer();
       this._resetHints();
       this.state.analyticsHistory.push({ type: "next_problem", timestamp: new Date().toISOString() });
+      await this._loadHistorySidebar();
     } catch (err) {
       console.error("_nextProblem:", err);
       this.ui.problemText.textContent = "Could not load next exercise — please retry.";
@@ -256,6 +287,18 @@ class TutorChatApp {
     if (this.ui.exerciseLabel) {
       this.ui.exerciseLabel.textContent = labels[this.state.taskType] || "Exercise";
     }
+  }
+
+  async _switchMode() {
+    const selected = this.state.pendingTaskType;
+    if (!selected || selected === this.state.taskType) {
+      this.ui.attemptWarning.textContent = "Already in this mode.";
+      return;
+    }
+    this.state.taskType = selected;
+    this._updateExerciseLabel();
+    this.ui.attemptWarning.textContent = "Switching mode and generating a new exercise...";
+    await this._nextProblem();
   }
 
   // ── Attempting ─────────────────────────────────────────────────────
@@ -313,6 +356,7 @@ class TutorChatApp {
       }
 
       if (Math.random() > 0.45) this._unlockRandomHint();
+      await this._loadHistorySidebar();
     } catch (err) {
       console.error("_submitAttempt:", err);
       this.ui.attemptWarning.textContent = "Submission failed — please retry.";
@@ -467,6 +511,85 @@ class TutorChatApp {
       try { return JSON.parse(str); } catch { /* fall through */ }
     }
     return str;
+  }
+
+  _syncLearningModeButtons() {
+    this.ui.learningTaskSwitcher.querySelectorAll(".mode-switch-btn").forEach(btn => {
+      btn.classList.toggle("selected", btn.dataset.value === this.state.pendingTaskType);
+    });
+  }
+
+  async _loadHistorySidebar() {
+    if (!this.state.studentName) return;
+    try {
+      const rsp = await fetch(`${this.apiBaseUrl}/pf/history?student_name=${encodeURIComponent(this.state.studentName)}`);
+      if (!rsp.ok) throw new Error(`HTTP ${rsp.status}`);
+      this.state.historySessions = await rsp.json();
+      this._renderHistorySidebar();
+    } catch (err) {
+      console.error("_loadHistorySidebar:", err);
+      this.state.historySessions = [];
+      this._renderHistorySidebar();
+    }
+  }
+
+  _renderHistorySidebar() {
+    this.ui.historyList.innerHTML = "";
+    const sessions = this.state.historySessions || [];
+    this.ui.historyEmpty.classList.toggle("hidden", sessions.length > 0);
+
+    sessions.forEach((item) => {
+      const row = document.createElement("button");
+      row.className = `history-item ${item.session_id === this.state.sessionId ? "active" : ""}`;
+      row.type = "button";
+      const updated = item.last_updated_at ? this._formatDateTime(item.last_updated_at) : "Unknown";
+      const attempts = item.stats?.total_attempts ?? 0;
+      const solved = item.stats?.problems_completed ?? 0;
+      row.innerHTML = `
+        <div class="history-item-title">${this._normalizeText(item.task_type || "session")}</div>
+        <div class="history-item-meta">${updated}</div>
+        <div class="history-item-meta">${attempts} attempts • ${solved} solved</div>
+      `;
+      row.addEventListener("click", () => this._openHistorySession(item.session_id));
+      this.ui.historyList.appendChild(row);
+    });
+  }
+
+  async _openHistorySession(sessionId) {
+    try {
+      const rsp = await fetch(`${this.apiBaseUrl}/pf/history/${encodeURIComponent(sessionId)}?student_name=${encodeURIComponent(this.state.studentName)}`);
+      if (!rsp.ok) throw new Error(`HTTP ${rsp.status}`);
+      const payload = await rsp.json();
+      this.ui.historyModalTitle.textContent = `Session ${payload.session_id}`;
+      const updated = payload.last_updated_at ? this._formatDateTime(payload.last_updated_at) : "Unknown";
+      const attempts = payload.stats?.total_attempts ?? 0;
+      const hints = payload.stats?.hints_used ?? 0;
+      const solved = payload.stats?.problems_completed ?? 0;
+      this.ui.historyModalMeta.textContent = `${updated} • ${attempts} attempts • ${hints} hints • ${solved} solved`;
+
+      this.ui.historyConversationContent.innerHTML = "";
+      const history = payload.conversation_history || [];
+      history.forEach((event) => {
+        const item = document.createElement("div");
+        item.className = "history-msg";
+        const role = event.role || event.event_type || "event";
+        item.innerHTML = `
+          <div class="history-msg-role">${this._normalizeText(role)}</div>
+          <div>${this._normalizeText(event.content || "")}</div>
+        `;
+        this.ui.historyConversationContent.appendChild(item);
+      });
+      this.ui.historyModal.classList.remove("hidden");
+    } catch (err) {
+      console.error("_openHistorySession:", err);
+      this.ui.attemptWarning.textContent = "Could not load that saved conversation.";
+    }
+  }
+
+  _formatDateTime(isoString) {
+    const dt = new Date(isoString);
+    if (Number.isNaN(dt.getTime())) return "Unknown";
+    return dt.toLocaleString();
   }
 }
 
