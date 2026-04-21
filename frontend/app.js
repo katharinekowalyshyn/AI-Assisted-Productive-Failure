@@ -28,14 +28,12 @@ class TutorChatApp {
       nextProblemBtn:    document.getElementById("nextProblemBtn"),
       conversationLog:   document.getElementById("conversationLog"),
       attemptWarning:    document.getElementById("attemptWarning"),
-      hintBtns:          Array.from(document.querySelectorAll(".hintBtn")),
       attemptBox:        document.getElementById("attemptBox"),
       submitAttempt:     document.getElementById("submitAttempt"),
       // Modal
       analyticsModal:    document.getElementById("analyticsModal"),
       statExercises:     document.getElementById("statExercises"),
       statAttempts:      document.getElementById("statAttempts"),
-      statHints:         document.getElementById("statHints"),
       statTime:          document.getElementById("statTime"),
       analyticsChart:    document.getElementById("analyticsChart"),
       newSessionBtn:     document.getElementById("newSessionBtn"),
@@ -58,7 +56,6 @@ class TutorChatApp {
       problemText:     "",
       attempts:        0,   // attempts on current exercise
       totalAttempts:   0,   // across whole session
-      hintsUsed:       0,
       problemsSolved:  0,
       startedAt:       null,
       elapsedInterval: null,
@@ -99,11 +96,6 @@ class TutorChatApp {
     this.ui.newSessionBtn.addEventListener("click",      () => this._newSession());
     this.ui.closeModalBtn.addEventListener("click",      () => this.ui.analyticsModal.classList.add("hidden"));
     this.ui.closeHistoryModalBtn.addEventListener("click", () => this.ui.historyModal.classList.add("hidden"));
-
-    this.ui.hintBtns.forEach(btn =>
-      btn.addEventListener("click", () => this._useHint(btn.dataset.level))
-    );
-
     this.ui.learningTaskSwitcher.querySelectorAll(".mode-switch-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         this.ui.learningTaskSwitcher.querySelectorAll(".mode-switch-btn").forEach(b => b.classList.remove("selected"));
@@ -176,7 +168,6 @@ class TutorChatApp {
       problemText:     "",
       attempts:        0,
       totalAttempts:   0,
-      hintsUsed:       0,
       problemsSolved:  0,
       startedAt:       null,
       elapsedInterval: null,
@@ -222,7 +213,6 @@ class TutorChatApp {
       this.state.problemActive = true;
       this.state.attempts = 0;
       this._startElapsedTimer();
-      this._resetHints();
       this.state.analyticsHistory.push({ type: "problem_start", timestamp: new Date().toISOString() });
       await this._loadHistorySidebar();
     } catch (err) {
@@ -265,7 +255,6 @@ class TutorChatApp {
       this.ui.conversationLog.innerHTML = "";
       this._updateExerciseLabel();
       this._startElapsedTimer();
-      this._resetHints();
       this.state.analyticsHistory.push({ type: "next_problem", timestamp: new Date().toISOString() });
       await this._loadHistorySidebar();
     } catch (err) {
@@ -338,63 +327,30 @@ class TutorChatApp {
       this.state.analyticsHistory.push({ type: "attempt", timestamp: new Date().toISOString() });
 
       if (payload.show_consolidation && payload.consolidation) {
-        this.ui.consolidationLabel.classList.remove("hidden");
-        this.ui.consolidationCard.classList.remove("hidden");
-        this.ui.consolidationCard.textContent = this._normalizeText(payload.consolidation);
+       this._appendConsolidation(payload.consolidation);
       }
 
       if (payload.can_advance) {
-        this.ui.nextProblemBtn.classList.remove("hidden");
         if (payload.show_consolidation) {
+          // Consolidation phase: disable further attempts, show Next button
+          // with a clear label — student decides when they're ready to move on
           this.state.problemActive = false;
           this.ui.submitAttempt.disabled = true;
-          this.ui.attemptWarning.textContent = "Consolidation complete. Loading next exercise...";
-          setTimeout(() => this._nextProblem(), 1200);
+          this.ui.attemptWarning.textContent = "Take your time reading the review above, then continue when ready.";
+        } else {
+          // Correct answer: just show Next button
+          this.ui.nextProblemBtn.textContent = "Next Exercise →";
+          this.ui.nextProblemBtn.classList.remove("hidden");
         }
       } else if (typeof payload.max_attempts === "number") {
         this.ui.attemptWarning.textContent = `Attempt ${payload.attempts_used || 0} of ${payload.max_attempts}.`;
       }
-
-      if (Math.random() > 0.45) this._unlockRandomHint();
       await this._loadHistorySidebar();
     } catch (err) {
       console.error("_submitAttempt:", err);
       this.ui.attemptWarning.textContent = "Submission failed — please retry.";
     }
   }
-
-  // ── Hints ──────────────────────────────────────────────────────────
-
-  _resetHints() {
-    this.ui.hintBtns.forEach(btn => { btn.disabled = true; });
-  }
-
-  _unlockRandomHint() {
-    const locked = this.ui.hintBtns.filter(b => b.disabled);
-    if (!locked.length) return;
-    locked[Math.floor(Math.random() * locked.length)].disabled = false;
-  }
-
-  async _useHint(level) {
-    try {
-      const rsp = await fetch(`${this.apiBaseUrl}/pf/hint`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          session_id:   this.state.sessionId,
-          problem_text: this.state.problemText,
-          hint_level:   Number(level),
-        }),
-      });
-      const data = await rsp.json();
-      this._appendConversation("ai", `Hint: ${data.hint || "No hint available."}`);
-      this.state.hintsUsed++;
-      this.state.analyticsHistory.push({ type: "hint", level, timestamp: new Date().toISOString() });
-    } catch {
-      this._appendConversation("ai", "Hint could not be loaded.");
-    }
-  }
-
   // ── Upload ─────────────────────────────────────────────────────────
 
   async _handleUpload() {
@@ -422,7 +378,6 @@ class TutorChatApp {
 
     this.ui.statExercises.textContent = this.state.problemsSolved;
     this.ui.statAttempts.textContent  = this.state.totalAttempts;
-    this.ui.statHints.textContent     = this.state.hintsUsed;
     this.ui.statTime.textContent      = `${Math.floor(elapsed / 60)}:${String(elapsed % 60).padStart(2, "0")}`;
 
     this._drawChart();
@@ -434,11 +389,10 @@ class TutorChatApp {
     const ctx    = canvas.getContext("2d");
     const values = [
       this.state.analyticsHistory.filter(x => x.type === "attempt").length,
-      this.state.hintsUsed,
       this.state.problemsSolved,
     ];
-    const labels = ["Attempts", "Hints", "Exercises Done"];
-    const colors = ["#4f46e5", "#06b6d4", "#059669"];
+    const labels = ["Attempts", "Exercises Done"];
+    const colors = ["#4f46e5", "#059669"];
     const max    = Math.max(...values, 1);
 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -496,6 +450,20 @@ class TutorChatApp {
     this.ui.conversationLog.scrollTop = this.ui.conversationLog.scrollHeight;
   }
 
+  _appendConsolidation(text) {
+  const card = document.createElement("div");
+  card.className = "conversation-card consolidation";
+  const normalized = text.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")
+    .split(/\r?\n/).map(l => l.trim()).filter(Boolean).join("<br><br>");
+  card.innerHTML = `
+    <strong>Review</strong>
+    <div class="consolidation-body">${normalized}</div>
+    <button class="btn success consolidation-next-btn">I've read this — Next Exercise →</button>
+  `;
+  card.querySelector(".consolidation-next-btn").addEventListener("click", () => this._nextProblem());
+  this.ui.conversationLog.appendChild(card);
+  this.ui.conversationLog.scrollTop = this.ui.conversationLog.scrollHeight;
+}
   _normalizeText(text) {
     if (!text) return "";
     const escaped = text
@@ -563,9 +531,8 @@ class TutorChatApp {
       this.ui.historyModalTitle.textContent = `Session ${payload.session_id}`;
       const updated = payload.last_updated_at ? this._formatDateTime(payload.last_updated_at) : "Unknown";
       const attempts = payload.stats?.total_attempts ?? 0;
-      const hints = payload.stats?.hints_used ?? 0;
       const solved = payload.stats?.problems_completed ?? 0;
-      this.ui.historyModalMeta.textContent = `${updated} • ${attempts} attempts • ${hints} hints • ${solved} solved`;
+      this.ui.historyModalMeta.textContent = `${updated} • ${attempts} attempts • ${solved} solved`;
 
       this.ui.historyConversationContent.innerHTML = "";
       const history = payload.conversation_history || [];

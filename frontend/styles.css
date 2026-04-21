@@ -383,6 +383,18 @@ body {
   box-shadow: var(--shadow-sm);
 }
 
+.conversation-card.consolidation {
+  background: #fefce8;
+  border: 2px solid #ca8a04;
+  color: var(--text);
+  align-self: stretch;
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+}
+.consolidation-body { margin: 8px 0 14px; line-height: 1.65; }
+.consolidation-next-btn { margin-top: 4px; width: 100%; }
+
+
 /* Status line */
 .status-line {
   font-size: 0.84rem;

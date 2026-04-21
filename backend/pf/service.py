@@ -1,5 +1,22 @@
 """
-PFService — core Productive Failure logic for Spanish A1/A2 language tutoring.
+PFService — Productive Failure logic for Spanish A1/A2 language tutoring.
+
+PF Workflow
+-----------
+Struggle phase  (attempts 1 … MAX_ATTEMPTS-1):
+  1. Student submits attempt
+  2. Tutor acknowledges motivationally, then asks ONE generative question
+     about what the student was thinking (to surface their reasoning)
+  3. Tutor prompts for a second / next attempt
+  4. Repeat
+
+Consolidation phase  (triggered after MAX_ATTEMPTS without a correct answer):
+  Tutor compares ALL prior attempts to the canonical solution, names what
+  was right and what was wrong in the student's approach, then reveals the
+  correct answer with a brief explanation.
+
+Hints: removed — the struggle phase itself provides adaptive scaffolding
+through generative questioning rather than domain-specific hint buttons.
 
 Session state shape:
     sessions[session_id] = {
@@ -9,14 +26,9 @@ Session state shape:
         "attempts": List[str],
         "uploaded_content": str,
         "problems_completed": int,
+        "conversation_history": List[dict],
+        ...
     }
-
-Difficulty scale:
-    1 — very basic A1 (greetings, colours, numbers, cognates)
-    2 — basic A1     (present tense, ser/estar/tener/ir/querer)
-    3 — A1/A2        (reflexive verbs, adjective agreement, basic questions)
-    4 — A2           (preterite past tense, direct object pronouns)
-    5 — A2+          (compound sentences, indirect pronouns, opinions)
 """
 
 from __future__ import annotations
@@ -35,7 +47,7 @@ from .analytics import AnalyticsLogger
 
 
 # ---------------------------------------------------------------------------
-# Prompt tables — keyed by (task_type, difficulty_score)
+# Difficulty labels
 # ---------------------------------------------------------------------------
 
 _DIFFICULTY_LABELS = {
@@ -45,6 +57,10 @@ _DIFFICULTY_LABELS = {
     4: "A2 Spanish — preterite past tense, direct object pronouns",
     5: "A2+ Spanish — compound sentences, indirect pronouns, expressing opinions",
 }
+
+# ---------------------------------------------------------------------------
+# Exercise generation prompts
+# ---------------------------------------------------------------------------
 
 _TASK_GENERATION_PROMPTS: dict[str, dict[int, str]] = {
     "translation": {
@@ -136,26 +152,6 @@ _TASK_FORMAT_INSTRUCTIONS: dict[str, str] = {
     ),
 }
 
-_HINT_INSTRUCTIONS: dict[int, str] = {
-    1: (
-        "Give a very gentle hint — remind the student of a relevant grammar rule "
-        "without mentioning the answer. (e.g. 'Remember that adjectives agree in gender…')"
-    ),
-    2: (
-        "Give a structural hint — explain the pattern needed "
-        "(e.g. 'This verb is reflexive' or 'This sentence uses the preterite tense') "
-        "without solving the problem."
-    ),
-    3: (
-        "Give a more direct hint — show the student the first word or first phrase of the answer "
-        "and briefly explain why that form is correct."
-    ),
-    4: (
-        "Give a near-complete scaffold — show the sentence structure with key blanks filled in, "
-        "or provide the correct form of the single most challenging element."
-    ),
-}
-
 MAX_ATTEMPTS = 5
 
 
@@ -184,19 +180,13 @@ class PFService:
         difficulty_score: int | None = None,
         student_name: str | None = None,
     ) -> str:
-        """Generate a Spanish exercise at the given difficulty.
-
-        If difficulty_score is None, the current session's score is used,
-        or 2 (basic A1) for brand-new sessions.
-        """
+        """Generate a Spanish exercise at the given difficulty."""
         uploaded_content = self.instructor.get_session_material(session_id)
 
-        # Resolve difficulty
         if difficulty_score is None:
             difficulty_score = self.sessions.get(session_id, {}).get("difficulty_score", 2)
         difficulty_score = max(1, min(5, difficulty_score))
 
-        # Build generation prompt
         task_prompt = (
             _TASK_GENERATION_PROMPTS
             .get(task_type, _TASK_GENERATION_PROMPTS["translation"])
@@ -241,7 +231,6 @@ Generate the exercise now:"""
         previous_session = self.sessions.get(session_id, {})
         problems_completed = previous_session.get("problems_completed", 0)
         existing_attempts_total = previous_session.get("total_attempts", 0)
-        existing_hints_total = previous_session.get("hints_used", 0)
         existing_conversation = previous_session.get("conversation_history", [])
 
         self.sessions[session_id] = {
@@ -255,7 +244,6 @@ Generate the exercise now:"""
             "problem_id": f"prob_{uuid4().hex[:10]}",
             "problem_started_at": datetime.utcnow().isoformat(),
             "total_attempts": existing_attempts_total,
-            "hints_used": existing_hints_total,
             "conversation_history": existing_conversation,
             "session_started_at": previous_session.get("session_started_at", datetime.utcnow().isoformat()),
         }
@@ -271,11 +259,15 @@ Generate the exercise now:"""
         return problem
 
     # ------------------------------------------------------------------
-    # Evaluate a student attempt
+    # Evaluate a student attempt  (core PF loop)
     # ------------------------------------------------------------------
 
     def handle_attempt(self, session_id: str, answer: str) -> dict:
-        """Evaluate a student attempt and optionally trigger consolidation."""
+        """
+        Struggle phase: acknowledge + generative question + prompt retry.
+        Consolidation phase: triggered after MAX_ATTEMPTS, compares all
+        attempts to canonical solution and explains what was right/wrong.
+        """
         if session_id not in self.sessions:
             return {
                 "reply": "Session not found. Please start a new problem.",
@@ -294,63 +286,7 @@ Generate the exercise now:"""
         attempt_number = len(session["attempts"])
         self._append_event(session_id, role="student", content=answer, event_type="attempt")
 
-        context = (
-            f"Reference this uploaded material for feedback: {uploaded_content}"
-            if uploaded_content
-            else ""
-        )
-
-        task_context_map = {
-            "translation": "The student is attempting to translate an English sentence into Spanish.",
-            "error_correction": "The student is trying to find and correct errors in a Spanish sentence.",
-            "conversation_completion": "The student is completing a Spanish conversation.",
-        }
-        task_context = task_context_map.get(task_type, "The student is working on a Spanish language task.")
-        answer_lower = answer.lower()
-        stuck_signal = any(token in answer_lower for token in ["i dont know", "i don't know", "no", "idk"])
-
-        adaptive_scaffold = (
-            "- Keep guidance light and ask one guiding question.\n"
-            "- Do not reveal the full answer."
-        )
-        if task_type == "translation":
-            if attempt_number >= 1:
-                adaptive_scaffold = (
-                    "- Give one concrete scaffold (for example, first letter of an important missing word).\n"
-                    "- Ask one short follow-up question.\n"
-                    "- Do not reveal the full answer."
-                )
-            if attempt_number >= 2 or stuck_signal:
-                adaptive_scaffold = (
-                    "- Give stronger scaffold: provide ONE key Spanish word the student needs.\n"
-                    "- Also provide the first letter of another missing word.\n"
-                    "- Keep it brief and still do not give the full sentence."
-                )
-            if attempt_number >= 4:
-                adaptive_scaffold = (
-                    "- Give maximal scaffold without full solution: provide 2 key words plus one grammar/order reminder.\n"
-                    "- Keep it to 2-3 sentences; do not provide the complete translated sentence."
-                )
-
-        pf_prompt = f"""{context}
-
-{task_context}
-
-Problem: {problem}
-Student attempt #{attempt_number}: {answer}
-
-You are a supportive Spanish tutor using Productive Failure pedagogy.
-Rules:
-- DO NOT provide the correct answer, translation, or corrected sentence.
-- Acknowledge anything correct or partially correct in their attempt.
-- Ask one guiding question to help them think further.
-- Respond entirely in English — students are A1/A2 level.
-- Keep your response to 2–3 sentences maximum.
-- Adaptive support based on attempt number:
-{adaptive_scaffold}
-
-Feedback:"""
-
+        # ── 1. Check correctness ──────────────────────────────────────
         correctness_rules = """
 Grading rules:
 - Be meaning-focused, not literal-wording-focused.
@@ -390,137 +326,225 @@ Respond ONLY as valid JSON:
                 rag_usage=True,
             )
             is_correct = self._parse_is_correct(correctness_response.get("result", ""))
-
-            if is_correct:
-                reply = (
-                    "Nice work - that's correct. Click Next Exercise when you're ready for a new one."
-                )
-            else:
-                response = self.llm.generate(
-                    model=settings.llm_model,
-                    system=settings.llm_system_prompt,
-                    query=pf_prompt,
-                    session_id=self.rag_session_id,
-                    temperature=0.5,
-                    rag_usage=True,
-                )
-                reply = response.get("result", "Good effort! What part are you most unsure about?")
-            show_consolidation = (not is_correct) and attempt_number >= MAX_ATTEMPTS
-            consolidation = None
-            can_advance = is_correct or show_consolidation
-
-            if show_consolidation:
-                consolidation = self._build_consolidation(session_id, answer)
-                reply = (
-                    "You've put in strong effort. Let's consolidate this one now so you can move on."
-                )
-
-            self._append_event(session_id, role="tutor", content=reply, event_type="feedback")
-            if consolidation:
-                self._append_event(
-                    session_id,
-                    role="tutor",
-                    content=f"Consolidation answer: {consolidation}",
-                    event_type="consolidation",
-                )
-
-            self.analytics.log_attempt(
-                session_id=session_id,
-                problem_id=session.get("problem_id", ""),
-                attempt_number=attempt_number,
-                time_spent=self._time_spent_for_problem(session),
-                hint_level=0,
-                misconceptions=[],
-                correct=is_correct,
-                reflection_score=0,
-            )
-            self._persist_session(session_id)
-            self._persist_result_snapshot(session_id)
-
-            return {
-                "reply": reply,
-                "is_correct": is_correct,
-                "can_advance": can_advance,
-                "show_consolidation": show_consolidation,
-                "consolidation": consolidation,
-                "attempts_used": attempt_number,
-                "max_attempts": MAX_ATTEMPTS,
-            }
         except Exception as exc:
-            print(f"[PFService] Attempt evaluation failed: {exc}")
-            return {
-                "reply": f"Evaluation failed: {exc}",
-                "is_correct": False,
-                "can_advance": False,
-                "show_consolidation": False,
-            }
+            print(f"[PFService] Correctness check failed: {exc}")
+            is_correct = False
+
+        # ── 2. Build reply ────────────────────────────────────────────
+        show_consolidation = (not is_correct) and attempt_number >= MAX_ATTEMPTS
+        consolidation = None
+        can_advance = is_correct or show_consolidation
+
+        if is_correct:
+            reply = (
+                "Nice work — that's correct! Click 'Next Exercise' when you're ready to continue."
+            )
+
+        elif show_consolidation:
+            # ── Consolidation phase ───────────────────────────────────
+            consolidation = self._build_consolidation(session_id, answer)
+            reply = (
+                "You've put in real effort on this one — let's review it together now."
+            )
+
+        else:
+            # ── Struggle phase: generative questioning ────────────────
+            reply = self._build_struggle_response(
+                session=session,
+                problem=problem,
+                task_type=task_type,
+                uploaded_content=uploaded_content,
+                answer=answer,
+                attempt_number=attempt_number,
+            )
+
+        # ── 3. Persist ────────────────────────────────────────────────
+        self._append_event(session_id, role="tutor", content=reply, event_type="feedback")
+        if consolidation:
+            self._append_event(
+                session_id,
+                role="tutor",
+                content=f"Consolidation: {consolidation}",
+                event_type="consolidation",
+            )
+
+        self.analytics.log_attempt(
+            session_id=session_id,
+            problem_id=session.get("problem_id", ""),
+            attempt_number=attempt_number,
+            time_spent=self._time_spent_for_problem(session),
+            hint_level=0,
+            misconceptions=[],
+            correct=is_correct,
+            reflection_score=0,
+        )
+        self._persist_session(session_id)
+        self._persist_result_snapshot(session_id)
+
+        return {
+            "reply": reply,
+            "is_correct": is_correct,
+            "can_advance": can_advance,
+            "show_consolidation": show_consolidation,
+            "consolidation": consolidation,
+            "attempts_used": attempt_number,
+            "max_attempts": MAX_ATTEMPTS,
+        }
 
     # ------------------------------------------------------------------
-    # Hints
+    # Struggle-phase response builder
     # ------------------------------------------------------------------
 
-    def get_hint(self, session_id: str, problem_text: str, hint_level: int) -> str:
-        """Return a scaffolded hint scaled to hint_level (1–4)."""
-        if session_id not in self.sessions:
-            return "Session not found."
-
-        session = self.sessions[session_id]
-        uploaded_content = session.get("uploaded_content", "")
-        task_type = session.get("task_type", "translation")
+    def _build_struggle_response(
+        self,
+        session: dict,
+        problem: str,
+        task_type: str,
+        uploaded_content: str,
+        answer: str,
+        attempt_number: int,
+    ) -> str:
+        """
+        Build a tutor message that:
+          1. Acknowledges the attempt motivationally (referencing this specific attempt)
+          2. Asks ONE generative question about the student's reasoning
+          3. Prompts them to try again
+        Context from all prior attempts in this problem is included so the
+        tutor never repeats itself.
+        """
+        # Summarise prior attempts for context
+        prior_attempts = session.get("attempts", [])[:-1]  # exclude current
+        prior_summary = ""
+        if prior_attempts:
+            formatted = "\n".join(
+                f"  Attempt {i + 1}: {a}" for i, a in enumerate(prior_attempts)
+            )
+            prior_summary = f"\nThe student's previous attempts on this problem were:\n{formatted}\n"
 
         context = (
-            f"Reference this uploaded material: {uploaded_content}"
+            f"Reference this uploaded material if relevant: {uploaded_content}\n\n"
             if uploaded_content
             else ""
         )
-        hint_instruction = _HINT_INSTRUCTIONS.get(hint_level, _HINT_INSTRUCTIONS[1])
 
-        hint_prompt = f"""{context}
+        task_context_map = {
+            "translation": "The student is translating an English sentence into Spanish.",
+            "error_correction": "The student is identifying and correcting errors in a Spanish sentence.",
+            "conversation_completion": "The student is completing a Spanish conversation.",
+        }
+        task_context = task_context_map.get(task_type, "The student is working on a Spanish task.")
 
-Task type: {task_type}
-Problem: {problem_text}
-Hint level: {hint_level}/4
+        stuck_signal = any(
+            token in answer.lower()
+            for token in ["i dont know", "i don't know", "no idea", "idk"]
+        )
 
-{hint_instruction}
+        if stuck_signal:
+            extra_instruction = (
+                "The student seems stuck. Ask a very targeted question that focuses on "
+                "just ONE specific element of the problem (e.g., the verb ending, the article, "
+                "the word order) to get them moving. Keep it to 2 sentences."
+            )
+        elif attempt_number == 1:
+            extra_instruction = (
+                "This is their first attempt. Acknowledge what they tried, ask them what they "
+                "were thinking when they chose that form/word, and invite a second try."
+            )
+        else:
+            extra_instruction = (
+                "Acknowledge any progress since previous attempts (even tiny improvements). "
+                "Ask ONE new generative question that probes a different aspect of the problem "
+                "from questions you have already asked. Do NOT repeat a question from earlier turns."
+            )
 
-Respond in English. Do not give the full solution."""
+        pf_prompt = f"""{context}{task_context}
+
+Problem: {problem}
+{prior_summary}
+Current attempt (attempt #{attempt_number}): {answer}
+
+You are a supportive Spanish tutor using Productive Failure pedagogy.
+
+Your response MUST:
+1. Open with brief motivational acknowledgement of THIS specific attempt (1 sentence, note what is right or partially right if anything)
+2. Ask ONE generative question about what the student was thinking — probe their reasoning, not just the answer (e.g. "Why did you choose that ending?", "What tense do you think is needed here?")
+3. End with a short prompt to try again
+
+Rules:
+- NEVER give the correct answer, translation, or corrected sentence
+- Respond entirely in English
+- Keep the whole response to 3 sentences maximum
+- Do NOT repeat questions already asked in prior turns
+{extra_instruction}
+
+Tutor response:"""
 
         try:
             response = self.llm.generate(
                 model=settings.llm_model,
-                system=(
-                    "You are a Spanish language tutor providing scaffolded hints. "
-                    "Guide students toward the answer without revealing it."
-                ),
-                query=hint_prompt,
+                system=settings.llm_system_prompt,
+                query=pf_prompt,
                 session_id=self.rag_session_id,
                 temperature=0.5,
                 rag_usage=True,
             )
-            hint_text = response.get(
-                "result",
-                "Think about the verb conjugation pattern. What tense is being used?",
-            )
-            session["hints_used"] = session.get("hints_used", 0) + 1
-            self._append_event(session_id, role="tutor", content=hint_text, event_type="hint")
-            self._persist_session(session_id)
-            self._persist_result_snapshot(session_id)
-            return hint_text
+            return response.get("result", "Good effort! What were you thinking when you wrote that? Give it another go.")
         except Exception as exc:
-            print(f"[PFService] Hint generation failed: {exc}")
-            return f"Hint generation failed: {exc}"
+            print(f"[PFService] Struggle response failed: {exc}")
+            return "Good effort — what were you thinking here? Give it another try!"
+
+    # ------------------------------------------------------------------
+    # Consolidation builder
+    # ------------------------------------------------------------------
+
+    def _build_consolidation(self, session_id: str, final_answer: str) -> str:
+        """
+        Compare ALL student attempts to the canonical solution.
+        Name specifically what was right and what was wrong, then reveal
+        the correct answer with a brief explanation.
+        """
+        session = self.sessions[session_id]
+        all_attempts = session.get("attempts", [])
+        attempts_formatted = "\n".join(
+            f"  Attempt {i + 1}: {a}" for i, a in enumerate(all_attempts)
+        )
+
+        prompt = f"""
+Problem: {session.get('problem', '')}
+Task type: {session.get('task_type', 'translation')}
+
+All student attempts:
+{attempts_formatted}
+
+You are a Spanish tutor closing the productive struggle phase with a consolidation.
+
+Write a consolidation message (in English, 4–6 sentences) that:
+1. Briefly notes what the student got RIGHT across their attempts (be specific — name the words/forms they used correctly)
+2. Clearly explains what was WRONG or missing and why (name the specific error pattern)
+3. Reveals the correct answer, labelled exactly as: Correct answer:
+4. Gives a short memorable explanation (1–2 sentences) of the key grammar rule
+
+Do NOT be vague. Reference the student's actual attempts by number if helpful.
+"""
+        try:
+            response = self.llm.generate(
+                model=settings.llm_model,
+                system="You are a Spanish tutor giving clear, specific consolidation feedback after productive struggle.",
+                query=prompt,
+                session_id=self.rag_session_id,
+                temperature=0.3,
+                rag_usage=True,
+            )
+            return response.get("result", "Correct answer unavailable.")
+        except Exception as exc:
+            print(f"[PFService] Consolidation failed: {exc}")
+            return "Consolidation could not be generated. Please ask your instructor."
 
     # ------------------------------------------------------------------
     # Next problem (jury-calibrated)
     # ------------------------------------------------------------------
 
     def next_problem(self, session_id: str, task_type: str | None = None) -> str:
-        """
-        Evaluate the completed problem via the LLM jury, adjust the internal
-        difficulty score, and return the next generated problem.
-
-        The jury verdict and difficulty adjustment are never exposed to the student.
-        """
         if session_id not in self.sessions:
             return "Session not found. Please start a new problem."
 
@@ -531,7 +555,6 @@ Respond in English. Do not give the full solution."""
         current_task_type = session.get("task_type", "translation")
         next_task_type = task_type or current_task_type
 
-        # Run jury
         try:
             verdict = self.jury.deliberate(
                 problem=problem,
@@ -540,18 +563,13 @@ Respond in English. Do not give the full solution."""
                 attempts=attempts,
                 session_id=session_id,
             )
-            adjustment = {
-                "INCREASE": +1,
-                "MAINTAIN":  0,
-                "DECREASE": -1,
-            }.get(verdict, 0)
+            adjustment = {"INCREASE": +1, "MAINTAIN": 0, "DECREASE": -1}.get(verdict, 0)
             next_difficulty = max(1, min(5, current_difficulty + adjustment))
             print(f"[PFService] difficulty {current_difficulty} → {next_difficulty} (jury: {verdict})")
         except Exception as exc:
             print(f"[PFService] Jury failed, keeping difficulty: {exc}")
             next_difficulty = current_difficulty
 
-        # Increment completed-problem counter
         session["problems_completed"] = session.get("problems_completed", 0) + 1
         self._append_event(session_id, role="system", content="Advanced to next problem.", event_type="next_problem")
         self._persist_session(session_id)
@@ -562,6 +580,49 @@ Respond in English. Do not give the full solution."""
             task_type=next_task_type,
             difficulty_score=next_difficulty,
         )
+
+    # ------------------------------------------------------------------
+    # History helpers
+    # ------------------------------------------------------------------
+
+    def list_history_for_student(self, student_name: str) -> list[dict]:
+        safe_name = self._safe_filename_component(student_name)
+        entries: list[dict] = []
+        for path in self.results_dir.glob(f"{safe_name}__*.json"):
+            try:
+                data = json.loads(path.read_text(encoding="utf-8"))
+                entries.append({
+                    "session_id": data.get("session_id"),
+                    "student_name": data.get("student_name"),
+                    "task_type": data.get("task_type"),
+                    "difficulty_score": data.get("difficulty_score"),
+                    "stats": data.get("stats", {}),
+                    "last_updated_at": data.get("last_updated_at"),
+                })
+            except Exception as exc:
+                print(f"[PFService] Skipping unreadable history file {path.name}: {exc}")
+        entries.sort(key=lambda item: item.get("last_updated_at") or "", reverse=True)
+        return entries
+
+    def get_history_session(self, session_id: str, student_name: str | None = None) -> dict | None:
+        if student_name:
+            safe_name = self._safe_filename_component(student_name)
+            candidate = self.results_dir / f"{safe_name}__{session_id}.json"
+            if candidate.exists():
+                try:
+                    return json.loads(candidate.read_text(encoding="utf-8"))
+                except Exception:
+                    return None
+        for path in self.results_dir.glob(f"*__{session_id}.json"):
+            try:
+                return json.loads(path.read_text(encoding="utf-8"))
+            except Exception:
+                continue
+        return None
+
+    # ------------------------------------------------------------------
+    # Internal helpers
+    # ------------------------------------------------------------------
 
     def _load_sessions(self) -> dict:
         if not self.sessions_file.exists():
@@ -590,7 +651,6 @@ Respond in English. Do not give the full solution."""
             "attempts_current_problem": len(session.get("attempts", [])),
             "stats": {
                 "total_attempts": session.get("total_attempts", 0),
-                "hints_used": session.get("hints_used", 0),
                 "problems_completed": session.get("problems_completed", 0),
                 "session_started_at": session.get("session_started_at"),
             },
@@ -607,57 +667,16 @@ Respond in English. Do not give the full solution."""
         cleaned = cleaned.strip("_")
         return cleaned or "unknown_user"
 
-    def list_history_for_student(self, student_name: str) -> list[dict]:
-        safe_name = self._safe_filename_component(student_name)
-        entries: list[dict] = []
-        for path in self.results_dir.glob(f"{safe_name}__*.json"):
-            try:
-                data = json.loads(path.read_text(encoding="utf-8"))
-                entries.append(
-                    {
-                        "session_id": data.get("session_id"),
-                        "student_name": data.get("student_name"),
-                        "task_type": data.get("task_type"),
-                        "difficulty_score": data.get("difficulty_score"),
-                        "stats": data.get("stats", {}),
-                        "last_updated_at": data.get("last_updated_at"),
-                    }
-                )
-            except Exception as exc:
-                print(f"[PFService] Skipping unreadable history file {path.name}: {exc}")
-
-        entries.sort(key=lambda item: item.get("last_updated_at") or "", reverse=True)
-        return entries
-
-    def get_history_session(self, session_id: str, student_name: str | None = None) -> dict | None:
-        if student_name:
-            safe_name = self._safe_filename_component(student_name)
-            candidate = self.results_dir / f"{safe_name}__{session_id}.json"
-            if candidate.exists():
-                try:
-                    return json.loads(candidate.read_text(encoding="utf-8"))
-                except Exception:
-                    return None
-
-        for path in self.results_dir.glob(f"*__{session_id}.json"):
-            try:
-                return json.loads(path.read_text(encoding="utf-8"))
-            except Exception:
-                continue
-        return None
-
     def _append_event(self, session_id: str, role: str, content: str, event_type: str):
         session = self.sessions.get(session_id)
         if not session:
             return
-        session.setdefault("conversation_history", []).append(
-            {
-                "timestamp": datetime.utcnow().isoformat(),
-                "role": role,
-                "event_type": event_type,
-                "content": content,
-            }
-        )
+        session.setdefault("conversation_history", []).append({
+            "timestamp": datetime.utcnow().isoformat(),
+            "role": role,
+            "event_type": event_type,
+            "content": content,
+        })
 
     def _parse_is_correct(self, raw_text: str) -> bool:
         try:
@@ -666,31 +685,6 @@ Respond in English. Do not give the full solution."""
         except Exception:
             normalized = raw_text.lower()
             return '"is_correct": true' in normalized or "is correct" in normalized
-
-    def _build_consolidation(self, session_id: str, student_answer: str) -> str:
-        session = self.sessions[session_id]
-        prompt = f"""
-Problem: {session.get('problem', '')}
-Student final attempt: {student_answer}
-Task type: {session.get('task_type', 'translation')}
-
-Provide:
-1) Correct answer
-2) Brief explanation (2-4 sentences, in English)
-
-Label exactly as:
-Correct answer:
-Why this is correct:
-"""
-        response = self.llm.generate(
-            model=settings.llm_model,
-            system="You are a Spanish tutor giving concise consolidation after productive struggle.",
-            query=prompt,
-            session_id=self.rag_session_id,
-            temperature=0.3,
-            rag_usage=True,
-        )
-        return response.get("result", "Correct answer unavailable.")
 
     def _time_spent_for_problem(self, session: dict) -> int:
         started = session.get("problem_started_at")

@@ -12,10 +12,6 @@ class AttemptRequest(BaseModel):
     content: str
 
 
-class HintRequest(BaseModel):
-    session_id: str
-    level: int
-
 
 class ReflectionRequest(BaseModel):
     session_id: str

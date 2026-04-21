@@ -53,12 +53,6 @@ def attempt(req: AttemptRequest):
     return {"reply": result}
 
 
-@router.post("/hint")
-def hint(req: HintRequest):
-    """Return a scaffolded hint at the requested level (1–4)."""
-    result = service.get_hint(req.session_id, req.problem_text, req.hint_level)
-    return {"hint": result}
-
 
 @router.post("/next")
 def next_problem(req: NextRequest):

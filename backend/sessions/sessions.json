@@ -678,5 +678,503 @@
       }
     ],
     "session_started_at": "2026-04-15T14:51:24.661102"
+  },
+  "sess_1776806372859": {
+    "problem": "English: What time do you wake up in the morning?",
+    "task_type": "translation",
+    "difficulty_score": 3,
+    "attempts": [],
+    "uploaded_content": "",
+    "problems_completed": 1,
+    "student_name": "Leila",
+    "problem_id": "prob_65f7a9ae64",
+    "problem_started_at": "2026-04-21T21:34:18.551037",
+    "total_attempts": 5,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-21T21:25:16.466315",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-21T21:25:57.316483",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "me gusto comer park."
+      },
+      {
+        "timestamp": "2026-04-21T21:26:30.360239",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your attempt! I see you used \"me\" and \"gusto,\" which shows you\u2019re thinking about expressing a desire. What made you choose \"gusto\" instead of another verb? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T21:29:46.250169",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Gusto means like to or want to, so I choose gusto instead of another verb. yo gusta comer park."
+      },
+      {
+        "timestamp": "2026-04-21T21:29:50.768954",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job recognizing that \"gusto\" relates to wanting something! Can you explain why you used \"gusta\" instead of \"gusto\" for the subject in your sentence? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T21:31:43.400164",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "It was a typo error with gusta. me gusto comer park"
+      },
+      {
+        "timestamp": "2026-04-21T21:31:50.170875",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I see that you're recognizing the typo with \"gusto,\" which shows you're reflecting on your choices! What do you think the correct verb should be to express \"want to\" in this context? Please give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T21:32:55.101641",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "the correct verb for want to can be gusto only."
+      },
+      {
+        "timestamp": "2026-04-21T21:33:01.237434",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I can see you're really focusing on the verb \"gusto,\" which shows you're thinking about the meaning! What do you think is the difference between \"gusto\" and \"quiero\" in this context? Please give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T21:34:00.381684",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "gusto means like to and queiro means love to. Me queiro comer park."
+      },
+      {
+        "timestamp": "2026-04-21T21:34:05.210723",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in real effort on this one \u2014 let's review it together now."
+      },
+      {
+        "timestamp": "2026-04-21T21:34:05.210764",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation: Great effort on your translations! You correctly identified that \"gusto\" means \"like,\" and you also used \"me\" in your attempts, which is a good start. However, the main issue in your attempts was the incorrect use of \"gusto\" and \"gusta\" for expressing \"want.\" The correct verb for \"want\" in Spanish is \"querer,\" and the correct conjugation for \"yo\" (I) is \"quiero.\" \n\nCorrect answer: Quiero ir al parque.\n\nRemember, \"querer\" is the verb you need to express desire or want, while \"gustar\" is used to express liking something. Keep practicing, and you'll get the hang of it!"
+      },
+      {
+        "timestamp": "2026-04-21T21:34:16.093231",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-21T21:34:18.551105",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 3)."
+      }
+    ],
+    "session_started_at": "2026-04-21T21:25:16.466292"
+  },
+  "sess_1776808547131": {
+    "problem": "English: I want to go to the park.",
+    "task_type": "translation",
+    "difficulty_score": 2,
+    "attempts": [
+      "Me gusto travel a park.",
+      "Gusto means like to/want to. So, I used that for the want. Me gusto comer a park.",
+      "Queiro. Me queiro comer a park.",
+      "It give some indication of going to like coming in English. So, I thought comer. Me queiro comer a park",
+      "the ir must means present tense. Me queiro comeir a park."
+    ],
+    "uploaded_content": "",
+    "problems_completed": 0,
+    "student_name": "Leila",
+    "problem_id": "prob_6ef16c4281",
+    "problem_started_at": "2026-04-21T21:56:01.511197",
+    "total_attempts": 5,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-21T21:56:01.511210",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-21T21:56:34.822170",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Me gusto travel a park."
+      },
+      {
+        "timestamp": "2026-04-21T21:56:38.991195",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with \"Me gusto\"! I see you used \"gusto,\" but can you explain why you chose that word for \"want\"? Please give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T21:57:30.939869",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Gusto means like to/want to. So, I used that for the want. Me gusto comer a park."
+      },
+      {
+        "timestamp": "2026-04-21T21:57:35.318845",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job recognizing that \"gusto\" relates to \"want\" in some contexts! However, \"gusto\" is actually used for \"like.\" What verb do you think would fit better for expressing desire in this sentence? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T21:58:28.644527",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Queiro. Me queiro comer a park."
+      },
+      {
+        "timestamp": "2026-04-21T21:58:33.239007",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your attempt, especially using \"quiero\" which is closer to \"I want\"! Can you explain why you used \"comer\" in your sentence? Please give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T21:59:11.381859",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "It give some indication of going to like coming in English. So, I thought comer. Me queiro comer a park"
+      },
+      {
+        "timestamp": "2026-04-21T21:59:17.911950",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your effort in trying to connect \"comer\" with the idea of going somewhere, which shows you\u2019re thinking about the meaning! What do you think the verb \"ir\" means in this context? Give it another shot!"
+      },
+      {
+        "timestamp": "2026-04-21T22:00:04.802763",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "the ir must means present tense. Me queiro comeir a park."
+      },
+      {
+        "timestamp": "2026-04-21T22:00:20.978046",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in real effort on this one \u2014 let's review it together now."
+      },
+      {
+        "timestamp": "2026-04-21T22:00:20.978098",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation: Great effort on your attempts to translate \"I want to go to the park\"! You correctly identified that \"gusto\" relates to liking, but it doesn\u2019t mean \"want.\" In your attempts, you also used \"me\" correctly, which indicates the subject, but the verb forms and vocabulary need some adjustments. Specifically, \"quiero\" (from \"querer\") is the correct verb for \"want,\" and \"ir\" is the verb for \"to go.\" \n\nYou also used \"comer\" (to eat) incorrectly in attempts 3, 4, and 5, when you needed \"ir\" instead. \n\nCorrect answer: Quiero ir al parque.\n\nRemember, \"querer\" is used to express desires, while \"ir\" is the verb for going somewhere. In Spanish, when you want to say \"to the,\" you use \"al,\" which is a contraction of \"a\" (to) and \"el\" (the). Keep practicing these verbs, and you'll get even better!"
+      }
+    ],
+    "session_started_at": "2026-04-21T21:56:01.511205"
+  },
+  "sess_1776808973269": {
+    "problem": "English: I want to go to the store.",
+    "task_type": "translation",
+    "difficulty_score": 2,
+    "attempts": [],
+    "uploaded_content": "",
+    "problems_completed": 0,
+    "student_name": "Mandy",
+    "problem_id": "prob_88ff69f808",
+    "problem_started_at": "2026-04-21T22:03:03.634621",
+    "total_attempts": 0,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-21T22:03:03.634694",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      }
+    ],
+    "session_started_at": "2026-04-21T22:03:03.634659"
+  },
+  "sess_1776809054995": {
+    "problem": "English: I want to go to the park.",
+    "task_type": "translation",
+    "difficulty_score": 2,
+    "attempts": [
+      "Me gusto comer a park",
+      "I thought comer means going to in Spanish. Me gusto traveha a park.",
+      "I used traveha because it indicates going to. Me gusto travel park.",
+      "gusto means like or want to in this context. Me gusto a comer park.",
+      "Queiro"
+    ],
+    "uploaded_content": "",
+    "problems_completed": 0,
+    "student_name": "Mandy",
+    "problem_id": "prob_80ab6f7645",
+    "problem_started_at": "2026-04-21T22:04:23.997773",
+    "total_attempts": 5,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-21T22:04:23.997842",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-21T22:04:32.975425",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Me gusto comer a park"
+      },
+      {
+        "timestamp": "2026-04-21T22:04:39.562286",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your attempt! I see you used \"me gusto,\" which shows you're thinking about expressing a desire, but it's not quite right for this sentence. What made you choose \"comer\" instead of a verb that means \"to go\"? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T22:05:20.951051",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "I thought comer means going to in Spanish. Me gusto traveha a park."
+      },
+      {
+        "timestamp": "2026-04-21T22:05:25.748739",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your second attempt! I see you're trying to use \"traveha,\" but I'm curious about why you chose that word instead of a different verb for \"to go.\" Give it another shot!"
+      },
+      {
+        "timestamp": "2026-04-21T22:06:27.810305",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "I used traveha because it indicates going to. Me gusto travel park."
+      },
+      {
+        "timestamp": "2026-04-21T22:06:33.125666",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your use of \"traveha\" and \"travel\" in your sentence! What do you think the verb \"gusto\" means in this context, and how does it relate to your sentence? Please give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T22:07:12.981038",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "gusto means like or want to in this context. Me gusto a comer park."
+      },
+      {
+        "timestamp": "2026-04-21T22:07:16.953349",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job recognizing that \"gusto\" relates to \"want\" in this context! What do you think the correct verb form should be to express \"I want\" in Spanish? Please give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T22:07:34.270910",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Queiro"
+      },
+      {
+        "timestamp": "2026-04-21T22:07:40.817150",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in real effort on this one \u2014 let's review it together now."
+      },
+      {
+        "timestamp": "2026-04-21T22:07:40.817195",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation: Great effort on your translations! You correctly identified that \"gusto\" means \"like\" or \"want\" in some contexts, which is a good start (Attempt 4). However, there were several issues with your attempts. The main error was using \"gusto\" in the wrong context; in this case, you should use \"quiero\" for \"I want.\" Additionally, \"comer\" means \"to eat,\" not \"to go,\" and \"park\" should be translated to \"parque.\" \n\nCorrect answer: Quiero ir al parque.\n\nRemember, in Spanish, \"quiero\" is the correct verb to express \"I want,\" and \"ir\" means \"to go.\" Always ensure that the verbs you use match the intended meaning!"
+      }
+    ],
+    "session_started_at": "2026-04-21T22:04:23.997812"
+  },
+  "sess_1776809354635": {
+    "problem": "English: I want to go to the park.",
+    "task_type": "translation",
+    "difficulty_score": 2,
+    "attempts": [
+      "me gusto comer a park",
+      "Comer means coming or going to in Spanish I think. Me gusto a comer park",
+      "quiero. Me quiero comer a park",
+      "Comer means coming or going to I think. coming to",
+      "I don't know"
+    ],
+    "uploaded_content": "",
+    "problems_completed": 0,
+    "student_name": "Leila",
+    "problem_id": "prob_00d878a62d",
+    "problem_started_at": "2026-04-21T22:09:20.998918",
+    "total_attempts": 5,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-21T22:09:20.998968",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-21T22:09:30.448338",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "me gusto comer a park"
+      },
+      {
+        "timestamp": "2026-04-21T22:09:35.193614",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your sentence! I see you used \"me gusto,\" which shows you were thinking about expressing a desire, but it's not quite right for this context. What made you choose \"comer\" instead of a verb that means to go? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T22:09:59.315684",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Comer means coming or going to in Spanish I think. Me gusto a comer park"
+      },
+      {
+        "timestamp": "2026-04-21T22:10:04.073251",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort in trying to connect \"comer\" with the idea of going, but remember \"gusto\" is not the right verb for wanting to go somewhere. What do you think is the correct verb for expressing desire in Spanish? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T22:10:20.397289",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "quiero. Me quiero comer a park"
+      },
+      {
+        "timestamp": "2026-04-21T22:10:25.717924",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job starting with \"quiero\" this time! What do you think the word \"comer\" means in this context? Try to think about how to express going to the park instead."
+      },
+      {
+        "timestamp": "2026-04-21T22:10:53.264493",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Comer means coming or going to I think. coming to"
+      },
+      {
+        "timestamp": "2026-04-21T22:10:58.202750",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I see that you're focusing on the verb \"comer,\" which is a good start, but it seems like you're mixing up meanings. What do you think the correct verb would be to express your desire to go somewhere? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T22:11:16.911097",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "I don't know"
+      },
+      {
+        "timestamp": "2026-04-21T22:11:22.338407",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in real effort on this one \u2014 let's review it together now."
+      },
+      {
+        "timestamp": "2026-04-21T22:11:22.338445",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation: Great effort on your attempts to translate \"I want to go to the park\"! You correctly identified the word \"quiero\" in Attempt 3, which is the right form of \"I want.\" However, there were some misunderstandings with the verb \"comer,\" which means \"to eat,\" not \"to go.\" Additionally, \"a park\" should be translated as \"al parque,\" combining the preposition \"a\" with the definite article \"el\" to form \"al.\" \n\nCorrect answer: Quiero ir al parque.\n\nRemember, when you want to express \"to go\" in Spanish, you use the verb \"ir.\" So, \"I want to go\" translates to \"Quiero ir.\" Keep practicing, and you'll get the hang of it!"
+      }
+    ],
+    "session_started_at": "2026-04-21T22:09:20.998944"
+  },
+  "sess_1776810176425": {
+    "problem": "English: I want to go to the park.",
+    "task_type": "translation",
+    "difficulty_score": 2,
+    "attempts": [],
+    "uploaded_content": "",
+    "problems_completed": 1,
+    "student_name": "Mandy",
+    "problem_id": "prob_b35d56aff4",
+    "problem_started_at": "2026-04-21T22:26:49.657588",
+    "total_attempts": 5,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-21T22:23:13.857119",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-21T22:23:21.391727",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Me gusto comer a park"
+      },
+      {
+        "timestamp": "2026-04-21T22:23:25.381919",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your attempt! I see you used \"me gusto,\" which shows you\u2019re trying to express a desire, but it doesn't quite fit here. What made you choose \"gusto\" instead of another verb for wanting? Give it another shot!"
+      },
+      {
+        "timestamp": "2026-04-21T22:23:55.132271",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "gusto means like to or want to. Me gusto a comer park"
+      },
+      {
+        "timestamp": "2026-04-21T22:23:58.850317",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your second attempt! I see you\u2019re trying to use \"gusto\" in a way that relates to wanting something, but what do you think the correct verb would be for expressing desire in this context? Give it another shot!"
+      },
+      {
+        "timestamp": "2026-04-21T22:24:49.947193",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "queiro. Me queiro a comer park"
+      },
+      {
+        "timestamp": "2026-04-21T22:24:57.832431",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I see you're trying to use \"quiero,\" which is a great improvement! What do you think \"a\" is doing in your sentence? Please give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T22:25:25.813711",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "a means to in Spanish I think. me queiro a comer park"
+      },
+      {
+        "timestamp": "2026-04-21T22:25:31.831751",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your current attempt! I see you're connecting \"a\" with \"to,\" which is a good observation. What do you think the correct verb form should be for \"I want\" in Spanish? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-21T22:26:01.094526",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Me queiro. Me queiro comer park"
+      },
+      {
+        "timestamp": "2026-04-21T22:26:06.441521",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in real effort on this one \u2014 let's review it together now."
+      },
+      {
+        "timestamp": "2026-04-21T22:26:06.441578",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation: Great effort on your translations! You correctly identified the verb \"quiero\" in attempts 3 and 5, which is the right form of \"I want\" in Spanish. However, you consistently used \"gusto,\" which means \"I like,\" instead of \"quiero,\" which means \"I want.\" Additionally, the word \"park\" should be translated to \"parque\" in Spanish. \n\nCorrect answer: Quiero ir al parque.\n\nRemember, \"ir\" means \"to go,\" and when expressing a desire to go somewhere, we use \"quiero\" followed by \"ir\" and the destination. Keep practicing these verbs, and you'll get even more comfortable with them!"
+      },
+      {
+        "timestamp": "2026-04-21T22:26:48.222101",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-21T22:26:49.657648",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      }
+    ],
+    "session_started_at": "2026-04-21T22:23:13.857100"
   }
 }
