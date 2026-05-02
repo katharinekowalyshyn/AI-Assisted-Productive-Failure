@@ -1,0 +1,104 @@
+{
+  "problem": "English: I have two brothers.",
+  "task_type": "translation",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Avery",
+  "problem_id": "prob_synth_3b1237056f",
+  "problem_started_at": "2026-04-25T14:08:10.214348+00:00",
+  "total_attempts": 4,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-25T14:07:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-25T14:07:12.130493+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer fui"
+    },
+    {
+      "timestamp": "2026-04-25T14:07:16.109643+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-25T14:07:25.753947+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer fui"
+    },
+    {
+      "timestamp": "2026-04-25T14:07:28.798125+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-25T14:07:31.411387+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-25T14:07:31.411387+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-25T14:07:41.666019+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Estoy muy feliz hoy."
+    },
+    {
+      "timestamp": "2026-04-25T14:07:44.318096+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-25T14:07:49.074645+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-25T14:07:49.074645+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-25T14:08:03.679477+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-25T14:08:06.455278+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-25T14:08:10.214348+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-25T14:07:00+00:00",
+  "_synthetic": {
+    "profile": "fast_finisher",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

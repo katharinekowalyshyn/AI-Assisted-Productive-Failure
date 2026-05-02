@@ -1,0 +1,92 @@
+{
+  "problem": "Find and correct the error(s): La libro es interesante.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Reese",
+  "problem_id": "prob_synth_9004218076",
+  "problem_started_at": "2026-04-25T21:09:05.061255+00:00",
+  "total_attempts": 5,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-25T21:06:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-25T21:06:31.828226+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "el libro"
+    },
+    {
+      "timestamp": "2026-04-25T21:06:36.698942+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-25T21:07:02.810284+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la libro es interesante"
+    },
+    {
+      "timestamp": "2026-04-25T21:07:06.698575+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-25T21:07:42.582099+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "el libro"
+    },
+    {
+      "timestamp": "2026-04-25T21:07:47.277447+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"el libro\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-25T21:08:17.908989+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la libro es interesante"
+    },
+    {
+      "timestamp": "2026-04-25T21:08:22.849165+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-25T21:08:54.234496+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "El libro es interesante."
+    },
+    {
+      "timestamp": "2026-04-25T21:08:57.158189+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-25T21:09:05.061255+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-25T21:06:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

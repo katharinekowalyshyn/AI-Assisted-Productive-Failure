@@ -1,0 +1,116 @@
+{
+  "problem": "Find and correct the error(s): La libro es interesante.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Jordan",
+  "problem_id": "prob_synth_28e7ffa6d1",
+  "problem_started_at": "2026-04-26T21:20:10.225401+00:00",
+  "total_attempts": 6,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T21:17:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-26T21:17:27.793903+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella se lava las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-26T21:17:31.914491+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T21:17:34.260235+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T21:17:34.260235+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-26T21:17:55.774725+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la libro es interesante"
+    },
+    {
+      "timestamp": "2026-04-26T21:18:01.624294+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"el libro\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-26T21:18:27.858728+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la libra es interesante (idk)"
+    },
+    {
+      "timestamp": "2026-04-26T21:18:32.953891+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T21:19:02.998909+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la libro es interesante"
+    },
+    {
+      "timestamp": "2026-04-26T21:19:08.699454+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-26T21:19:28.986869+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la libro es interesante"
+    },
+    {
+      "timestamp": "2026-04-26T21:19:32.612522+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T21:20:01.191184+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "El libro es interesante."
+    },
+    {
+      "timestamp": "2026-04-26T21:20:05.023500+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T21:20:10.225401+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T21:17:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

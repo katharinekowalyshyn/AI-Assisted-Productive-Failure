@@ -1,0 +1,158 @@
+{
+  "problem": "Find and correct the error(s): Yo tienes dos hermanos.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Reese",
+  "problem_id": "prob_synth_62185ce7c5",
+  "problem_started_at": "2026-04-27T12:14:58.824223+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T12:09:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-27T12:09:29.985810+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la libro"
+    },
+    {
+      "timestamp": "2026-04-27T12:09:34.712464+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"quiero ir\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-27T12:10:16.913080+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la libro"
+    },
+    {
+      "timestamp": "2026-04-27T12:10:22.288896+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T12:10:49.875399+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir la tienda"
+    },
+    {
+      "timestamp": "2026-04-27T12:10:53.248792+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"quiero ir\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-27T12:11:30.832363+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Quiero ir a la tienda."
+    },
+    {
+      "timestamp": "2026-04-27T12:11:34.559047+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T12:11:41.281167+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T12:11:41.281167+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-27T12:12:05.980423+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i give up"
+    },
+    {
+      "timestamp": "2026-04-27T12:12:08.740124+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T12:13:06.096391+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tengo"
+    },
+    {
+      "timestamp": "2026-04-27T12:13:11.704150+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-27T12:13:45.282632+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-27T12:13:50.926067+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"yo tengo\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-27T12:14:13.421174+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-27T12:14:17.104001+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-27T12:14:49.108005+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-27T12:14:53.895728+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-27T12:14:54.219021+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"yo tengo\". However, the main issue was the student gave up before exploring the structure of the prompt. \n\nCorrect answer: Yo tengo dos hermanos.\n\nRemember: even an educated guess based on the prompt's vocabulary helps you learn."
+    },
+    {
+      "timestamp": "2026-04-27T12:14:58.824223+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T12:09:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 2,
+    "consolidation_in_last_problem": true
+  }
+}

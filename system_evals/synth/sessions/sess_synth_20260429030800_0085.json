@@ -1,0 +1,140 @@
+{
+  "problem": "English: I want to go to the store.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Jordan",
+  "problem_id": "prob_synth_39a84e584a",
+  "problem_started_at": "2026-04-29T03:12:24.760907+00:00",
+  "total_attempts": 8,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T03:08:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-29T03:08:38.922000+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer voy al cine"
+    },
+    {
+      "timestamp": "2026-04-29T03:08:41.554425+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T03:09:05.274564+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer fui cine con mi hermana"
+    },
+    {
+      "timestamp": "2026-04-29T03:09:10.940725+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ayer fui\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T03:09:48.289572+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer fui al cine con mi hermana."
+    },
+    {
+      "timestamp": "2026-04-29T03:09:52.593413+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T03:10:00.232879+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T03:10:00.232879+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-29T03:10:11.612235+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir"
+    },
+    {
+      "timestamp": "2026-04-29T03:10:14.429569+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-29T03:10:24.503589+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir"
+    },
+    {
+      "timestamp": "2026-04-29T03:10:29.990286+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T03:11:02.756227+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i give up"
+    },
+    {
+      "timestamp": "2026-04-29T03:11:07.939005+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-29T03:11:37.237438+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir tienda"
+    },
+    {
+      "timestamp": "2026-04-29T03:11:40.355602+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"quiero ir\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T03:12:16.874233+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Quiero ir a la tienda."
+    },
+    {
+      "timestamp": "2026-04-29T03:12:20.420279+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T03:12:24.760907+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T03:08:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

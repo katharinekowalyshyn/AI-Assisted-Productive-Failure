@@ -1,0 +1,92 @@
+{
+  "problem": "Find and correct the error(s): Yo tienes dos hermanos.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Quinn",
+  "problem_id": "prob_synth_e28b932cf3",
+  "problem_started_at": "2026-04-26T03:30:12.797039+00:00",
+  "total_attempts": 4,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T03:28:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-26T03:28:20.663508+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Estoy muy feliz hoy."
+    },
+    {
+      "timestamp": "2026-04-26T03:28:26.358410+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T03:28:29.217116+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T03:28:29.217116+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-26T03:28:50.159705+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-26T03:28:56.026807+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-26T03:29:21.017268+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-26T03:29:24.214527+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T03:30:04.670445+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-26T03:30:10.157119+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T03:30:12.797039+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T03:28:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

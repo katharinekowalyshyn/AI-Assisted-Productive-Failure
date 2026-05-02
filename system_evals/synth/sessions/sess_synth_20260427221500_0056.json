@@ -1,0 +1,68 @@
+{
+  "problem": "Complete the conversation:\nA: \u00bfQu\u00e9 haces los fines de semana?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Taylor",
+  "problem_id": "prob_synth_62cfee6f69",
+  "problem_started_at": "2026-04-27T22:16:01.047024+00:00",
+  "total_attempts": 3,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T22:15:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-27T22:15:14.070148+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta"
+    },
+    {
+      "timestamp": "2026-04-27T22:15:18.316048+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-27T22:15:29.731368+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta"
+    },
+    {
+      "timestamp": "2026-04-27T22:15:34.808117+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-27T22:15:49.240885+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me gusta ir al parque."
+    },
+    {
+      "timestamp": "2026-04-27T22:15:53.520050+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T22:16:01.047024+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T22:15:00+00:00",
+  "_synthetic": {
+    "profile": "fast_finisher",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

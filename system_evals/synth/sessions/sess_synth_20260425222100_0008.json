@@ -1,0 +1,80 @@
+{
+  "problem": "Complete the conversation:\nA: \u00bfQu\u00e9 haces los fines de semana?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Robin",
+  "problem_id": "prob_synth_40a1d2203d",
+  "problem_started_at": "2026-04-25T22:22:38.137508+00:00",
+  "total_attempts": 4,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-25T22:21:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-25T22:21:16.245313+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta"
+    },
+    {
+      "timestamp": "2026-04-25T22:21:20.371793+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-25T22:21:41.809485+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta"
+    },
+    {
+      "timestamp": "2026-04-25T22:21:46.039558+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-25T22:22:04.730913+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusto ir al parque"
+    },
+    {
+      "timestamp": "2026-04-25T22:22:07.867353+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-25T22:22:29.081773+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me gusta ir al parque."
+    },
+    {
+      "timestamp": "2026-04-25T22:22:32.560578+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-25T22:22:38.137508+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-25T22:21:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

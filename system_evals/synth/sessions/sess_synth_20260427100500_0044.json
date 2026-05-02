@@ -1,0 +1,68 @@
+{
+  "problem": "Complete the conversation:\nA: Quiero que vengas a la fiesta. \u00bfPuedes venir?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 5,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Robin",
+  "problem_id": "prob_synth_9bf8206d83",
+  "problem_started_at": "2026-04-27T10:05:52.294240+00:00",
+  "total_attempts": 2,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T10:05:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-27T10:05:14.841724+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me llamo Maria."
+    },
+    {
+      "timestamp": "2026-04-27T10:05:18.039826+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T10:05:25.347741+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T10:05:25.347741+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-27T10:05:39.639832+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "S\u00ed, espero que sea divertido."
+    },
+    {
+      "timestamp": "2026-04-27T10:05:45.602745+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T10:05:52.294240+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T10:05:00+00:00",
+  "_synthetic": {
+    "profile": "fast_finisher",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

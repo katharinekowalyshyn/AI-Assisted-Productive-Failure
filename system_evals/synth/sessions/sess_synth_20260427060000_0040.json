@@ -1,0 +1,164 @@
+{
+  "problem": "English: My name is Maria.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Sam",
+  "problem_id": "prob_synth_4a53b7231d",
+  "problem_started_at": "2026-04-27T06:07:06.589823+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T06:00:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-27T06:00:44.476502+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-27T06:00:50.106441+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T06:01:39.495569+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es contenta"
+    },
+    {
+      "timestamp": "2026-04-27T06:01:42.794984+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ella feliz\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-27T06:02:36.972826+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 feliz."
+    },
+    {
+      "timestamp": "2026-04-27T06:02:40.328756+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T06:02:45.159344+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T06:02:45.159344+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-27T06:03:25.605526+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos abuelos"
+    },
+    {
+      "timestamp": "2026-04-27T06:03:31.311018+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T06:04:05.774726+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la semana pasada visitamos a nuestras abuelos"
+    },
+    {
+      "timestamp": "2026-04-27T06:04:09.579555+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"visitamos abuelos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-27T06:04:48.570784+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "La semana pasada visitamos a nuestros abuelos."
+    },
+    {
+      "timestamp": "2026-04-27T06:04:51.698489+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T06:04:58.524517+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T06:04:58.524517+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-27T06:05:37.053338+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me llamo Maria is"
+    },
+    {
+      "timestamp": "2026-04-27T06:05:40.402382+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T06:05:59.382512+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "my name is maria"
+    },
+    {
+      "timestamp": "2026-04-27T06:06:03.953430+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-27T06:06:56.246846+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me llamo Maria."
+    },
+    {
+      "timestamp": "2026-04-27T06:07:01.310468+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T06:07:06.589823+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T06:00:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

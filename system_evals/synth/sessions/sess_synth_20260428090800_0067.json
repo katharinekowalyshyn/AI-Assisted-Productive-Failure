@@ -1,0 +1,92 @@
+{
+  "problem": "Find and correct the error(s): Yo tienes dos hermanos.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Morgan",
+  "problem_id": "prob_synth_789de09062",
+  "problem_started_at": "2026-04-28T09:11:38.147953+00:00",
+  "total_attempts": 5,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T09:08:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-28T09:08:26.321373+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos brothers"
+    },
+    {
+      "timestamp": "2026-04-28T09:08:31.757774+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"yo tengo\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-28T09:08:58.174943+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos brothers"
+    },
+    {
+      "timestamp": "2026-04-28T09:09:01.938310+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T09:09:39.735699+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-28T09:09:43.440190+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-28T09:10:32.985506+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-28T09:10:38.856414+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T09:11:27.729772+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-28T09:11:32.248760+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T09:11:38.147953+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T09:08:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

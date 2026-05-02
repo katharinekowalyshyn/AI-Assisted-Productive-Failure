@@ -1,0 +1,4039 @@
+[
+  {
+    "session_id": "sess_synth_20260425140700_0000",
+    "problem_index": 1,
+    "problem_id": "prob_synth_592e3fe980",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "fast_finisher",
+    "n_attempts": 2,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "ayer fui",
+      "ayer fui"
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260425140700_0000",
+    "problem_index": 2,
+    "problem_id": "prob_synth_f2ee1a09c4",
+    "task_type": "conversation_completion",
+    "difficulty": 3,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Estoy muy feliz hoy."
+    ],
+    "answer": "Estoy muy feliz hoy."
+  },
+  {
+    "session_id": "sess_synth_20260425140700_0000",
+    "problem_index": 3,
+    "problem_id": "prob_synth_e429d88be2",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Tengo dos hermanos."
+    ],
+    "answer": "Tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260425151800_0001",
+    "problem_index": 1,
+    "problem_id": "prob_synth_765c78dec2",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "VOCABULARY"
+    ],
+    "attempts": [
+      "quiero ir",
+      "want ir a la equipo",
+      "I want ir a la store",
+      "quiero ir a la libro",
+      "Quiero ir a la tienda."
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260425151800_0001",
+    "problem_index": 2,
+    "problem_id": "prob_synth_e39e2abf8e",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "REFLEXIVE",
+      "STUCK"
+    ],
+    "attempts": [
+      "yo lavo las manos cada ma\u00f1ana (idk)",
+      "yo lavo mis manos cada ma\u00f1ana",
+      "me lavo las manos",
+      "i don't know",
+      "yo lavo mis manos cada ma\u00f1ana (idk)"
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260425151800_0001",
+    "problem_index": 3,
+    "problem_id": "prob_synth_a81f16b867",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "STUCK",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer ate la cena mi familia",
+      "ayer comi",
+      "ayer comiste la cena con mi familia (idk)",
+      "no idea",
+      "ayer comiste la cena con mi familia"
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260425160200_0002",
+    "problem_index": 1,
+    "problem_id": "prob_synth_ae5ee781f0",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "yo lavo mis manos cada ma\u00f1ana",
+      "yo lavo las manos cada ma\u00f1ana",
+      "yo lavo mis manos cada ma\u00f1ana (idk)",
+      "Yo me lavo las manos cada ma\u00f1ana."
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260425160200_0002",
+    "problem_index": 2,
+    "problem_id": "prob_synth_d5673d0d98",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "si, espero que es divertido",
+      "si, creo que es divertido",
+      "si, espero que es divertido (idk)",
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260425160200_0002",
+    "problem_index": 3,
+    "problem_id": "prob_synth_a18d5555f6",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "STUCK"
+    ],
+    "attempts": [
+      "I want ir a la store",
+      "i don't know",
+      "quiero ir a la store",
+      "Quiero ir a la tienda."
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260425170400_0003",
+    "problem_index": 1,
+    "problem_id": "prob_synth_05bcaef130",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "La semana pasada visitamos a nuestros abuelos."
+    ],
+    "answer": "La semana pasada visitamos a nuestros abuelos."
+  },
+  {
+    "session_id": "sess_synth_20260425170400_0003",
+    "problem_index": 2,
+    "problem_id": "prob_synth_7c7e03abad",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION"
+    ],
+    "attempts": [
+      "me llamo Maria is",
+      "me llamo Maria is (idk)",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260425170400_0003",
+    "problem_index": 3,
+    "problem_id": "prob_synth_01cdb4d750",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ella est\u00e1 feliz."
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260425181100_0004",
+    "problem_index": 1,
+    "problem_id": "prob_synth_ccda7172f8",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "fast_finisher",
+    "n_attempts": 2,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "lava las manos",
+      "lava las manos"
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260425181100_0004",
+    "problem_index": 2,
+    "problem_id": "prob_synth_181a3131e9",
+    "task_type": "translation",
+    "difficulty": 5,
+    "profile": "fast_finisher",
+    "n_attempts": 2,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "espero que",
+      "espero que mi hermano llegar\u00e1 a tiempo"
+    ],
+    "answer": "Espero que mi hermano llegue a tiempo."
+  },
+  {
+    "session_id": "sess_synth_20260425190500_0005",
+    "problem_index": 1,
+    "problem_id": "prob_synth_70d37a9fa3",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "me gusto ir al parque",
+      "me gusta ir parque",
+      "me gusta ir el parque",
+      "me gusto ir al parque",
+      "me gusta ir el parque"
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260425201400_0006",
+    "problem_index": 1,
+    "problem_id": "prob_synth_efd96fa064",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer com\u00ed la cena mi familia",
+      "ayer comiste la cena con mi familia",
+      "ayer com\u00ed la cena mi familia",
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260425201400_0006",
+    "problem_index": 2,
+    "problem_id": "prob_synth_a63ec56004",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "yo lavo mis manos cada ma\u00f1ana",
+      "yo lavo mis manos cada ma\u00f1ana",
+      "me lavo las manos",
+      "yo lavo mis manos cada ma\u00f1ana",
+      "yo lavo mis manos cada ma\u00f1ana"
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260425210600_0007",
+    "problem_index": 1,
+    "problem_id": "prob_synth_909f0c0b6d",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "el libro",
+      "la libro es interesante",
+      "el libro",
+      "la libro es interesante",
+      "El libro es interesante."
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260425222100_0008",
+    "problem_index": 1,
+    "problem_id": "prob_synth_3384384bbd",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "me gusta",
+      "me gusta",
+      "me gusto ir al parque",
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260425233000_0009",
+    "problem_index": 1,
+    "problem_id": "prob_synth_2fb349340f",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella son enferma hoy",
+      "ella son enferma hoy",
+      "Ella est\u00e1 enferma hoy."
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260425233000_0009",
+    "problem_index": 2,
+    "problem_id": "prob_synth_6b7dcfc8cd",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION"
+    ],
+    "attempts": [
+      "my name is maria",
+      "my name is maria",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260426000800_0010",
+    "problem_index": 1,
+    "problem_id": "prob_synth_2dae0750ee",
+    "task_type": "error_correction",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "TENSE"
+    ],
+    "attempts": [
+      "ella come pizza con sus amigas",
+      "ella comio",
+      "ayer ella come pizza con sus amigas",
+      "Ayer ella comi\u00f3 pizza con sus amigas."
+    ],
+    "answer": "Ayer ella comi\u00f3 pizza con sus amigas."
+  },
+  {
+    "session_id": "sess_synth_20260426000800_0010",
+    "problem_index": 2,
+    "problem_id": "prob_synth_abb9a7834c",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer comi",
+      "ayer comiste la cena con mi familia",
+      "ayer comi",
+      "ayer com\u00ed la cena mi familia"
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260426012400_0011",
+    "problem_index": 1,
+    "problem_id": "prob_synth_4aa2cdd014",
+    "task_type": "conversation_completion",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "I am carlos",
+      "yo llamo carlos (idk)",
+      "Me llamo Carlos."
+    ],
+    "answer": "Me llamo Carlos."
+  },
+  {
+    "session_id": "sess_synth_20260426012400_0011",
+    "problem_index": 2,
+    "problem_id": "prob_synth_f36a718ee7",
+    "task_type": "error_correction",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "TENSE"
+    ],
+    "attempts": [
+      "ayer ella come pizza con sus amigas",
+      "ayer ella come pizza con sus amigas (idk)",
+      "ayer ella come pizza con sus amigas",
+      "Ayer ella comi\u00f3 pizza con sus amigas."
+    ],
+    "answer": "Ayer ella comi\u00f3 pizza con sus amigas."
+  },
+  {
+    "session_id": "sess_synth_20260426012400_0011",
+    "problem_index": 3,
+    "problem_id": "prob_synth_e4f2646d32",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "TENSE"
+    ],
+    "attempts": [
+      "ayer voy al cine",
+      "ayer fui cine con mi hermana",
+      "ayer fui cine con mi hermana",
+      "ayer fui cine con mi hermana",
+      "ayer fui cine con mi hermana"
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260426021000_0012",
+    "problem_index": 1,
+    "problem_id": "prob_synth_315b3fa896",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Yo me lavo las manos cada ma\u00f1ana."
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260426032800_0013",
+    "problem_index": 1,
+    "problem_id": "prob_synth_95dbf69082",
+    "task_type": "conversation_completion",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Estoy muy feliz hoy."
+    ],
+    "answer": "Estoy muy feliz hoy."
+  },
+  {
+    "session_id": "sess_synth_20260426032800_0013",
+    "problem_index": 2,
+    "problem_id": "prob_synth_b1085601bb",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tiene dos hermanos",
+      "yo tiene dos hermanos",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260426040900_0014",
+    "problem_index": 1,
+    "problem_id": "prob_synth_9a7775200a",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer comiste la cena con mi familia",
+      "ayer ate la cena mi familia",
+      "ayer comi",
+      "ayer comiste la cena con mi familia",
+      "ayer com\u00ed la cena mi familia"
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260426040900_0014",
+    "problem_index": 2,
+    "problem_id": "prob_synth_994329d0b0",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella es contenta",
+      "ella est\u00e1 felizo",
+      "Ella est\u00e1 feliz."
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260426051300_0015",
+    "problem_index": 1,
+    "problem_id": "prob_synth_e82cdda64a",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tiene dos brothers",
+      "yo tienes dos hermanos",
+      "yo tienes dos hermanos",
+      "yo tienes dos hermanos",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260426051300_0015",
+    "problem_index": 2,
+    "problem_id": "prob_synth_cbac5c5d94",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ella est\u00e1 enferma hoy."
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260426051300_0015",
+    "problem_index": 3,
+    "problem_id": "prob_synth_04fbd9fbf8",
+    "task_type": "error_correction",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "STUCK",
+      "TENSE"
+    ],
+    "attempts": [
+      "i give up",
+      "ella come pizza con sus amigas",
+      "idk",
+      "ella comio",
+      "Ayer ella comi\u00f3 pizza con sus amigas."
+    ],
+    "answer": "Ayer ella comi\u00f3 pizza con sus amigas."
+  },
+  {
+    "session_id": "sess_synth_20260426062700_0016",
+    "problem_index": 1,
+    "problem_id": "prob_synth_3a5342c96c",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "fast_finisher",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "yo lavo las manos cada ma\u00f1ana",
+      "me lavo las manos",
+      "Yo me lavo las manos cada ma\u00f1ana."
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260426062700_0016",
+    "problem_index": 2,
+    "problem_id": "prob_synth_98fe657e40",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "fast_finisher",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION"
+    ],
+    "attempts": [
+      "quiero ir",
+      "quiero ir a la store",
+      "Quiero ir a la tienda."
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260426072900_0017",
+    "problem_index": 1,
+    "problem_id": "prob_synth_ad62949308",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "la libra es interesante",
+      "la libro es interesante",
+      "El libro es interesante."
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260426072900_0017",
+    "problem_index": 2,
+    "problem_id": "prob_synth_50914ed055",
+    "task_type": "translation",
+    "difficulty": 5,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "STUCK",
+      "SUBJUNCTIVE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "espero que mi hermano llegar\u00e1 a tiempo",
+      "espero que mi hermano lleguemos a tiempo",
+      "no idea",
+      "espero que mi hermano llegar\u00e1 a tiempo",
+      "Espero que mi hermano llegue a tiempo."
+    ],
+    "answer": "Espero que mi hermano llegue a tiempo."
+  },
+  {
+    "session_id": "sess_synth_20260426072900_0017",
+    "problem_index": 3,
+    "problem_id": "prob_synth_b07e391157",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "si, espero que es divertido",
+      "si, espero que es divertido",
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260426081600_0018",
+    "problem_index": 1,
+    "problem_id": "prob_synth_79062ded0e",
+    "task_type": "error_correction",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "TENSE"
+    ],
+    "attempts": [
+      "ella come pizza con sus amigas",
+      "ella come pizza con sus amigas",
+      "ella come pizza con sus amigas",
+      "Ayer ella comi\u00f3 pizza con sus amigas."
+    ],
+    "answer": "Ayer ella comi\u00f3 pizza con sus amigas."
+  },
+  {
+    "session_id": "sess_synth_20260426091500_0019",
+    "problem_index": 1,
+    "problem_id": "prob_synth_998c1bd174",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "TENSE"
+    ],
+    "attempts": [
+      "la semana pasada visitamos nuestros abuelos",
+      "visitamos nuestros abuelos",
+      "visitamos abuelos",
+      "visitamos nuestros abuelos"
+    ],
+    "answer": "La semana pasada visitamos a nuestros abuelos."
+  },
+  {
+    "session_id": "sess_synth_20260426091500_0019",
+    "problem_index": 2,
+    "problem_id": "prob_synth_63e4288e41",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260426091500_0019",
+    "problem_index": 3,
+    "problem_id": "prob_synth_653939581b",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "la libro es interesante",
+      "la libro es interesante",
+      "el libro",
+      "El libro es interesante."
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260426101400_0020",
+    "problem_index": 1,
+    "problem_id": "prob_synth_83dd224980",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "llamo maria",
+      "my name is maria",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260426112900_0021",
+    "problem_index": 1,
+    "problem_id": "prob_synth_b940b89d47",
+    "task_type": "error_correction",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ayer ella comi\u00f3 pizza con sus amigas."
+    ],
+    "answer": "Ayer ella comi\u00f3 pizza con sus amigas."
+  },
+  {
+    "session_id": "sess_synth_20260426112900_0021",
+    "problem_index": 2,
+    "problem_id": "prob_synth_b186c56268",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "espero que",
+      "si, espero que es divertido",
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260426121700_0022",
+    "problem_index": 1,
+    "problem_id": "prob_synth_386754f0d5",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_stuck",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tiene dos hermanos",
+      "yo tienes dos brothers",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260426121700_0022",
+    "problem_index": 2,
+    "problem_id": "prob_synth_a137902dae",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "novice_stuck",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella es contenta",
+      "ella est\u00e1 felizo",
+      "ella est\u00e1 felizo",
+      "Ella est\u00e1 feliz."
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260426121700_0022",
+    "problem_index": 3,
+    "problem_id": "prob_synth_4378f961c0",
+    "task_type": "conversation_completion",
+    "difficulty": 1,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "llamo carlos",
+      "llamo carlos (idk)",
+      "llamo carlos",
+      "yo llamo carlos",
+      "I am carlos"
+    ],
+    "answer": "Me llamo Carlos."
+  },
+  {
+    "session_id": "sess_synth_20260426130200_0023",
+    "problem_index": 1,
+    "problem_id": "prob_synth_e170854b4b",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "STUCK"
+    ],
+    "attempts": [
+      "la libro es interesante (idk)",
+      "la libra es interesante",
+      "idk",
+      "la libro es interesante",
+      "la libra es interesante"
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260426142300_0024",
+    "problem_index": 1,
+    "problem_id": "prob_synth_651eba8d5a",
+    "task_type": "translation",
+    "difficulty": 5,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "espero que mi brother lleguemos a tiempo",
+      "espero que mi hermano lleguemos a tiempo",
+      "espero que",
+      "espero que",
+      "Espero que mi hermano llegue a tiempo."
+    ],
+    "answer": "Espero que mi hermano llegue a tiempo."
+  },
+  {
+    "session_id": "sess_synth_20260426142300_0024",
+    "problem_index": 2,
+    "problem_id": "prob_synth_415528c192",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260426142300_0024",
+    "problem_index": 3,
+    "problem_id": "prob_synth_0cbb79ce6e",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tienes dos hermanos",
+      "yo tengo",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260426152300_0025",
+    "problem_index": 1,
+    "problem_id": "prob_synth_289a51fd27",
+    "task_type": "conversation_completion",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "llamo carlos",
+      "my name is carlos",
+      "yo llamo carlos",
+      "me llamo",
+      "Me llamo Carlos."
+    ],
+    "answer": "Me llamo Carlos."
+  },
+  {
+    "session_id": "sess_synth_20260426161900_0026",
+    "problem_index": 1,
+    "problem_id": "prob_synth_833559ca15",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 6,
+    "solved": true,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "REFLEXIVE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ella se lavo las manos cada ma\u00f1ana",
+      "lava las manos",
+      "ella lava las manos cada ma\u00f1ana",
+      "ella lava sus manos",
+      "ella se lavo las manos cada ma\u00f1ana (idk)",
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260426161900_0026",
+    "problem_index": 2,
+    "problem_id": "prob_synth_102a1c16c5",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella es contenta (idk)",
+      "ella est\u00e1 felizo",
+      "Ella est\u00e1 feliz."
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260426172200_0027",
+    "problem_index": 1,
+    "problem_id": "prob_synth_47bc2482bb",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "fast_finisher",
+    "n_attempts": 2,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "llamo maria",
+      "llamo maria"
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260426182900_0028",
+    "problem_index": 1,
+    "problem_id": "prob_synth_577b3e6c65",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "STUCK",
+      "TENSE"
+    ],
+    "attempts": [
+      "la semana pasada visitamos a nuestras abuelos (idk)",
+      "la semana pasada visitamos a nuestras abuelos (idk)",
+      "la semana pasada visitamos a nuestras abuelos (idk)",
+      "no idea",
+      "visitamos nuestros abuelos"
+    ],
+    "answer": "La semana pasada visitamos a nuestros abuelos."
+  },
+  {
+    "session_id": "sess_synth_20260426182900_0028",
+    "problem_index": 2,
+    "problem_id": "prob_synth_47baef3101",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR",
+      "STUCK"
+    ],
+    "attempts": [
+      "no idea",
+      "ella son enferma hoy",
+      "ella es enferma hoy",
+      "ella es enferma hoy",
+      "ella es enferma hoy (idk)"
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260426191300_0029",
+    "problem_index": 1,
+    "problem_id": "prob_synth_8690d639cf",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "si, creo que es divertido (idk)",
+      "si, espero que es divertido",
+      "si, creo que es divertido",
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260426201400_0030",
+    "problem_index": 1,
+    "problem_id": "prob_synth_cf118f312d",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "El libro es interesante."
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260426211700_0031",
+    "problem_index": 1,
+    "problem_id": "prob_synth_18c6ad13b7",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260426211700_0031",
+    "problem_index": 2,
+    "problem_id": "prob_synth_51151854b3",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "la libro es interesante",
+      "la libra es interesante (idk)",
+      "la libro es interesante",
+      "la libro es interesante",
+      "El libro es interesante."
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260426221600_0032",
+    "problem_index": 1,
+    "problem_id": "prob_synth_812e8fbf31",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "tengo dos",
+      "yo tiene dos hermanos",
+      "Tengo dos hermanos."
+    ],
+    "answer": "Tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260426221600_0032",
+    "problem_index": 2,
+    "problem_id": "prob_synth_9bc31bb00f",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella esta enferma",
+      "ella esta enferma",
+      "ella es enferma hoy",
+      "ella esta enferma",
+      "Ella est\u00e1 enferma hoy."
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260426232500_0033",
+    "problem_index": 1,
+    "problem_id": "prob_synth_3718a1e706",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_stuck",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella es enferma hoy (idk)",
+      "ella es enferma hoy",
+      "Ella est\u00e1 enferma hoy."
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260426232500_0033",
+    "problem_index": 2,
+    "problem_id": "prob_synth_ebdeddd36c",
+    "task_type": "translation",
+    "difficulty": 5,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "STUCK",
+      "SUBJUNCTIVE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "espero que mi brother lleguemos a tiempo",
+      "espero que mi hermano llega a tiempo",
+      "espero que mi hermano llega a tiempo",
+      "espero que mi hermano lleguemos a tiempo",
+      "idk"
+    ],
+    "answer": "Espero que mi hermano llegue a tiempo."
+  },
+  {
+    "session_id": "sess_synth_20260426232500_0033",
+    "problem_index": 3,
+    "problem_id": "prob_synth_4e59a01d80",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "REFLEXIVE",
+      "STUCK"
+    ],
+    "attempts": [
+      "my name is maria",
+      "no idea",
+      "yo llamo maria",
+      "idk",
+      "llamo maria (idk)"
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260427000500_0034",
+    "problem_index": 1,
+    "problem_id": "prob_synth_43f853f6ea",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "STUCK"
+    ],
+    "attempts": [
+      "ayer com\u00ed la cena mi familia",
+      "i give up",
+      "ayer com\u00ed la cena mi familia",
+      "ayer comi",
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260427000500_0034",
+    "problem_index": 2,
+    "problem_id": "prob_synth_ad4bc74ece",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ayer fui al cine con mi hermana."
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260427000500_0034",
+    "problem_index": 3,
+    "problem_id": "prob_synth_ae1c47bd93",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "me lavo las manos",
+      "yo lavo mis manos cada ma\u00f1ana",
+      "Yo me lavo las manos cada ma\u00f1ana."
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260427012900_0035",
+    "problem_index": 1,
+    "problem_id": "prob_synth_4616dee6b4",
+    "task_type": "translation",
+    "difficulty": 5,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "espero que mi hermano lleguemos a tiempo",
+      "espero que mi hermano llegar\u00e1 a tiempo",
+      "espero que mi hermano llegar\u00e1 a tiempo",
+      "espero que",
+      "Espero que mi hermano llegue a tiempo."
+    ],
+    "answer": "Espero que mi hermano llegue a tiempo."
+  },
+  {
+    "session_id": "sess_synth_20260427012900_0035",
+    "problem_index": 2,
+    "problem_id": "prob_synth_84589bb1d6",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Quiero ir a la tienda."
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260427012900_0035",
+    "problem_index": 3,
+    "problem_id": "prob_synth_6b311d6f58",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ella se lavo las manos cada ma\u00f1ana",
+      "ella se lavo las manos cada ma\u00f1ana (idk)",
+      "ella se lavo las manos cada ma\u00f1ana",
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260427021800_0036",
+    "problem_index": 1,
+    "problem_id": "prob_synth_342edd2c2d",
+    "task_type": "error_correction",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "TENSE"
+    ],
+    "attempts": [
+      "ella come pizza con sus amigas",
+      "ayer ella come pizza con sus amigas",
+      "Ayer ella comi\u00f3 pizza con sus amigas."
+    ],
+    "answer": "Ayer ella comi\u00f3 pizza con sus amigas."
+  },
+  {
+    "session_id": "sess_synth_20260427021800_0036",
+    "problem_index": 2,
+    "problem_id": "prob_synth_5f797072f7",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "si, creo que es divertido",
+      "espero que",
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260427021800_0036",
+    "problem_index": 3,
+    "problem_id": "prob_synth_eafc89ec17",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260427031300_0037",
+    "problem_index": 1,
+    "problem_id": "prob_synth_757df9d7dd",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260427031300_0037",
+    "problem_index": 2,
+    "problem_id": "prob_synth_db96d1f5ba",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Yo me lavo las manos cada ma\u00f1ana."
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260427031300_0037",
+    "problem_index": 3,
+    "problem_id": "prob_synth_472bc6fb20",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "espero que",
+      "si, espero que es divertido",
+      "espero que",
+      "espero que",
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260427041400_0038",
+    "problem_index": 1,
+    "problem_id": "prob_synth_a7e8a7568d",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "struggler",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "STUCK",
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "no idea",
+      "si, espero que es divertido (idk)",
+      "si, creo que es divertido",
+      "no idea",
+      "si, espero que es divertido"
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260427041400_0038",
+    "problem_index": 2,
+    "problem_id": "prob_synth_f835c39f25",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "struggler",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "STUCK",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "tengo dos sisters",
+      "i don't know",
+      "idk",
+      "yo tienes dos brothers",
+      "tengo dos hermanas"
+    ],
+    "answer": "Tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260427041400_0038",
+    "problem_index": 3,
+    "problem_id": "prob_synth_e0c913c8ed",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "struggler",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "REFLEXIVE",
+      "STUCK",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ella lava sus manos (idk)",
+      "ella se lavo las manos cada ma\u00f1ana",
+      "ella se lavo las manos cada ma\u00f1ana (idk)",
+      "i don't know",
+      "ella lava sus manos"
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260427052900_0039",
+    "problem_index": 1,
+    "problem_id": "prob_synth_4e0fa475e8",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Tengo dos hermanos."
+    ],
+    "answer": "Tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260427060000_0040",
+    "problem_index": 1,
+    "problem_id": "prob_synth_49f5de8071",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR",
+      "STUCK"
+    ],
+    "attempts": [
+      "i don't know",
+      "ella es contenta",
+      "Ella est\u00e1 feliz."
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260427060000_0040",
+    "problem_index": 2,
+    "problem_id": "prob_synth_40a22e47a9",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "visitamos abuelos",
+      "la semana pasada visitamos a nuestras abuelos",
+      "La semana pasada visitamos a nuestros abuelos."
+    ],
+    "answer": "La semana pasada visitamos a nuestros abuelos."
+  },
+  {
+    "session_id": "sess_synth_20260427060000_0040",
+    "problem_index": 3,
+    "problem_id": "prob_synth_a58bae6396",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION"
+    ],
+    "attempts": [
+      "me llamo Maria is",
+      "my name is maria",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260427070000_0041",
+    "problem_index": 1,
+    "problem_id": "prob_synth_1b9678e57f",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION"
+    ],
+    "attempts": [
+      "me gusta",
+      "me gusta ir el parque",
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260427082900_0042",
+    "problem_index": 1,
+    "problem_id": "prob_synth_6559dcf18d",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "La semana pasada visitamos a nuestros abuelos."
+    ],
+    "answer": "La semana pasada visitamos a nuestros abuelos."
+  },
+  {
+    "session_id": "sess_synth_20260427092600_0043",
+    "problem_index": 1,
+    "problem_id": "prob_synth_38b9cccfca",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "ella lava sus manos",
+      "ella lava las manos cada ma\u00f1ana",
+      "ella lava sus manos",
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260427100500_0044",
+    "problem_index": 1,
+    "problem_id": "prob_synth_dac5df115b",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260427100500_0044",
+    "problem_index": 2,
+    "problem_id": "prob_synth_e187839644",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260427111100_0045",
+    "problem_index": 1,
+    "problem_id": "prob_synth_2a5d808013",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION"
+    ],
+    "attempts": [
+      "my name is maria",
+      "me llamo Maria is",
+      "me llamo Maria is",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260427111100_0045",
+    "problem_index": 2,
+    "problem_id": "prob_synth_244599832a",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "STUCK",
+      "TENSE"
+    ],
+    "attempts": [
+      "no idea",
+      "visitamos nuestros abuelos (idk)",
+      "La semana pasada visitamos a nuestros abuelos."
+    ],
+    "answer": "La semana pasada visitamos a nuestros abuelos."
+  },
+  {
+    "session_id": "sess_synth_20260427120900_0046",
+    "problem_index": 1,
+    "problem_id": "prob_synth_138c82c759",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VOCABULARY"
+    ],
+    "attempts": [
+      "quiero ir a la libro",
+      "quiero ir a la libro",
+      "quiero ir la tienda",
+      "Quiero ir a la tienda."
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260427120900_0046",
+    "problem_index": 2,
+    "problem_id": "prob_synth_ca21d2a6fc",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "STUCK",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "i give up",
+      "yo tengo",
+      "yo tienes dos hermanos",
+      "yo tienes dos hermanos",
+      "i don't know"
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260427130600_0047",
+    "problem_index": 1,
+    "problem_id": "prob_synth_cb230dcd3f",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260427140200_0048",
+    "problem_index": 1,
+    "problem_id": "prob_synth_8514d93067",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260427152100_0049",
+    "problem_index": 1,
+    "problem_id": "prob_synth_f2849d7345",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "llamo maria",
+      "llamo maria",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260427152100_0049",
+    "problem_index": 2,
+    "problem_id": "prob_synth_c60edc6911",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ella lava las manos cada ma\u00f1ana",
+      "ella se lavo las manos cada ma\u00f1ana",
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260427152100_0049",
+    "problem_index": 3,
+    "problem_id": "prob_synth_6359f2a89a",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer comiste la cena con mi familia",
+      "ayer comiste la cena con mi familia (idk)",
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260427160000_0050",
+    "problem_index": 1,
+    "problem_id": "prob_synth_1a7ac710b2",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "struggler",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "STUCK"
+    ],
+    "attempts": [
+      "i give up",
+      "i give up",
+      "quiero ir la tienda",
+      "i give up",
+      "i don't know"
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260427160000_0050",
+    "problem_index": 2,
+    "problem_id": "prob_synth_ffa8259fa1",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "struggler",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "me gusta ir el parque (idk)",
+      "me gusto ir al parque (idk)",
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260427172000_0051",
+    "problem_index": 1,
+    "problem_id": "prob_synth_7cad8e50ee",
+    "task_type": "conversation_completion",
+    "difficulty": 1,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Me llamo Carlos."
+    ],
+    "answer": "Me llamo Carlos."
+  },
+  {
+    "session_id": "sess_synth_20260427172000_0051",
+    "problem_index": 2,
+    "problem_id": "prob_synth_205d2b1be7",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "fast_finisher",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "llamo maria",
+      "llamo maria",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260427172000_0051",
+    "problem_index": 3,
+    "problem_id": "prob_synth_b798b79457",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "fast_finisher",
+    "n_attempts": 2,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION"
+    ],
+    "attempts": [
+      "ayer fui",
+      "ayer fui cine con mi hermana"
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260427182300_0052",
+    "problem_index": 1,
+    "problem_id": "prob_synth_d7eb7dfae8",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "PREPOSITION",
+      "STUCK",
+      "VOCABULARY"
+    ],
+    "attempts": [
+      "no idea",
+      "want ir tienda",
+      "I want ir a la store",
+      "i give up",
+      "quiero ir a la equipo"
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260427182300_0052",
+    "problem_index": 2,
+    "problem_id": "prob_synth_4d210a1cf7",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "STUCK",
+      "TENSE"
+    ],
+    "attempts": [
+      "la semana pasada visitamos a nuestras abuelos",
+      "visitamos abuelos",
+      "no idea",
+      "visitamos abuelos",
+      "la semana pasada visitamos nuestros abuelos"
+    ],
+    "answer": "La semana pasada visitamos a nuestros abuelos."
+  },
+  {
+    "session_id": "sess_synth_20260427182300_0052",
+    "problem_index": 3,
+    "problem_id": "prob_synth_1136424820",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "novice_stuck",
+    "n_attempts": 6,
+    "solved": true,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "STUCK",
+      "TENSE"
+    ],
+    "attempts": [
+      "go al cine con mi hermana",
+      "no idea",
+      "i don't know",
+      "ayer fui cine con mi hermana",
+      "ayer voy al cine",
+      "Ayer fui al cine con mi hermana."
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260427192500_0053",
+    "problem_index": 1,
+    "problem_id": "prob_synth_ecbbd6f3cb",
+    "task_type": "translation",
+    "difficulty": 5,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Espero que mi brother llegue a tiempo."
+    ],
+    "answer": "Espero que mi hermano llegue a tiempo."
+  },
+  {
+    "session_id": "sess_synth_20260427192500_0053",
+    "problem_index": 2,
+    "problem_id": "prob_synth_84fcddd687",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "fast_finisher",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella es enferma hoy",
+      "ella esta enferma",
+      "Ella est\u00e1 enferma hoy."
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260427192500_0053",
+    "problem_index": 3,
+    "problem_id": "prob_synth_37e1d05077",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Yo me lavo las manos cada ma\u00f1ana."
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260427201000_0054",
+    "problem_index": 1,
+    "problem_id": "prob_synth_371dc7b076",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "STUCK",
+      "VOCABULARY"
+    ],
+    "attempts": [
+      "quiero ir a la equipo",
+      "no idea",
+      "quiero ir",
+      "quiero ir a la store",
+      "quiero ir"
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260427210400_0055",
+    "problem_index": 1,
+    "problem_id": "prob_synth_3733ce417d",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "STUCK",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer comi",
+      "ayer comiste la cena con mi familia (idk)",
+      "ayer comi",
+      "i give up"
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260427210400_0055",
+    "problem_index": 2,
+    "problem_id": "prob_synth_f4c7cde28e",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "ella feliz",
+      "ella feliz",
+      "Ella est\u00e1 feliz."
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260427221500_0056",
+    "problem_index": 1,
+    "problem_id": "prob_synth_6afd0ca5fc",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "fast_finisher",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "me gusta",
+      "me gusta",
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260427232300_0057",
+    "problem_index": 1,
+    "problem_id": "prob_synth_32ccff66da",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "me lavo las manos",
+      "yo lavo las manos cada ma\u00f1ana",
+      "yo lavo las manos cada ma\u00f1ana",
+      "yo lavo mis manos cada ma\u00f1ana",
+      "yo lavo mis manos cada ma\u00f1ana"
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260428002700_0058",
+    "problem_index": 1,
+    "problem_id": "prob_synth_7b1f3c26fe",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella esta enferma",
+      "ella es enferma hoy",
+      "ella es enferma hoy",
+      "ella son enferma hoy (idk)",
+      "ella es enferma hoy (idk)"
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260428010600_0059",
+    "problem_index": 1,
+    "problem_id": "prob_synth_4c4eb4872c",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "lava las manos",
+      "ella se lavo las manos cada ma\u00f1ana (idk)",
+      "ella lava las manos cada ma\u00f1ana",
+      "ella lava las manos cada ma\u00f1ana",
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260428010600_0059",
+    "problem_index": 2,
+    "problem_id": "prob_synth_98a44ab1a3",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "La semana pasada visitamos a nuestros abuelos."
+    ],
+    "answer": "La semana pasada visitamos a nuestros abuelos."
+  },
+  {
+    "session_id": "sess_synth_20260428021000_0060",
+    "problem_index": 1,
+    "problem_id": "prob_synth_3ae9ef96b7",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "TENSE"
+    ],
+    "attempts": [
+      "ayer comi",
+      "ayer comemos la cena con mi familia (idk)",
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260428021000_0060",
+    "problem_index": 2,
+    "problem_id": "prob_synth_6497603684",
+    "task_type": "translation",
+    "difficulty": 5,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "espero que mi hermano lleguemos a tiempo",
+      "espero que",
+      "espero que mi brother llega a tiempo",
+      "espero que mi hermano llegar\u00e1 a tiempo",
+      "Espero que mi hermano llegue a tiempo."
+    ],
+    "answer": "Espero que mi hermano llegue a tiempo."
+  },
+  {
+    "session_id": "sess_synth_20260428031100_0061",
+    "problem_index": 1,
+    "problem_id": "prob_synth_e042c788f6",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "me gustas ir al parque",
+      "me gusto ir al parque",
+      "me gusta",
+      "me gusta"
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260428031100_0061",
+    "problem_index": 2,
+    "problem_id": "prob_synth_67363ff3dd",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tienes dos hermanos",
+      "yo tienes dos hermanos",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260428031100_0061",
+    "problem_index": 3,
+    "problem_id": "prob_synth_227c5dfe40",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "El libro es interesante."
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260428042800_0062",
+    "problem_index": 1,
+    "problem_id": "prob_synth_d745b55d30",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "STUCK"
+    ],
+    "attempts": [
+      "me gusta",
+      "me gusta ir el parque",
+      "no idea",
+      "me gusta ir parque",
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260428042800_0062",
+    "problem_index": 2,
+    "problem_id": "prob_synth_9fe59bbc92",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VOCABULARY"
+    ],
+    "attempts": [
+      "want ir a la equipo",
+      "quiero ir la tienda",
+      "quiero ir",
+      "Quiero ir a la tienda."
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260428050700_0063",
+    "problem_index": 1,
+    "problem_id": "prob_synth_436f2d8964",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "el libro",
+      "la libra es interesante",
+      "El libro es interesante."
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260428050700_0063",
+    "problem_index": 2,
+    "problem_id": "prob_synth_0776a64a25",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "TENSE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer ate la cena mi familia",
+      "ayer comiste la cena con mi familia",
+      "ayer ate la cena mi familia",
+      "ayer comiste la cena con mi familia",
+      "ayer comemos la cena con mi familia"
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260428062500_0064",
+    "problem_index": 1,
+    "problem_id": "prob_synth_12e4479a7c",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 6,
+    "solved": true,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "REFLEXIVE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ella se lavo las manos cada ma\u00f1ana",
+      "ella se lavo las manos cada ma\u00f1ana",
+      "ella lava las manos cada ma\u00f1ana",
+      "ella lava las manos cada ma\u00f1ana",
+      "ella lava las manos cada ma\u00f1ana",
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260428072800_0065",
+    "problem_index": 1,
+    "problem_id": "prob_synth_fd78998df1",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "novice_stuck",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE",
+      "STUCK"
+    ],
+    "attempts": [
+      "idk",
+      "ella lava sus manos (idk)",
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260428081500_0066",
+    "problem_index": 1,
+    "problem_id": "prob_synth_18cfcc8604",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "struggler",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "STUCK"
+    ],
+    "attempts": [
+      "la libra es interesante (idk)",
+      "idk",
+      "idk",
+      "no idea",
+      "i give up"
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260428090800_0067",
+    "problem_index": 1,
+    "problem_id": "prob_synth_3f61c42058",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tiene dos brothers",
+      "yo tienes dos brothers",
+      "yo tiene dos hermanos",
+      "yo tienes dos hermanos",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260428101100_0068",
+    "problem_index": 1,
+    "problem_id": "prob_synth_de24bde92f",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "VOCABULARY"
+    ],
+    "attempts": [
+      "quiero ir a la libro",
+      "quiero ir a la store",
+      "Quiero ir a la tienda."
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260428101100_0068",
+    "problem_index": 2,
+    "problem_id": "prob_synth_098858ba90",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella est\u00e1 felizo (idk)",
+      "ella es feliz",
+      "ella es feliz",
+      "ella est\u00e1 felizo",
+      "Ella est\u00e1 feliz."
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260428101100_0068",
+    "problem_index": 3,
+    "problem_id": "prob_synth_79d188fd4c",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tiene dos hermanos",
+      "yo tiene dos hermanos",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260428112500_0069",
+    "problem_index": 1,
+    "problem_id": "prob_synth_aed8213506",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Tengo dos hermanos."
+    ],
+    "answer": "Tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260428112500_0069",
+    "problem_index": 2,
+    "problem_id": "prob_synth_b67bb3c61b",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ella est\u00e1 enferma hoy."
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260428120400_0070",
+    "problem_index": 1,
+    "problem_id": "prob_synth_04449cd02b",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_stuck",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR",
+      "STUCK"
+    ],
+    "attempts": [
+      "i give up",
+      "ella es enferma hoy",
+      "ella son enferma hoy",
+      "Ella est\u00e1 enferma hoy."
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260428130700_0071",
+    "problem_index": 1,
+    "problem_id": "prob_synth_23ed9225f3",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "la libra es interesante",
+      "el libro",
+      "El libro es interesante."
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260428142200_0072",
+    "problem_index": 1,
+    "problem_id": "prob_synth_5a2eaccdb0",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "STUCK",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tiene dos hermanos",
+      "i give up",
+      "yo tiene dos hermanos",
+      "yo tiene dos hermanos",
+      "yo tienes dos hermanos"
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260428151000_0073",
+    "problem_index": 1,
+    "problem_id": "prob_synth_b9ae868e58",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ella se lavo las manos cada ma\u00f1ana",
+      "ella lava sus manos",
+      "ella se lavo las manos cada ma\u00f1ana",
+      "ella lava las manos cada ma\u00f1ana",
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260428151000_0073",
+    "problem_index": 2,
+    "problem_id": "prob_synth_b3ef095f4e",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "espero que",
+      "si, creo que es divertido",
+      "si, creo que es divertido",
+      "si, creo que es divertido"
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260428151000_0073",
+    "problem_index": 3,
+    "problem_id": "prob_synth_155fa91d0f",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer com\u00ed la cena mi familia",
+      "ayer comi",
+      "ayer comiste la cena con mi familia (idk)",
+      "ayer comiste la cena con mi familia"
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260428162900_0074",
+    "problem_index": 1,
+    "problem_id": "prob_synth_823cd3903f",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "TENSE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer comiste la cena con mi familia",
+      "ayer como la cena con mi familia",
+      "ayer com\u00ed la cena mi familia",
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260428162900_0074",
+    "problem_index": 2,
+    "problem_id": "prob_synth_de03f3ef50",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "TENSE"
+    ],
+    "attempts": [
+      "voy al cine con mi hermana",
+      "voy al cine con mi hermana",
+      "Ayer fui al cine con mi hermana."
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260428162900_0074",
+    "problem_index": 3,
+    "problem_id": "prob_synth_9fdc07a6f6",
+    "task_type": "error_correction",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ayer ella comi\u00f3 pizza con sus amigas."
+    ],
+    "answer": "Ayer ella comi\u00f3 pizza con sus amigas."
+  },
+  {
+    "session_id": "sess_synth_20260428170900_0075",
+    "problem_index": 1,
+    "problem_id": "prob_synth_7d82e5464c",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260428170900_0075",
+    "problem_index": 2,
+    "problem_id": "prob_synth_078f336e2e",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "fast_finisher",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION"
+    ],
+    "attempts": [
+      "ayer fui",
+      "ayer fui cine con mi hermana",
+      "Ayer fui al cine con mi hermana."
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260428180600_0076",
+    "problem_index": 1,
+    "problem_id": "prob_synth_db13c2f4f7",
+    "task_type": "error_correction",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "TENSE"
+    ],
+    "attempts": [
+      "ella come pizza con sus amigas",
+      "ella come pizza con sus amigas",
+      "ayer ella come pizza con sus amigas",
+      "ella come pizza con sus amigas",
+      "Ayer ella comi\u00f3 pizza con sus amigas."
+    ],
+    "answer": "Ayer ella comi\u00f3 pizza con sus amigas."
+  },
+  {
+    "session_id": "sess_synth_20260428180600_0076",
+    "problem_index": 2,
+    "problem_id": "prob_synth_1742b4b068",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION"
+    ],
+    "attempts": [
+      "llamo maria",
+      "my name is maria",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260428180600_0076",
+    "problem_index": 3,
+    "problem_id": "prob_synth_152ab81b37",
+    "task_type": "conversation_completion",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "I am carlos (idk)",
+      "llamo carlos",
+      "me llamo",
+      "llamo carlos (idk)",
+      "me llamo"
+    ],
+    "answer": "Me llamo Carlos."
+  },
+  {
+    "session_id": "sess_synth_20260428191600_0077",
+    "problem_index": 1,
+    "problem_id": "prob_synth_028ac4f6c5",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260428191600_0077",
+    "problem_index": 2,
+    "problem_id": "prob_synth_9b5d602880",
+    "task_type": "conversation_completion",
+    "difficulty": 3,
+    "profile": "fast_finisher",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "estoy",
+      "estoy muy feliza hoy",
+      "Estoy muy feliz hoy."
+    ],
+    "answer": "Estoy muy feliz hoy."
+  },
+  {
+    "session_id": "sess_synth_20260428191600_0077",
+    "problem_index": 3,
+    "problem_id": "prob_synth_eb05495d7f",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "fast_finisher",
+    "n_attempts": 2,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "ella feliz",
+      "ella est\u00e1 felizo"
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260428200900_0078",
+    "problem_index": 1,
+    "problem_id": "prob_synth_56d908a5fa",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "llamo maria",
+      "llamo maria (idk)",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260428200900_0078",
+    "problem_index": 2,
+    "problem_id": "prob_synth_3ec12b1a25",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "tengo dos hermanas",
+      "yo tienes dos hermanos",
+      "tengo dos hermanas",
+      "Tengo dos hermanos."
+    ],
+    "answer": "Tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260428212700_0079",
+    "problem_index": 1,
+    "problem_id": "prob_synth_aa1633850f",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "STUCK"
+    ],
+    "attempts": [
+      "i don't know",
+      "quiero ir",
+      "want ir tienda",
+      "Quiero ir a la tienda."
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260428212700_0079",
+    "problem_index": 2,
+    "problem_id": "prob_synth_de79bcde5c",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "ella feliz",
+      "ella est\u00e1 felizo",
+      "ella est\u00e1 felizo",
+      "ella est\u00e1 felizo",
+      "Ella est\u00e1 feliz."
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260428212700_0079",
+    "problem_index": 3,
+    "problem_id": "prob_synth_adefc92e1d",
+    "task_type": "conversation_completion",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "yo llamo carlos",
+      "me llamo",
+      "Me llamo Carlos."
+    ],
+    "answer": "Me llamo Carlos."
+  },
+  {
+    "session_id": "sess_synth_20260428220600_0080",
+    "problem_index": 1,
+    "problem_id": "prob_synth_462b4ac18a",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "struggler",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "STUCK",
+      "TENSE"
+    ],
+    "attempts": [
+      "voy al cine con mi hermana",
+      "idk",
+      "idk",
+      "ayer go al cine",
+      "ayer fui cine con mi sister"
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260428220600_0080",
+    "problem_index": 2,
+    "problem_id": "prob_synth_09955e2f04",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "struggler",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "REFLEXIVE",
+      "STUCK"
+    ],
+    "attempts": [
+      "i don't know",
+      "i give up",
+      "i give up",
+      "yo lavo las manos cada ma\u00f1ana",
+      "no idea"
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260428230200_0081",
+    "problem_index": 1,
+    "problem_id": "prob_synth_f6da21d193",
+    "task_type": "conversation_completion",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION"
+    ],
+    "attempts": [
+      "my name is carlos",
+      "me llamo",
+      "Me llamo Carlos."
+    ],
+    "answer": "Me llamo Carlos."
+  },
+  {
+    "session_id": "sess_synth_20260428230200_0081",
+    "problem_index": 2,
+    "problem_id": "prob_synth_745695599a",
+    "task_type": "conversation_completion",
+    "difficulty": 5,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SUBJUNCTIVE"
+    ],
+    "attempts": [
+      "si, creo que es divertido",
+      "si, espero que es divertido",
+      "espero que",
+      "S\u00ed, espero que sea divertido."
+    ],
+    "answer": "S\u00ed, espero que sea divertido."
+  },
+  {
+    "session_id": "sess_synth_20260429000900_0082",
+    "problem_index": 1,
+    "problem_id": "prob_synth_b79536b1d0",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 6,
+    "solved": true,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "TENSE"
+    ],
+    "attempts": [
+      "ayer com\u00ed la cena mi familia",
+      "ayer com\u00ed la cena mi familia",
+      "ayer ate la cena mi familia",
+      "ayer como la cena con mi familia (idk)",
+      "ayer comi",
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260429012200_0083",
+    "problem_index": 1,
+    "problem_id": "prob_synth_6bce23e30e",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "GENDER_AGREEMENT",
+      "STUCK"
+    ],
+    "attempts": [
+      "i don't know",
+      "i don't know",
+      "I have dos brothers",
+      "tengo dos las hermanos",
+      "tengo dos"
+    ],
+    "answer": "Tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260429012200_0083",
+    "problem_index": 2,
+    "problem_id": "prob_synth_8a635f4018",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_stuck",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION",
+      "REFLEXIVE",
+      "STUCK"
+    ],
+    "attempts": [
+      "no idea",
+      "my name is maria",
+      "me llamo Maria is",
+      "yo llamo maria",
+      "me llamo Maria is"
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260429021500_0084",
+    "problem_index": 1,
+    "problem_id": "prob_synth_398f775b42",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella son enferma hoy",
+      "ella son enferma hoy",
+      "ella es enferma hoy (idk)",
+      "Ella est\u00e1 enferma hoy."
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260429021500_0084",
+    "problem_index": 2,
+    "problem_id": "prob_synth_12daeccc63",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "llamo maria",
+      "llamo maria",
+      "Me llamo Maria."
+    ],
+    "answer": "Me llamo Maria."
+  },
+  {
+    "session_id": "sess_synth_20260429030800_0085",
+    "problem_index": 1,
+    "problem_id": "prob_synth_3ae91b18ea",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "TENSE"
+    ],
+    "attempts": [
+      "ayer voy al cine",
+      "ayer fui cine con mi hermana",
+      "Ayer fui al cine con mi hermana."
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260429030800_0085",
+    "problem_index": 2,
+    "problem_id": "prob_synth_360bcb38e4",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "STUCK"
+    ],
+    "attempts": [
+      "quiero ir",
+      "quiero ir",
+      "i give up",
+      "quiero ir tienda",
+      "Quiero ir a la tienda."
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260429041500_0086",
+    "problem_index": 1,
+    "problem_id": "prob_synth_d2d3b4ffd2",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "STUCK",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "idk",
+      "i don't know",
+      "yo tienes dos hermanos",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260429052600_0087",
+    "problem_index": 1,
+    "problem_id": "prob_synth_360d19cef9",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "yo lavo las manos cada ma\u00f1ana",
+      "yo lavo las manos cada ma\u00f1ana",
+      "me lavo las manos",
+      "Yo me lavo las manos cada ma\u00f1ana."
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260429062200_0088",
+    "problem_index": 1,
+    "problem_id": "prob_synth_e72d0b86f5",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "STUCK",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "no idea",
+      "me gusta",
+      "me gusta",
+      "me gusto ir al parque (idk)",
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260429062200_0088",
+    "problem_index": 2,
+    "problem_id": "prob_synth_39e5923c19",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "TENSE",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer ate la cena mi familia",
+      "ayer comiste la cena con mi familia",
+      "ayer comemos la cena con mi familia",
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260429070800_0089",
+    "problem_index": 1,
+    "problem_id": "prob_synth_a0ce46e2e2",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "ayer comiste la cena con mi familia",
+      "ayer com\u00ed la cena mi familia",
+      "Ayer com\u00ed la cena con mi familia."
+    ],
+    "answer": "Ayer com\u00ed la cena con mi familia."
+  },
+  {
+    "session_id": "sess_synth_20260429070800_0089",
+    "problem_index": 2,
+    "problem_id": "prob_synth_61886c98e5",
+    "task_type": "conversation_completion",
+    "difficulty": 4,
+    "profile": "novice_persistent",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "TENSE"
+    ],
+    "attempts": [
+      "ayer fui",
+      "ayer fui cine con mi hermana",
+      "voy al cine con mi hermana",
+      "Ayer fui al cine con mi hermana."
+    ],
+    "answer": "Ayer fui al cine con mi hermana."
+  },
+  {
+    "session_id": "sess_synth_20260429081400_0090",
+    "problem_index": 1,
+    "problem_id": "prob_synth_77566eedcf",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR",
+      "STUCK"
+    ],
+    "attempts": [
+      "ella es feliz",
+      "ella feliz",
+      "ella es feliz",
+      "idk",
+      "ella es feliz (idk)"
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260429081400_0090",
+    "problem_index": 2,
+    "problem_id": "prob_synth_ed309e4b54",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "yo lavo mis manos cada ma\u00f1ana",
+      "me lavo las manos",
+      "yo lavo las manos cada ma\u00f1ana (idk)",
+      "me lavo las manos",
+      "Yo me lavo las manos cada ma\u00f1ana."
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260429081400_0090",
+    "problem_index": 3,
+    "problem_id": "prob_synth_511499f61a",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tengo",
+      "yo tiene dos hermanos",
+      "yo tiene dos hermanos",
+      "yo tiene dos hermanos",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260429090800_0091",
+    "problem_index": 1,
+    "problem_id": "prob_synth_4a74ddc916",
+    "task_type": "translation",
+    "difficulty": 5,
+    "profile": "novice_persistent",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "espero que mi brother lleguemos a tiempo",
+      "espero que mi hermano lleguemos a tiempo",
+      "Espero que mi hermano llegue a tiempo."
+    ],
+    "answer": "Espero que mi hermano llegue a tiempo."
+  },
+  {
+    "session_id": "sess_synth_20260429090800_0091",
+    "problem_index": 2,
+    "problem_id": "prob_synth_13118b7ef0",
+    "task_type": "conversation_completion",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "yo es feliz",
+      "soy muy feliz hoy",
+      "estoy muy feliza hoy",
+      "yo es feliz",
+      "yo es feliz"
+    ],
+    "answer": "Estoy muy feliz hoy."
+  },
+  {
+    "session_id": "sess_synth_20260429101000_0092",
+    "problem_index": 1,
+    "problem_id": "prob_synth_ce166fc32a",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT"
+    ],
+    "attempts": [
+      "el libro",
+      "la libra es interesante",
+      "la libro es interesante",
+      "la libro es interesante",
+      "El libro es interesante."
+    ],
+    "answer": "El libro es interesante."
+  },
+  {
+    "session_id": "sess_synth_20260429110100_0093",
+    "problem_index": 1,
+    "problem_id": "prob_synth_5e27c21224",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Me gusta ir al parque."
+    ],
+    "answer": "Me gusta ir al parque."
+  },
+  {
+    "session_id": "sess_synth_20260429110100_0093",
+    "problem_index": 2,
+    "problem_id": "prob_synth_0aa5af2666",
+    "task_type": "translation",
+    "difficulty": 5,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Espero que mi hermano llegue a tiempo."
+    ],
+    "answer": "Espero que mi hermano llegue a tiempo."
+  },
+  {
+    "session_id": "sess_synth_20260429110100_0093",
+    "problem_index": 3,
+    "problem_id": "prob_synth_9127219a42",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "fast_finisher",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Tengo dos hermanos."
+    ],
+    "answer": "Tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260429120300_0094",
+    "problem_index": 1,
+    "problem_id": "prob_synth_517bb60eb5",
+    "task_type": "conversation_completion",
+    "difficulty": 3,
+    "profile": "struggler",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "GENDER_AGREEMENT",
+      "STUCK"
+    ],
+    "attempts": [
+      "idk",
+      "i give up",
+      "estoy muy feliza hoy",
+      "Estoy muy feliz hoy."
+    ],
+    "answer": "Estoy muy feliz hoy."
+  },
+  {
+    "session_id": "sess_synth_20260429120300_0094",
+    "problem_index": 2,
+    "problem_id": "prob_synth_c47fe192c3",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "struggler",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "STUCK",
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "i don't know",
+      "i don't know",
+      "idk",
+      "idk",
+      "yo tienes dos hermanos"
+    ],
+    "answer": "Tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260429130000_0095",
+    "problem_index": 1,
+    "problem_id": "prob_synth_95fbd0ef67",
+    "task_type": "error_correction",
+    "difficulty": 2,
+    "profile": "intermediate_steady",
+    "n_attempts": 3,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "VERB_CONJUGATION"
+    ],
+    "attempts": [
+      "yo tiene dos hermanos",
+      "yo tienes dos hermanos",
+      "Yo tengo dos hermanos."
+    ],
+    "answer": "Yo tengo dos hermanos."
+  },
+  {
+    "session_id": "sess_synth_20260429130000_0095",
+    "problem_index": 2,
+    "problem_id": "prob_synth_8101e1aa21",
+    "task_type": "translation",
+    "difficulty": 1,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": false,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "VOCABULARY"
+    ],
+    "attempts": [
+      "quiero ir tienda",
+      "quiero ir a la libro",
+      "quiero ir la tienda",
+      "quiero ir a la libro"
+    ],
+    "answer": "Quiero ir a la tienda."
+  },
+  {
+    "session_id": "sess_synth_20260429140300_0096",
+    "problem_index": 1,
+    "problem_id": "prob_synth_b9a0c5d619",
+    "task_type": "translation",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ella se lava las manos cada ma\u00f1ana."
+    ],
+    "answer": "Ella se lava las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260429140300_0096",
+    "problem_index": 2,
+    "problem_id": "prob_synth_df37806109",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "REFLEXIVE"
+    ],
+    "attempts": [
+      "yo lavo mis manos cada ma\u00f1ana",
+      "yo lavo las manos cada ma\u00f1ana",
+      "yo lavo mis manos cada ma\u00f1ana",
+      "Yo me lavo las manos cada ma\u00f1ana."
+    ],
+    "answer": "Yo me lavo las manos cada ma\u00f1ana."
+  },
+  {
+    "session_id": "sess_synth_20260429140300_0096",
+    "problem_index": 3,
+    "problem_id": "prob_synth_8336157447",
+    "task_type": "translation",
+    "difficulty": 4,
+    "profile": "intermediate_steady",
+    "n_attempts": 4,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "TENSE"
+    ],
+    "attempts": [
+      "la semana pasada visitamos nuestros abuelos",
+      "visitamos abuelos",
+      "visitamos abuelos",
+      "La semana pasada visitamos a nuestros abuelos."
+    ],
+    "answer": "La semana pasada visitamos a nuestros abuelos."
+  },
+  {
+    "session_id": "sess_synth_20260429150700_0097",
+    "problem_index": 1,
+    "problem_id": "prob_synth_f414992670",
+    "task_type": "error_correction",
+    "difficulty": 3,
+    "profile": "novice_persistent",
+    "n_attempts": 5,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [
+      "SER_VS_ESTAR"
+    ],
+    "attempts": [
+      "ella esta enferma",
+      "ella son enferma hoy (idk)",
+      "ella es enferma hoy",
+      "ella es enferma hoy",
+      "Ella est\u00e1 enferma hoy."
+    ],
+    "answer": "Ella est\u00e1 enferma hoy."
+  },
+  {
+    "session_id": "sess_synth_20260429161300_0098",
+    "problem_index": 1,
+    "problem_id": "prob_synth_3907e8f1b8",
+    "task_type": "conversation_completion",
+    "difficulty": 1,
+    "profile": "novice_persistent",
+    "n_attempts": 6,
+    "solved": true,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "ENGLISH_INTRUSION"
+    ],
+    "attempts": [
+      "I am carlos",
+      "my name is carlos",
+      "I am carlos",
+      "I am carlos",
+      "my name is carlos (idk)",
+      "Me llamo Carlos."
+    ],
+    "answer": "Me llamo Carlos."
+  },
+  {
+    "session_id": "sess_synth_20260429161300_0098",
+    "problem_index": 2,
+    "problem_id": "prob_synth_904908ffac",
+    "task_type": "translation",
+    "difficulty": 2,
+    "profile": "novice_persistent",
+    "n_attempts": 1,
+    "solved": true,
+    "consolidated": false,
+    "gold_misconceptions": [],
+    "attempts": [
+      "Ella est\u00e1 feliz."
+    ],
+    "answer": "Ella est\u00e1 feliz."
+  },
+  {
+    "session_id": "sess_synth_20260429172800_0099",
+    "problem_index": 1,
+    "problem_id": "prob_synth_245618adb3",
+    "task_type": "conversation_completion",
+    "difficulty": 2,
+    "profile": "struggler",
+    "n_attempts": 5,
+    "solved": false,
+    "consolidated": true,
+    "gold_misconceptions": [
+      "PREPOSITION",
+      "STUCK"
+    ],
+    "attempts": [
+      "idk",
+      "i give up",
+      "me gusta ir parque (idk)",
+      "me gusta ir parque",
+      "me gusta ir el parque"
+    ],
+    "answer": "Me gusta ir al parque."
+  }
+]

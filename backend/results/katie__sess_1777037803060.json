@@ -1,0 +1,173 @@
+{
+  "session_id": "sess_1777037803060",
+  "student_name": "katie",
+  "task_type": "conversation_completion",
+  "difficulty_score": 3,
+  "problem_id": "prob_dc6a3b20ff",
+  "problem": "Complete the conversation:  \nA: Me despierto a las siete de la ma\u00f1ana y me siento cansado. \u00bfA qu\u00e9 hora te despiertas t\u00fa?  \nB: ___  ",
+  "attempts_current_problem": 0,
+  "stats": {
+    "total_attempts": 7,
+    "problems_completed": 4,
+    "session_started_at": "2026-04-24T13:38:38.630661"
+  },
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-24T13:38:38.630671",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-24T13:39:04.891438",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Quiero ir al parque."
+    },
+    {
+      "timestamp": "2026-04-24T13:39:07.175036",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-24T13:39:22.171074",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-24T13:39:24.018396",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-24T13:39:35.604971",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i dont know how to do this"
+    },
+    {
+      "timestamp": "2026-04-24T13:39:40.182887",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's completely okay to feel unsure; recognizing that is the first step! Can you think about what verb you might need to use for \"wash\" in this question? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-24T13:39:56.437377",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "idk"
+    },
+    {
+      "timestamp": "2026-04-24T13:40:02.222831",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in expressing that you're unsure! Can you think about how to express \"where\" in Spanish? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-24T13:40:06.820795",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no"
+    },
+    {
+      "timestamp": "2026-04-24T13:40:12.313798",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in this attempt; it's great that you're engaging with the challenge! Can you think about which words in the English sentence might need to change to fit Spanish grammar? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-24T13:40:36.104490",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Cuando laves tus manos cada dia?"
+    },
+    {
+      "timestamp": "2026-04-24T13:40:40.293483",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job attempting to use \"laves\" and \"manos\" in your sentence! Why did you choose \"cuando\" at the beginning instead of a word that asks a question? Take another shot at translating the whole sentence!"
+    },
+    {
+      "timestamp": "2026-04-24T13:40:51.252794",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i have no idea"
+    },
+    {
+      "timestamp": "2026-04-24T13:40:58.240527",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-24T13:40:58.240567",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Great effort on this translation task! I noticed that in Attempt 4, you used the word \"cuando\" (when) and \"cada d\u00eda\" (every day), which are both correct in terms of meaning. However, the main issue in your attempts is that the sentence structure is not quite right. The question should start with \"\u00bfD\u00f3nde\" (where) instead of \"Cuando\" (when), and the verb \"laves\" (wash) should be in the present tense form \"lavas\" to match the subject \"t\u00fa\" (you).\n\nCorrect answer: \u00bfD\u00f3nde lavas tus manos cada d\u00eda?\n\nRemember, in Spanish, when asking a question, the structure typically starts with the question word (like \"\u00bfD\u00f3nde\") followed by the verb in the correct tense. Keep practicing, and you'll get the hang of it!"
+    },
+    {
+      "timestamp": "2026-04-24T13:41:34.378937",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-24T13:41:35.871864",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-24T13:41:36.561851",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-24T13:41:38.957643",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-24T13:41:46.254463",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-24T13:41:47.915261",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-24T13:42:03.751387",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "can you give me a hint?"
+    },
+    {
+      "timestamp": "2026-04-24T13:42:10.233901",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job reaching out for help! What part of the sentence do you think might need a different verb or structure to express the idea correctly? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-24T13:43:27.395547",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-24T13:43:30.257457",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 3)."
+    }
+  ],
+  "last_updated_at": "2026-04-24T13:43:30.259835"
+}

@@ -1,0 +1,164 @@
+{
+  "problem": "Find and correct the error(s): Yo lavo las manos cada ma\u00f1ana.",
+  "task_type": "error_correction",
+  "difficulty_score": 3,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Jamie",
+  "problem_id": "prob_synth_c964864b41",
+  "problem_started_at": "2026-04-27T00:09:15.561813+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T00:05:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-27T00:05:12.363266+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer com\u00ed la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-27T00:05:15.985594+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-27T00:05:43.097257+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i give up"
+    },
+    {
+      "timestamp": "2026-04-27T00:05:48.973268+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-27T00:06:20.592590+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer com\u00ed la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-27T00:06:24.112659+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-27T00:07:02.790100+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comi"
+    },
+    {
+      "timestamp": "2026-04-27T00:07:06.430702+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T00:07:28.621811+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer com\u00ed la cena con mi familia."
+    },
+    {
+      "timestamp": "2026-04-27T00:07:33.979542+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T00:07:38.337153+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T00:07:38.337153+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-27T00:07:54.929120+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer fui al cine con mi hermana."
+    },
+    {
+      "timestamp": "2026-04-27T00:07:59.815114+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T00:08:05.115709+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T00:08:05.115709+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-27T00:08:24.613283+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me lavo las manos"
+    },
+    {
+      "timestamp": "2026-04-27T00:08:28.173197+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T00:08:46.289260+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo mis manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-27T00:08:51.551029+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me lavo las manos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-27T00:09:05.902476+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo me lavo las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-27T00:09:09.974210+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T00:09:15.561813+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T00:05:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

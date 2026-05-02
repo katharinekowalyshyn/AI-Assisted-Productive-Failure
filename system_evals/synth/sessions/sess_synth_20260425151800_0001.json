@@ -1,0 +1,248 @@
+{
+  "problem": "English: Yesterday I ate dinner with my family.",
+  "task_type": "translation",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Drew",
+  "problem_id": "prob_synth_35e0444ffc",
+  "problem_started_at": "2026-04-25T15:27:49.080345+00:00",
+  "total_attempts": 15,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-25T15:18:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-25T15:18:46.061522+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir"
+    },
+    {
+      "timestamp": "2026-04-25T15:18:51.074222+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"quiero ir\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-25T15:19:19.356378+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "want ir a la equipo"
+    },
+    {
+      "timestamp": "2026-04-25T15:19:24.150413+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-25T15:20:09.895552+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "I want ir a la store"
+    },
+    {
+      "timestamp": "2026-04-25T15:20:12.895603+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-25T15:20:38.384404+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la libro"
+    },
+    {
+      "timestamp": "2026-04-25T15:20:41.747600+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-25T15:21:16.549156+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Quiero ir a la tienda."
+    },
+    {
+      "timestamp": "2026-04-25T15:21:21.091521+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-25T15:21:25.263500+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-25T15:21:25.263500+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-25T15:21:49.688264+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo las manos cada ma\u00f1ana (idk)"
+    },
+    {
+      "timestamp": "2026-04-25T15:21:53.776297+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-25T15:22:34.334821+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo mis manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-25T15:22:38.586872+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-25T15:23:08.087609+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me lavo las manos"
+    },
+    {
+      "timestamp": "2026-04-25T15:23:12.364495+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me lavo las manos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-25T15:23:53.148135+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-25T15:23:57.884458+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-25T15:24:26.765582+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo mis manos cada ma\u00f1ana (idk)"
+    },
+    {
+      "timestamp": "2026-04-25T15:24:29.800519+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-25T15:24:30.193649+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"me lavo las manos\". However, the main issue was the reflexive pronoun was missing. \n\nCorrect answer: Yo me lavo las manos cada ma\u00f1ana.\n\nRemember: verbs like llamarse, lavarse, levantarse take a reflexive pronoun (me, te, se)."
+    },
+    {
+      "timestamp": "2026-04-25T15:24:35.429923+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-25T15:24:35.429923+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-25T15:25:04.319675+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer ate la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-25T15:25:08.707211+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-25T15:25:46.911129+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comi"
+    },
+    {
+      "timestamp": "2026-04-25T15:25:51.825666+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-25T15:26:14.806822+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia (idk)"
+    },
+    {
+      "timestamp": "2026-04-25T15:26:18.613794+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-25T15:27:02.462802+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-25T15:27:05.386317+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-25T15:27:42.283677+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-25T15:27:46.722402+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-25T15:27:47.037200+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"ayer comi\". However, the main issue was a required preposition (a/de/en) was missing or wrong. \n\nCorrect answer: Ayer com\u00ed la cena con mi familia.\n\nRemember: Spanish requires 'a' before destinations after 'ir' (voy a la tienda)."
+    },
+    {
+      "timestamp": "2026-04-25T15:27:49.080345+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-25T15:18:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 3,
+    "consolidation_in_last_problem": true
+  }
+}

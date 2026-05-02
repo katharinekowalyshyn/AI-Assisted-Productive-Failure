@@ -1,0 +1,98 @@
+{
+  "problem": "English: I want to go to the store.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Taylor",
+  "problem_id": "prob_synth_f90a6428f8",
+  "problem_started_at": "2026-04-27T20:13:19.987566+00:00",
+  "total_attempts": 5,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T20:10:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-27T20:10:43.932189+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la equipo"
+    },
+    {
+      "timestamp": "2026-04-27T20:10:48.140619+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T20:11:15.916404+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-27T20:11:19.958812+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T20:11:54.325600+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir"
+    },
+    {
+      "timestamp": "2026-04-27T20:11:59.291589+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-27T20:12:42.954381+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la store"
+    },
+    {
+      "timestamp": "2026-04-27T20:12:48.877015+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T20:13:08.719035+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir"
+    },
+    {
+      "timestamp": "2026-04-27T20:13:13.382872+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-27T20:13:13.627654+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"quiero ir\". However, the main issue was the wrong vocabulary word was used (e.g. 'equipo' means team, not store). \n\nCorrect answer: Quiero ir a la tienda.\n\nRemember: double-check vocabulary using context \u2014 \"tienda\" is store, \"equipo\" is team."
+    },
+    {
+      "timestamp": "2026-04-27T20:13:19.987566+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T20:10:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 1,
+    "consolidation_in_last_problem": true
+  }
+}

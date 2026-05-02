@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-05-02T14:35:18.099639+00:00",
+  "n_sessions": 100,
+  "n_problems": 197,
+  "profile_distribution": {
+    "fast_finisher": 15,
+    "novice_persistent": 33,
+    "intermediate_steady": 37,
+    "novice_stuck": 9,
+    "struggler": 6
+  },
+  "consolidation_rate": 0.198,
+  "correct_rate": 0.761,
+  "seed": 42
+}

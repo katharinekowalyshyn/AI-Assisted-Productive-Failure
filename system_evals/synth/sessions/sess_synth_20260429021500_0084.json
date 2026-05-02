@@ -1,0 +1,128 @@
+{
+  "problem": "English: My name is Maria.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Jamie",
+  "problem_id": "prob_synth_fdabbc14fd",
+  "problem_started_at": "2026-04-29T02:19:46.169159+00:00",
+  "total_attempts": 7,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T02:15:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-29T02:15:43.632344+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella son enferma hoy"
+    },
+    {
+      "timestamp": "2026-04-29T02:15:46.900301+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T02:16:28.501808+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella son enferma hoy"
+    },
+    {
+      "timestamp": "2026-04-29T02:16:31.883444+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ella esta enferma\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T02:17:11.226790+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es enferma hoy (idk)"
+    },
+    {
+      "timestamp": "2026-04-29T02:17:17.011559+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T02:17:52.663170+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 enferma hoy."
+    },
+    {
+      "timestamp": "2026-04-29T02:17:58.489881+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T02:18:04.318378+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T02:18:04.318378+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-29T02:18:16.362791+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "llamo maria"
+    },
+    {
+      "timestamp": "2026-04-29T02:18:21.098523+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T02:19:00.934347+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "llamo maria"
+    },
+    {
+      "timestamp": "2026-04-29T02:19:06.127104+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T02:19:40.324329+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me llamo Maria."
+    },
+    {
+      "timestamp": "2026-04-29T02:19:43.794835+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T02:19:46.169159+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T02:15:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

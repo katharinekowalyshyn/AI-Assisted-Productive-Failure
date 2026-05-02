@@ -1,0 +1,68 @@
+{
+  "problem": "Find and correct the error(s): Ella es enferma hoy.",
+  "task_type": "error_correction",
+  "difficulty_score": 3,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Robin",
+  "problem_id": "prob_synth_c208901880",
+  "problem_started_at": "2026-04-28T11:25:40.955454+00:00",
+  "total_attempts": 2,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T11:25:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-28T11:25:10.664938+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-28T11:25:14.973073+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T11:25:21.772827+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T11:25:21.772827+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-28T11:25:32.980717+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 enferma hoy."
+    },
+    {
+      "timestamp": "2026-04-28T11:25:37.342522+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T11:25:40.955454+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T11:25:00+00:00",
+  "_synthetic": {
+    "profile": "fast_finisher",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

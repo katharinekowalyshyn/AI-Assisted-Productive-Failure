@@ -1,0 +1,158 @@
+{
+  "problem": "English: I have two brothers.",
+  "task_type": "translation",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Taylor",
+  "problem_id": "prob_synth_d9d635aa55",
+  "problem_started_at": "2026-04-29T12:12:31.953782+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T12:03:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-29T12:04:00.598364+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "idk"
+    },
+    {
+      "timestamp": "2026-04-29T12:04:06.097217+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-29T12:04:48.064590+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i give up"
+    },
+    {
+      "timestamp": "2026-04-29T12:04:52.972755+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-29T12:05:55.426869+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "estoy muy feliza hoy"
+    },
+    {
+      "timestamp": "2026-04-29T12:05:58.201986+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"estoy\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T12:07:00.688410+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Estoy muy feliz hoy."
+    },
+    {
+      "timestamp": "2026-04-29T12:07:03.460484+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T12:07:10.108638+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T12:07:10.108638+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-29T12:08:02.776673+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-29T12:08:05.786122+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-29T12:08:56.506110+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-29T12:09:02.326881+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-29T12:09:33.780700+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "idk"
+    },
+    {
+      "timestamp": "2026-04-29T12:09:39.013507+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-29T12:11:05.496150+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "idk"
+    },
+    {
+      "timestamp": "2026-04-29T12:11:09.763332+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-29T12:12:26.107903+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-29T12:12:28.656848+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-29T12:12:28.804497+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"tengo dos\". However, the main issue was the student gave up before exploring the structure of the prompt. \n\nCorrect answer: Tengo dos hermanos.\n\nRemember: even an educated guess based on the prompt's vocabulary helps you learn."
+    },
+    {
+      "timestamp": "2026-04-29T12:12:31.953782+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T12:03:00+00:00",
+  "_synthetic": {
+    "profile": "struggler",
+    "n_problems": 2,
+    "consolidation_in_last_problem": true
+  }
+}

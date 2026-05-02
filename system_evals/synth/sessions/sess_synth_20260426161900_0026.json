@@ -1,0 +1,146 @@
+{
+  "problem": "English: She is happy.",
+  "task_type": "translation",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Maya",
+  "problem_id": "prob_synth_b64134ab6e",
+  "problem_started_at": "2026-04-26T16:24:45.718774+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T16:19:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-26T16:19:35.287773+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella se lavo las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-26T16:19:39.741076+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"lava las manos\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-26T16:20:41.240368+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "lava las manos"
+    },
+    {
+      "timestamp": "2026-04-26T16:20:46.439478+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-26T16:21:11.232738+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-26T16:21:16.148578+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T16:21:47.361417+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava sus manos"
+    },
+    {
+      "timestamp": "2026-04-26T16:21:53.129368+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T16:22:36.581946+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella se lavo las manos cada ma\u00f1ana (idk)"
+    },
+    {
+      "timestamp": "2026-04-26T16:22:40.089209+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-26T16:22:40.397274+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"lava las manos\". However, the main issue was the verb conjugation did not match the subject's person/number. \n\nCorrect answer: Ella se lava las manos cada ma\u00f1ana.\n\nRemember: match the verb ending to the subject (yo \u2192 -o, t\u00fa \u2192 -as/-es, \u00e9l/ella \u2192 -a/-e)."
+    },
+    {
+      "timestamp": "2026-04-26T16:22:45.656419+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T16:22:45.656419+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-26T16:23:24.397872+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es contenta (idk)"
+    },
+    {
+      "timestamp": "2026-04-26T16:23:28.864935+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T16:23:56.846798+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella est\u00e1 felizo"
+    },
+    {
+      "timestamp": "2026-04-26T16:23:59.827253+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-26T16:24:35.532462+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 feliz."
+    },
+    {
+      "timestamp": "2026-04-26T16:24:39.891107+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T16:24:45.718774+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T16:19:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

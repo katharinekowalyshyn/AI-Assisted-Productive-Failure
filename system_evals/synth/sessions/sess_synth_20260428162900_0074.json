@@ -1,0 +1,152 @@
+{
+  "problem": "Find and correct the error(s): Ayer ella come pizza con sus amigas.",
+  "task_type": "error_correction",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Jordan",
+  "problem_id": "prob_synth_b56eec6343",
+  "problem_started_at": "2026-04-28T16:33:02.808422+00:00",
+  "total_attempts": 8,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T16:29:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-28T16:29:18.136235+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T16:29:23.078782+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"ayer comi\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-28T16:29:53.163314+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer como la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T16:29:57.346543+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T16:30:10.752700+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer com\u00ed la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T16:30:13.939048+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T16:30:39.825040+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer com\u00ed la cena con mi familia."
+    },
+    {
+      "timestamp": "2026-04-28T16:30:43.173143+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T16:30:46.770686+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T16:30:46.770686+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-28T16:31:18.038075+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "voy al cine con mi hermana"
+    },
+    {
+      "timestamp": "2026-04-28T16:31:22.719213+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T16:31:34.737304+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "voy al cine con mi hermana"
+    },
+    {
+      "timestamp": "2026-04-28T16:31:37.394375+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T16:32:04.800954+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer fui al cine con mi hermana."
+    },
+    {
+      "timestamp": "2026-04-28T16:32:09.953022+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T16:32:17.069607+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T16:32:17.069607+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-28T16:32:49.426751+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer ella comi\u00f3 pizza con sus amigas."
+    },
+    {
+      "timestamp": "2026-04-28T16:32:55.248044+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T16:33:02.808422+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T16:29:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

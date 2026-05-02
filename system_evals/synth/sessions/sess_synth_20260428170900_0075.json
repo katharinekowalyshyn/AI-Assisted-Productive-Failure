@@ -1,0 +1,92 @@
+{
+  "problem": "Complete the conversation:\nA: \u00bfQu\u00e9 hiciste ayer?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Sam",
+  "problem_id": "prob_synth_11bff25a6d",
+  "problem_started_at": "2026-04-28T17:10:11.066944+00:00",
+  "total_attempts": 4,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T17:09:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-28T17:09:08.971079+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "S\u00ed, espero que sea divertido."
+    },
+    {
+      "timestamp": "2026-04-28T17:09:11.681464+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T17:09:14.885640+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T17:09:14.885640+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-28T17:09:26.370744+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer fui"
+    },
+    {
+      "timestamp": "2026-04-28T17:09:31.906681+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-28T17:09:36.906681+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer fui cine con mi hermana"
+    },
+    {
+      "timestamp": "2026-04-28T17:09:41.186572+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ayer fui\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-28T17:10:00.495419+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer fui al cine con mi hermana."
+    },
+    {
+      "timestamp": "2026-04-28T17:10:06.158971+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T17:10:11.066944+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T17:09:00+00:00",
+  "_synthetic": {
+    "profile": "fast_finisher",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

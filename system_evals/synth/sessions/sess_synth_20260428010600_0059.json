@@ -1,0 +1,116 @@
+{
+  "problem": "English: Last week we visited our grandparents.",
+  "task_type": "translation",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Quinn",
+  "problem_id": "prob_synth_17573cd45e",
+  "problem_started_at": "2026-04-28T01:09:09.092147+00:00",
+  "total_attempts": 6,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T01:06:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-28T01:06:30.003888+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "lava las manos"
+    },
+    {
+      "timestamp": "2026-04-28T01:06:32.867632+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-28T01:07:05.669451+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella se lavo las manos cada ma\u00f1ana (idk)"
+    },
+    {
+      "timestamp": "2026-04-28T01:07:10.764264+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-28T01:07:21.304668+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T01:07:26.067632+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"lava las manos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-28T01:07:50.977332+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T01:07:55.084620+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T01:08:15.462833+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella se lava las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-28T01:08:18.095435+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T01:08:20.534923+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T01:08:20.534923+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-28T01:08:58.957897+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "La semana pasada visitamos a nuestros abuelos."
+    },
+    {
+      "timestamp": "2026-04-28T01:09:04.646350+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T01:09:09.092147+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T01:06:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "problem": "Complete the conversation:\nA: \u00bfQu\u00e9 hiciste ayer?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Drew",
+  "problem_id": "prob_synth_ad1885354a",
+  "problem_started_at": "2026-04-29T07:12:32.092858+00:00",
+  "total_attempts": 7,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T07:08:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-29T07:08:24.006955+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-29T07:08:26.557718+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T07:09:03.405995+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer com\u00ed la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-29T07:09:08.482621+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T07:09:43.628045+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer com\u00ed la cena con mi familia."
+    },
+    {
+      "timestamp": "2026-04-29T07:09:46.906468+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T07:09:54.471346+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T07:09:54.471346+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-29T07:10:40.143693+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer fui"
+    },
+    {
+      "timestamp": "2026-04-29T07:10:45.279468+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-29T07:11:17.484990+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer fui cine con mi hermana"
+    },
+    {
+      "timestamp": "2026-04-29T07:11:20.449482+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T07:11:31.137487+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "voy al cine con mi hermana"
+    },
+    {
+      "timestamp": "2026-04-29T07:11:34.474205+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ayer fui\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T07:12:24.270851+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer fui al cine con mi hermana."
+    },
+    {
+      "timestamp": "2026-04-29T07:12:27.337161+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T07:12:32.092858+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T07:08:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

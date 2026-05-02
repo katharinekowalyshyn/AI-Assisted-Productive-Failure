@@ -1,0 +1,122 @@
+{
+  "problem": "English: She is happy.",
+  "task_type": "translation",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Quinn",
+  "problem_id": "prob_synth_83932bcb87",
+  "problem_started_at": "2026-04-29T16:17:11.841459+00:00",
+  "total_attempts": 7,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T16:13:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-29T16:13:35.519574+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "I am carlos"
+    },
+    {
+      "timestamp": "2026-04-29T16:13:39.644133+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-29T16:14:33.376124+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "my name is carlos"
+    },
+    {
+      "timestamp": "2026-04-29T16:14:39.345650+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-29T16:15:12.688863+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "I am carlos"
+    },
+    {
+      "timestamp": "2026-04-29T16:15:15.746618+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T16:15:48.556594+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "I am carlos"
+    },
+    {
+      "timestamp": "2026-04-29T16:15:51.158591+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T16:16:22.780913+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "my name is carlos (idk)"
+    },
+    {
+      "timestamp": "2026-04-29T16:16:28.264737+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-29T16:16:28.748441+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"me llamo\". However, the main issue was English words appeared in what should be a fully Spanish response. \n\nCorrect answer: Me llamo Carlos.\n\nRemember: translate every content word \u2014 keep the response fully in Spanish."
+    },
+    {
+      "timestamp": "2026-04-29T16:16:33.663493+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T16:16:33.663493+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-29T16:17:03.438108+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 feliz."
+    },
+    {
+      "timestamp": "2026-04-29T16:17:06.231861+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T16:17:11.841459+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T16:13:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

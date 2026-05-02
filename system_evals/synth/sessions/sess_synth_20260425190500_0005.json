@@ -1,0 +1,98 @@
+{
+  "problem": "Complete the conversation:\nA: \u00bfQu\u00e9 haces los fines de semana?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Avery",
+  "problem_id": "prob_synth_153b71370c",
+  "problem_started_at": "2026-04-25T19:08:54.251496+00:00",
+  "total_attempts": 5,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-25T19:05:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-25T19:05:18.412932+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusto ir al parque"
+    },
+    {
+      "timestamp": "2026-04-25T19:05:24.272344+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-25T19:06:07.402638+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta ir parque"
+    },
+    {
+      "timestamp": "2026-04-25T19:06:10.496558+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me gusta\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-25T19:06:50.829790+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta ir el parque"
+    },
+    {
+      "timestamp": "2026-04-25T19:06:55.497203+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me gusta\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-25T19:08:02.149349+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusto ir al parque"
+    },
+    {
+      "timestamp": "2026-04-25T19:08:07.513831+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-25T19:08:47.524495+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta ir el parque"
+    },
+    {
+      "timestamp": "2026-04-25T19:08:50.721450+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-25T19:08:50.782441+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"me gusta\". However, the main issue was the verb conjugation did not match the subject's person/number. \n\nCorrect answer: Me gusta ir al parque.\n\nRemember: match the verb ending to the subject (yo \u2192 -o, t\u00fa \u2192 -as/-es, \u00e9l/ella \u2192 -a/-e)."
+    },
+    {
+      "timestamp": "2026-04-25T19:08:54.251496+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-25T19:05:00+00:00",
+  "_synthetic": {
+    "profile": "novice_stuck",
+    "n_problems": 1,
+    "consolidation_in_last_problem": true
+  }
+}

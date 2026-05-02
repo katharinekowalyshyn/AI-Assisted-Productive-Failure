@@ -1,0 +1,140 @@
+{
+  "problem": "Find and correct the error(s): Ella es enferma hoy.",
+  "task_type": "error_correction",
+  "difficulty_score": 3,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Drew",
+  "problem_id": "prob_synth_361e6c54ba",
+  "problem_started_at": "2026-04-26T22:19:53.327544+00:00",
+  "total_attempts": 8,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T22:16:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-26T22:16:06.786349+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "tengo dos"
+    },
+    {
+      "timestamp": "2026-04-26T22:16:10.467824+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T22:16:29.468449+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-26T22:16:35.351228+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T22:16:47.746123+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-26T22:16:51.478740+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T22:16:54.318491+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T22:16:54.318491+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-26T22:17:22.485040+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella esta enferma"
+    },
+    {
+      "timestamp": "2026-04-26T22:17:26.755105+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T22:18:02.342902+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella esta enferma"
+    },
+    {
+      "timestamp": "2026-04-26T22:18:08.111565+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T22:18:37.338247+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es enferma hoy"
+    },
+    {
+      "timestamp": "2026-04-26T22:18:42.145742+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ella esta enferma\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T22:19:17.269981+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella esta enferma"
+    },
+    {
+      "timestamp": "2026-04-26T22:19:19.811459+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T22:19:45.232330+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 enferma hoy."
+    },
+    {
+      "timestamp": "2026-04-26T22:19:49.607413+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T22:19:53.327544+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T22:16:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

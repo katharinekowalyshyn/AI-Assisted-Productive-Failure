@@ -1,0 +1,1075 @@
+{
+  "generated_at": "2026-05-02T14:27:13.276835+00:00",
+  "headline": {
+    "n_sessions": 11,
+    "n_problems": 26,
+    "n_consolidations": 6,
+    "pf_fidelity_overall_pass_rate": 0.905,
+    "pf_fidelity_no_answer_leak_rate": 0.976,
+    "struggle_index_mean": 0.492,
+    "productive_zone_share": 0.269,
+    "consolidation_rule_match_rate": 1.0,
+    "jury_unanimous_rate": 0.19,
+    "jury_verdict_index_alignment": 0.333,
+    "misconception_micro_f1": 0.522,
+    "misconception_macro_f1": 0.14
+  },
+  "pf_fidelity": {
+    "total_feedback": 42,
+    "excluded_correct_template": 8,
+    "excluded_consolidation_opener": 7,
+    "counts": {
+      "no_answer_leak": 41,
+      "generative_question": 42,
+      "brevity_le3_sentences": 40,
+      "motivational_opener": 41,
+      "all_four_pass": 38
+    },
+    "rates": {
+      "no_answer_leak": 0.976,
+      "generative_question": 1.0,
+      "brevity_le3_sentences": 0.952,
+      "motivational_opener": 0.976,
+      "all_four_pass": 0.905
+    },
+    "examples_failing": [
+      {
+        "session_id": "sess_1776263723268",
+        "problem_index": 1,
+        "task_type": "translation",
+        "feedback": "Great job with \"quiero\" and \"ir\"! You're on the right track. What do you think you need to say before \"ir\" to complete your thought? Remember, it starts with \"a.\"",
+        "violations": [
+          "too_long"
+        ]
+      },
+      {
+        "session_id": "sess_1776263723268",
+        "problem_index": 1,
+        "task_type": "translation",
+        "feedback": "Great job using \"quiero\" and \"parque\"! Now, think about how you connect \"quiero\" to \"ir.\" What do you remember about using \"ir\" after a verb like \"quiero\"?",
+        "violations": [
+          "answer_leak"
+        ]
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_index": 8,
+        "task_type": "conversation_completion",
+        "feedback": "Great effort with your response! I see you\u2019re expressing a preference, which is a good start. What made you choose \"spring\" instead of the Spanish word for it? Try again!",
+        "violations": [
+          "too_long"
+        ]
+      },
+      {
+        "session_id": "sess_1777037803060",
+        "problem_index": 2,
+        "task_type": "translation",
+        "feedback": "It's completely okay to feel unsure; recognizing that is the first step! Can you think about what verb you might need to use for \"wash\" in this question? Give it another try!",
+        "violations": [
+          "not_motivational"
+        ]
+      }
+    ]
+  },
+  "struggle_index": {
+    "n_problems": 26,
+    "struggle_index": {
+      "mean": 0.492,
+      "median": 0.543,
+      "stdev": 0.263,
+      "min": 0.145,
+      "max": 0.9
+    },
+    "attempts": {
+      "mean": 3.15,
+      "median": 3.5,
+      "max": 6
+    },
+    "bucket_distribution": {
+      "too_easy": 8,
+      "productive": 7,
+      "too_hard": 11
+    },
+    "bucket_distribution_pct": {
+      "too_easy": 0.308,
+      "productive": 0.269,
+      "too_hard": 0.423
+    },
+    "consolidation_rate": 0.423,
+    "correct_rate": 0.385,
+    "by_task_type_mean_index": {
+      "conversation_completion": 0.601,
+      "error_correction": 0.317,
+      "translation": 0.553,
+      "unknown": 0.512
+    },
+    "by_difficulty_mean_index": {
+      "0": 0.512,
+      "1": 0.414,
+      "2": 0.45,
+      "3": 0.735,
+      "4": 0.198,
+      "5": 0.658
+    },
+    "items": [
+      {
+        "session_id": "sess_1776262588703",
+        "problem_id": "prob_0ebd9d0207",
+        "task_type": "translation",
+        "difficulty": 1,
+        "attempts": 2,
+        "mean_time_sec": 13.0,
+        "total_time_sec": 26.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": false,
+        "struggle_index": 0.305,
+        "bucket": "productive"
+      },
+      {
+        "session_id": "sess_1776262710727",
+        "problem_id": "prob_2b49246dcf",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 1,
+        "mean_time_sec": 9.0,
+        "total_time_sec": 9.0,
+        "stuck_rate": 0.0,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.165,
+        "bucket": "too_easy"
+      },
+      {
+        "session_id": "sess_1776262710727",
+        "problem_id": "prob_59e734528c",
+        "task_type": "translation",
+        "difficulty": 3,
+        "attempts": 6,
+        "mean_time_sec": 23.17,
+        "total_time_sec": 139.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.7158,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1776262965235",
+        "problem_id": "prob_b495a642c6",
+        "task_type": "error_correction",
+        "difficulty": 2,
+        "attempts": 2,
+        "mean_time_sec": 18.0,
+        "total_time_sec": 36.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": false,
+        "struggle_index": 0.33,
+        "bucket": "productive"
+      },
+      {
+        "session_id": "sess_1776263454639",
+        "problem_id": "prob_a1f5aa5e29",
+        "task_type": "translation",
+        "difficulty": 1,
+        "attempts": 3,
+        "mean_time_sec": 19.33,
+        "total_time_sec": 58.0,
+        "stuck_rate": 0.667,
+        "correct": false,
+        "consolidated": false,
+        "struggle_index": 0.5233,
+        "bucket": "productive"
+      },
+      {
+        "session_id": "sess_1776263723268",
+        "problem_id": "prob_365797fb4b",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 4,
+        "mean_time_sec": 16.75,
+        "total_time_sec": 67.0,
+        "stuck_rate": 0.0,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.5637,
+        "bucket": "productive"
+      },
+      {
+        "session_id": "sess_1776264048052",
+        "problem_id": "prob_57180e5dcb",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 1,
+        "mean_time_sec": 8.0,
+        "total_time_sec": 8.0,
+        "stuck_rate": 0.0,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.16,
+        "bucket": "too_easy"
+      },
+      {
+        "session_id": "sess_1776264048052",
+        "problem_id": "prob_adb4f15992",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 1,
+        "mean_time_sec": 13.0,
+        "total_time_sec": 13.0,
+        "stuck_rate": 0.0,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.185,
+        "bucket": "too_easy"
+      },
+      {
+        "session_id": "sess_1776264436700",
+        "problem_id": "prob_86cb1aff6d",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 1,
+        "mean_time_sec": 10.0,
+        "total_time_sec": 10.0,
+        "stuck_rate": 0.0,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.17,
+        "bucket": "too_easy"
+      },
+      {
+        "session_id": "sess_1776264436700",
+        "problem_id": "prob_ff68ecb0c6",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 2,
+        "mean_time_sec": 20.0,
+        "total_time_sec": 40.0,
+        "stuck_rate": 0.0,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.34,
+        "bucket": "productive"
+      },
+      {
+        "session_id": "sess_1776264436700",
+        "problem_id": "prob_4bd89f2d8b",
+        "task_type": "error_correction",
+        "difficulty": 5,
+        "attempts": 5,
+        "mean_time_sec": 18.8,
+        "total_time_sec": 94.0,
+        "stuck_rate": 0.2,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.714,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1776264676307",
+        "problem_id": "prob_585a3ea169",
+        "task_type": "error_correction",
+        "difficulty": 2,
+        "attempts": 1,
+        "mean_time_sec": 5.0,
+        "total_time_sec": 5.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": false,
+        "struggle_index": 0.145,
+        "bucket": "too_easy"
+      },
+      {
+        "session_id": "sess_1776806372859",
+        "problem_id": "prob_5243ba2b75",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 5,
+        "mean_time_sec": 105.6,
+        "total_time_sec": 528.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.9,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1776808547131",
+        "problem_id": "prob_6ef16c4281",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 5,
+        "mean_time_sec": 51.8,
+        "total_time_sec": 259.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.859,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1776809054995",
+        "problem_id": "prob_80ab6f7645",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 5,
+        "mean_time_sec": 39.2,
+        "total_time_sec": 196.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.796,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1776809354635",
+        "problem_id": "prob_00d878a62d",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 5,
+        "mean_time_sec": 24.2,
+        "total_time_sec": 121.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.721,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1776810176425",
+        "problem_id": "prob_04e732e7a6",
+        "task_type": "unknown",
+        "difficulty": 0,
+        "attempts": 5,
+        "mean_time_sec": 34.4,
+        "total_time_sec": 172.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.772,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_id": "prob_1105a6237b",
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 5,
+        "mean_time_sec": 17.2,
+        "total_time_sec": 86.0,
+        "stuck_rate": 0.4,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.726,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_id": "prob_b5d5f122e4",
+        "task_type": "error_correction",
+        "difficulty": 4,
+        "attempts": 1,
+        "mean_time_sec": 14.0,
+        "total_time_sec": 14.0,
+        "stuck_rate": 0.0,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.19,
+        "bucket": "too_easy"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_id": "prob_c2e1f618e4",
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 5,
+        "mean_time_sec": 21.8,
+        "total_time_sec": 109.0,
+        "stuck_rate": 0.4,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.749,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_id": "prob_91011790ec",
+        "task_type": "error_correction",
+        "difficulty": 4,
+        "attempts": 1,
+        "mean_time_sec": 17.0,
+        "total_time_sec": 17.0,
+        "stuck_rate": 0.0,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.205,
+        "bucket": "too_easy"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_id": "prob_00a8ca43b4",
+        "task_type": "conversation_completion",
+        "difficulty": 5,
+        "attempts": 4,
+        "mean_time_sec": 19.25,
+        "total_time_sec": 77.0,
+        "stuck_rate": 0.25,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.6012,
+        "bucket": "productive"
+      },
+      {
+        "session_id": "sess_1777037803060",
+        "problem_id": "prob_e773825b8f",
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 1,
+        "mean_time_sec": 28.0,
+        "total_time_sec": 28.0,
+        "stuck_rate": 0.0,
+        "correct": true,
+        "consolidated": false,
+        "struggle_index": 0.26,
+        "bucket": "productive"
+      },
+      {
+        "session_id": "sess_1777037803060",
+        "problem_id": "prob_ab50ab5ec0",
+        "task_type": "translation",
+        "difficulty": 3,
+        "attempts": 5,
+        "mean_time_sec": 18.8,
+        "total_time_sec": 94.0,
+        "stuck_rate": 0.6,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.754,
+        "bucket": "too_hard"
+      },
+      {
+        "session_id": "sess_1777037803060",
+        "problem_id": "prob_d8967e4708",
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 1,
+        "mean_time_sec": 22.0,
+        "total_time_sec": 22.0,
+        "stuck_rate": 0.0,
+        "correct": false,
+        "consolidated": false,
+        "struggle_index": 0.23,
+        "bucket": "too_easy"
+      },
+      {
+        "session_id": "sess_1777302390653",
+        "problem_id": "prob_991f188358",
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 5,
+        "mean_time_sec": 14.6,
+        "total_time_sec": 73.0,
+        "stuck_rate": 0.4,
+        "correct": false,
+        "consolidated": true,
+        "struggle_index": 0.713,
+        "bucket": "too_hard"
+      }
+    ]
+  },
+  "consolidation_timing": {
+    "n_problems": 21,
+    "n_consolidations": 6,
+    "consolidation_rate": 0.286,
+    "rule_match_rate": 1.0,
+    "false_positives": 0,
+    "false_negatives": 0,
+    "fired_problems_with_stuck_signals_pct": 0.5,
+    "fired_problems_with_late_progress_pct": 0.167,
+    "minutes_to_consolidation": {
+      "mean": 1.57,
+      "median": 1.57,
+      "min": 1.22,
+      "max": 1.83
+    },
+    "examples_false_negative": [],
+    "examples_false_positive": []
+  },
+  "jury_simulation": {
+    "n": 21,
+    "agreement": {
+      "unanimous": 4,
+      "majority_2of3": 17,
+      "split_3way": 0,
+      "unanimous_rate": 0.19
+    },
+    "verdict_distribution": {
+      "MAINTAIN": 12,
+      "DECREASE": 6,
+      "INCREASE": 3
+    },
+    "verdict_distribution_pct": {
+      "MAINTAIN": 0.571,
+      "DECREASE": 0.286,
+      "INCREASE": 0.143
+    },
+    "by_juror": {
+      "Melchior": {
+        "INCREASE": 12,
+        "MAINTAIN": 9
+      },
+      "Casper": {
+        "MAINTAIN": 10,
+        "DECREASE": 8,
+        "INCREASE": 3
+      },
+      "Balthazar": {
+        "MAINTAIN": 12,
+        "DECREASE": 6,
+        "INCREASE": 3
+      }
+    },
+    "verdict_vs_struggle_bucket_alignment": 0.333,
+    "rows": [
+      {
+        "session_id": "sess_1776262588703",
+        "problem_index": 1,
+        "task_type": "translation",
+        "difficulty": 1,
+        "attempts": 2,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": true,
+        "melchior": "INCREASE",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1776262710727",
+        "problem_index": 1,
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 1,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": false,
+        "melchior": "INCREASE",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1776262710727",
+        "problem_index": 2,
+        "task_type": "translation",
+        "difficulty": 3,
+        "attempts": 6,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": true,
+        "melchior": "MAINTAIN",
+        "casper": "DECREASE",
+        "balthazar": "DECREASE",
+        "verdict": "DECREASE",
+        "bucket_from_index": "productive"
+      },
+      {
+        "session_id": "sess_1776262965235",
+        "problem_index": 1,
+        "task_type": "error_correction",
+        "difficulty": 2,
+        "attempts": 2,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": true,
+        "melchior": "INCREASE",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1776263454639",
+        "problem_index": 1,
+        "task_type": "translation",
+        "difficulty": 1,
+        "attempts": 3,
+        "correct": false,
+        "stuck_rate": 0.67,
+        "showed_progress": false,
+        "melchior": "MAINTAIN",
+        "casper": "DECREASE",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "productive"
+      },
+      {
+        "session_id": "sess_1776263723268",
+        "problem_index": 1,
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 4,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": true,
+        "melchior": "MAINTAIN",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "productive"
+      },
+      {
+        "session_id": "sess_1776264048052",
+        "problem_index": 1,
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 1,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": false,
+        "melchior": "INCREASE",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1776264048052",
+        "problem_index": 2,
+        "task_type": "translation",
+        "difficulty": 3,
+        "attempts": 1,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": false,
+        "melchior": "INCREASE",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1776264436700",
+        "problem_index": 1,
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 1,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": false,
+        "melchior": "INCREASE",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1776264436700",
+        "problem_index": 3,
+        "task_type": "error_correction",
+        "difficulty": 4,
+        "attempts": 2,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": true,
+        "melchior": "INCREASE",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1776264436700",
+        "problem_index": 4,
+        "task_type": "error_correction",
+        "difficulty": 5,
+        "attempts": 5,
+        "correct": false,
+        "stuck_rate": 0.2,
+        "showed_progress": false,
+        "melchior": "MAINTAIN",
+        "casper": "DECREASE",
+        "balthazar": "DECREASE",
+        "verdict": "DECREASE",
+        "bucket_from_index": "productive"
+      },
+      {
+        "session_id": "sess_1776264676307",
+        "problem_index": 1,
+        "task_type": "error_correction",
+        "difficulty": 2,
+        "attempts": 1,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": false,
+        "melchior": "INCREASE",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_index": 1,
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 5,
+        "correct": false,
+        "stuck_rate": 0.4,
+        "showed_progress": false,
+        "melchior": "MAINTAIN",
+        "casper": "DECREASE",
+        "balthazar": "DECREASE",
+        "verdict": "DECREASE",
+        "bucket_from_index": "productive"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_index": 4,
+        "task_type": "error_correction",
+        "difficulty": 4,
+        "attempts": 1,
+        "correct": true,
+        "stuck_rate": 0.0,
+        "showed_progress": false,
+        "melchior": "INCREASE",
+        "casper": "INCREASE",
+        "balthazar": "INCREASE",
+        "verdict": "INCREASE",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_index": 5,
+        "task_type": "error_correction",
+        "difficulty": 5,
+        "attempts": 5,
+        "correct": false,
+        "stuck_rate": 0.2,
+        "showed_progress": false,
+        "melchior": "MAINTAIN",
+        "casper": "DECREASE",
+        "balthazar": "DECREASE",
+        "verdict": "DECREASE",
+        "bucket_from_index": "productive"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_index": 7,
+        "task_type": "conversation_completion",
+        "difficulty": 4,
+        "attempts": 1,
+        "correct": true,
+        "stuck_rate": 0.0,
+        "showed_progress": false,
+        "melchior": "INCREASE",
+        "casper": "INCREASE",
+        "balthazar": "INCREASE",
+        "verdict": "INCREASE",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_index": 8,
+        "task_type": "conversation_completion",
+        "difficulty": 5,
+        "attempts": 4,
+        "correct": true,
+        "stuck_rate": 0.25,
+        "showed_progress": false,
+        "melchior": "MAINTAIN",
+        "casper": "DECREASE",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "productive"
+      },
+      {
+        "session_id": "sess_1777037803060",
+        "problem_index": 1,
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 1,
+        "correct": true,
+        "stuck_rate": 0.0,
+        "showed_progress": false,
+        "melchior": "INCREASE",
+        "casper": "INCREASE",
+        "balthazar": "INCREASE",
+        "verdict": "INCREASE",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1777037803060",
+        "problem_index": 2,
+        "task_type": "translation",
+        "difficulty": 3,
+        "attempts": 5,
+        "correct": false,
+        "stuck_rate": 0.6,
+        "showed_progress": false,
+        "melchior": "MAINTAIN",
+        "casper": "DECREASE",
+        "balthazar": "DECREASE",
+        "verdict": "DECREASE",
+        "bucket_from_index": "too_hard"
+      },
+      {
+        "session_id": "sess_1777037803060",
+        "problem_index": 5,
+        "task_type": "error_correction",
+        "difficulty": 3,
+        "attempts": 1,
+        "correct": false,
+        "stuck_rate": 0.0,
+        "showed_progress": false,
+        "melchior": "INCREASE",
+        "casper": "MAINTAIN",
+        "balthazar": "MAINTAIN",
+        "verdict": "MAINTAIN",
+        "bucket_from_index": "too_easy"
+      },
+      {
+        "session_id": "sess_1777302390653",
+        "problem_index": 1,
+        "task_type": "translation",
+        "difficulty": 2,
+        "attempts": 5,
+        "correct": false,
+        "stuck_rate": 0.4,
+        "showed_progress": false,
+        "melchior": "MAINTAIN",
+        "casper": "DECREASE",
+        "balthazar": "DECREASE",
+        "verdict": "DECREASE",
+        "bucket_from_index": "productive"
+      }
+    ]
+  },
+  "misconception_detection": {
+    "n": 6,
+    "tags": [
+      {
+        "tag": "STUCK",
+        "tp": 5,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      {
+        "tag": "ENGLISH_INTRUSION",
+        "tp": 0,
+        "fp": 3,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "tag": "VOCABULARY",
+        "tp": 1,
+        "fp": 2,
+        "fn": 1,
+        "precision": 0.333,
+        "recall": 0.5,
+        "f1": 0.4
+      },
+      {
+        "tag": "VERB_CONJUGATION",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "tag": "GENDER_AGREEMENT",
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "tag": "SER_VS_ESTAR",
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "tag": "PREPOSITION",
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "tag": "REFLEXIVE",
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "tag": "TENSE",
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "tag": "SUBJUNCTIVE",
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    ],
+    "micro": {
+      "precision": 0.545,
+      "recall": 0.5,
+      "f1": 0.522
+    },
+    "macro_f1": 0.14,
+    "examples": [
+      {
+        "session_id": "sess_1776262710727",
+        "problem_index": 2,
+        "task_type": "translation",
+        "attempts": [
+          "Que hora despiertas por la manana?",
+          "no se",
+          "Cuando despiertas?",
+          "Que hora",
+          "Que hora te despiertas por la manana?",
+          "A que hora despiertas por la manana?"
+        ],
+        "silver": [
+          "REFLEXIVE"
+        ],
+        "pred": [
+          "VOCABULARY"
+        ]
+      },
+      {
+        "session_id": "sess_1776264436700",
+        "problem_index": 4,
+        "task_type": "error_correction",
+        "attempts": [
+          "dont see an error",
+          "would it be la ?",
+          "les ?",
+          "Me gustan",
+          "I dont know"
+        ],
+        "silver": [
+          "GENDER_AGREEMENT",
+          "STUCK"
+        ],
+        "pred": [
+          "STUCK"
+        ]
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_index": 1,
+        "task_type": "translation",
+        "attempts": [
+          "Quiero ir al something",
+          "Is store equipo?",
+          "I don't know",
+          "store",
+          "no idea"
+        ],
+        "silver": [
+          "STUCK",
+          "VOCABULARY"
+        ],
+        "pred": [
+          "ENGLISH_INTRUSION",
+          "STUCK",
+          "VOCABULARY"
+        ]
+      },
+      {
+        "session_id": "sess_1777032626957",
+        "problem_index": 5,
+        "task_type": "error_correction",
+        "attempts": [
+          "there is no error.",
+          "A m\u00ed me gusta el libro que t\u00fa me dijiste a comprar.",
+          "i dont know",
+          "que a comprar?",
+          "que compro?"
+        ],
+        "silver": [
+          "PREPOSITION",
+          "STUCK",
+          "SUBJUNCTIVE"
+        ],
+        "pred": [
+          "ENGLISH_INTRUSION",
+          "STUCK"
+        ]
+      },
+      {
+        "session_id": "sess_1777037803060",
+        "problem_index": 2,
+        "task_type": "translation",
+        "attempts": [
+          "i dont know how to do this",
+          "idk",
+          "no",
+          "Cuando laves tus manos cada dia?",
+          "i have no idea"
+        ],
+        "silver": [
+          "STUCK",
+          "TENSE"
+        ],
+        "pred": [
+          "ENGLISH_INTRUSION",
+          "STUCK",
+          "VOCABULARY"
+        ]
+      },
+      {
+        "session_id": "sess_1777302390653",
+        "problem_index": 1,
+        "task_type": "translation",
+        "attempts": [
+          "i dont know",
+          "quiero",
+          "i dont know",
+          "kfjdklsa;fj",
+          "jdksalf;jadsk"
+        ],
+        "silver": [
+          "STUCK",
+          "VOCABULARY"
+        ],
+        "pred": [
+          "STUCK"
+        ]
+      }
+    ]
+  }
+}

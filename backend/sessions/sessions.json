@@ -1176,5 +1176,590 @@
       }
     ],
     "session_started_at": "2026-04-21T22:23:13.857100"
+  },
+  "sess_1777032626957": {
+    "problem": "Complete the conversation:  \nA: Creo que es importante aprender idiomas porque nos ayuda a comunicarnos con m\u00e1s personas.  \nB: ___",
+    "task_type": "conversation_completion",
+    "difficulty_score": 5,
+    "attempts": [],
+    "uploaded_content": "",
+    "problems_completed": 6,
+    "student_name": "Katie",
+    "problem_id": "prob_02cf011cda",
+    "problem_started_at": "2026-04-24T12:18:44.299358",
+    "total_attempts": 16,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-24T12:11:08.111180",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-24T12:11:16.543541",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Quiero ir al something"
+      },
+      {
+        "timestamp": "2026-04-24T12:11:22.055279",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great start with \"Quiero ir\" \u2014 you correctly used the verb \"querer\" in the first person! What were you considering when you chose to use \"something\" for the store? Give it another shot and think about how to say \"the store\" in Spanish!"
+      },
+      {
+        "timestamp": "2026-04-24T12:11:43.020474",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Is store equipo?"
+      },
+      {
+        "timestamp": "2026-04-24T12:11:48.178229",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort on your second attempt! I see you\u2019re trying to find a word for \"store,\" but \"equipo\" means \"team.\" What word do you think might relate more to a place where you buy things? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-24T12:11:58.235876",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "I don't know"
+      },
+      {
+        "timestamp": "2026-04-24T12:12:03.946657",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your honesty in saying you don't know! What do you think the Spanish word for \"store\" could be, based on your previous attempts? Give it another shot!"
+      },
+      {
+        "timestamp": "2026-04-24T12:12:19.104378",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "store"
+      },
+      {
+        "timestamp": "2026-04-24T12:12:24.294669",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort by focusing on the word \"store\"! What do you think the Spanish word for \"store\" might be based on what you know? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-24T12:12:28.900606",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "no idea"
+      },
+      {
+        "timestamp": "2026-04-24T12:12:34.444385",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in real effort on this one \u2014 let's review it together now."
+      },
+      {
+        "timestamp": "2026-04-24T12:12:34.444414",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation: Great effort on your attempts to translate \"I want to go to the store\" into Spanish! You correctly identified \"Quiero\" from Attempt 1, which means \"I want,\" and you also used \"ir\" correctly, meaning \"to go.\" However, you struggled with the word for \"store.\" In Attempt 2, you asked if \"store\" is \"equipo,\" which is incorrect; \"equipo\" means \"team\" in Spanish. \n\nCorrect answer: Quiero ir a la tienda.\n\nRemember, \"tienda\" is the Spanish word for \"store,\" and when using the verb \"ir,\" you need to use \"a\" before a location, which means \"to.\" Keep practicing, and you'll get even more comfortable with these translations!"
+      },
+      {
+        "timestamp": "2026-04-24T12:13:04.771376",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:06.274596",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 3)."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:09.377258",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:10.817315",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 3)."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:12.580057",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:14.036557",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (error_correction, difficulty 4)."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:26.752941",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "there is no error."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:28.924647",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:35.210445",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:37.219542",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (error_correction, difficulty 5)."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:47.435260",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "there is no error."
+      },
+      {
+        "timestamp": "2026-04-24T12:13:51.244243",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job identifying that you didn't find any errors in the sentence! What made you feel confident that there were no mistakes in the structure or word choice? Give it another try and think about the verbs and their agreement in the sentence."
+      },
+      {
+        "timestamp": "2026-04-24T12:14:20.886737",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "A m\u00ed me gusta el libro que t\u00fa me dijiste a comprar."
+      },
+      {
+        "timestamp": "2026-04-24T12:14:24.657634",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job on recognizing that there was an error in the original sentence! What made you decide to change \"que comprar\" to \"a comprar\"? Take another look and see if there\u2019s a different way to express that idea."
+      },
+      {
+        "timestamp": "2026-04-24T12:14:32.920436",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "i dont know"
+      },
+      {
+        "timestamp": "2026-04-24T12:14:38.167051",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "It's okay to feel unsure; recognizing that you don't know is an important step! What do you think about the verb \"comprar\" in this context\u2014does it need a preposition or something else? Give it another shot!"
+      },
+      {
+        "timestamp": "2026-04-24T12:14:50.265714",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "que a comprar?"
+      },
+      {
+        "timestamp": "2026-04-24T12:14:54.315536",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I see you're focusing on the phrase \"que a comprar,\" which shows you're trying to identify the correct structure! What do you think is the relationship between \"que\" and the verb in this context? Give it another shot!"
+      },
+      {
+        "timestamp": "2026-04-24T12:15:09.353615",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "que compro?"
+      },
+      {
+        "timestamp": "2026-04-24T12:15:27.108903",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in real effort on this one \u2014 let's review it together now."
+      },
+      {
+        "timestamp": "2026-04-24T12:15:27.108919",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation: Great job on recognizing that the sentence structure is important! You correctly used \"A m\u00ed me gusta\" and \"el libro que t\u00fa me dijiste,\" which shows you understand how to express likes and refer to something someone mentioned. However, the error lies in the phrase \"que comprar.\" In Spanish, when you want to indicate that someone told you to buy something, you need to use the preposition \"que\" followed by the verb in the infinitive form, which should be \"comprar.\" \n\nCorrect answer: A m\u00ed me gusta el libro que t\u00fa me dijiste que compraras.\n\nRemember, when reporting speech or thoughts in Spanish, you often need to use the subjunctive mood, especially when expressing indirect commands or suggestions. In this case, \"compraras\" is the correct form to use!"
+      },
+      {
+        "timestamp": "2026-04-24T12:15:56.829971",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T12:15:59.196211",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (error_correction, difficulty 5)."
+      },
+      {
+        "timestamp": "2026-04-24T12:16:53.820842",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T12:16:56.197587",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (conversation_completion, difficulty 4)."
+      },
+      {
+        "timestamp": "2026-04-24T12:17:10.452299",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Que divertido! Cual pelicula?"
+      },
+      {
+        "timestamp": "2026-04-24T12:17:13.242097",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+      },
+      {
+        "timestamp": "2026-04-24T12:17:18.499274",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T12:17:20.605134",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (conversation_completion, difficulty 5)."
+      },
+      {
+        "timestamp": "2026-04-24T12:17:36.201142",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Ah en serio? Prefiero el spring"
+      },
+      {
+        "timestamp": "2026-04-24T12:17:40.877551",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great effort with your response! I see you\u2019re expressing a preference, which is a good start. What made you choose \"spring\" instead of the Spanish word for it? Try again!"
+      },
+      {
+        "timestamp": "2026-04-24T12:18:00.580954",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "what is the word for spring?"
+      },
+      {
+        "timestamp": "2026-04-24T12:18:05.112646",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job asking about the word for \"spring\"! What do you think is the importance of using the right season in your response? Try to complete the conversation again with your new understanding."
+      },
+      {
+        "timestamp": "2026-04-24T12:18:16.896420",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "i dont know"
+      },
+      {
+        "timestamp": "2026-04-24T12:18:21.401469",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your honesty in saying you don't know; it's okay to feel stuck sometimes! What do you think is a common way to express a preference or opinion in Spanish? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-24T12:18:35.915944",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Quiero estar afuera"
+      },
+      {
+        "timestamp": "2026-04-24T12:18:38.489598",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+      },
+      {
+        "timestamp": "2026-04-24T12:18:42.794289",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T12:18:44.299419",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (conversation_completion, difficulty 5)."
+      }
+    ],
+    "session_started_at": "2026-04-24T12:11:08.111164"
+  },
+  "sess_1777037803060": {
+    "problem": "Complete the conversation:  \nA: Me despierto a las siete de la ma\u00f1ana y me siento cansado. \u00bfA qu\u00e9 hora te despiertas t\u00fa?  \nB: ___  ",
+    "task_type": "conversation_completion",
+    "difficulty_score": 3,
+    "attempts": [],
+    "uploaded_content": "",
+    "problems_completed": 4,
+    "student_name": "katie",
+    "problem_id": "prob_dc6a3b20ff",
+    "problem_started_at": "2026-04-24T13:43:30.257412",
+    "total_attempts": 7,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-24T13:38:38.630671",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-24T13:39:04.891438",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Quiero ir al parque."
+      },
+      {
+        "timestamp": "2026-04-24T13:39:07.175036",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+      },
+      {
+        "timestamp": "2026-04-24T13:39:22.171074",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T13:39:24.018396",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 3)."
+      },
+      {
+        "timestamp": "2026-04-24T13:39:35.604971",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "i dont know how to do this"
+      },
+      {
+        "timestamp": "2026-04-24T13:39:40.182887",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "It's completely okay to feel unsure; recognizing that is the first step! Can you think about what verb you might need to use for \"wash\" in this question? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-24T13:39:56.437377",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "idk"
+      },
+      {
+        "timestamp": "2026-04-24T13:40:02.222831",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your honesty in expressing that you're unsure! Can you think about how to express \"where\" in Spanish? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-24T13:40:06.820795",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "no"
+      },
+      {
+        "timestamp": "2026-04-24T13:40:12.313798",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your honesty in this attempt; it's great that you're engaging with the challenge! Can you think about which words in the English sentence might need to change to fit Spanish grammar? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-24T13:40:36.104490",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "Cuando laves tus manos cada dia?"
+      },
+      {
+        "timestamp": "2026-04-24T13:40:40.293483",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job attempting to use \"laves\" and \"manos\" in your sentence! Why did you choose \"cuando\" at the beginning instead of a word that asks a question? Take another shot at translating the whole sentence!"
+      },
+      {
+        "timestamp": "2026-04-24T13:40:51.252794",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "i have no idea"
+      },
+      {
+        "timestamp": "2026-04-24T13:40:58.240527",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in real effort on this one \u2014 let's review it together now."
+      },
+      {
+        "timestamp": "2026-04-24T13:40:58.240567",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation: Great effort on this translation task! I noticed that in Attempt 4, you used the word \"cuando\" (when) and \"cada d\u00eda\" (every day), which are both correct in terms of meaning. However, the main issue in your attempts is that the sentence structure is not quite right. The question should start with \"\u00bfD\u00f3nde\" (where) instead of \"Cuando\" (when), and the verb \"laves\" (wash) should be in the present tense form \"lavas\" to match the subject \"t\u00fa\" (you).\n\nCorrect answer: \u00bfD\u00f3nde lavas tus manos cada d\u00eda?\n\nRemember, in Spanish, when asking a question, the structure typically starts with the question word (like \"\u00bfD\u00f3nde\") followed by the verb in the correct tense. Keep practicing, and you'll get the hang of it!"
+      },
+      {
+        "timestamp": "2026-04-24T13:41:34.378937",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T13:41:35.871864",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-24T13:41:36.561851",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T13:41:38.957643",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-24T13:41:46.254463",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T13:41:47.915261",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (error_correction, difficulty 3)."
+      },
+      {
+        "timestamp": "2026-04-24T13:42:03.751387",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "can you give me a hint?"
+      },
+      {
+        "timestamp": "2026-04-24T13:42:10.233901",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job reaching out for help! What part of the sentence do you think might need a different verb or structure to express the idea correctly? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-24T13:43:27.395547",
+        "role": "system",
+        "event_type": "next_problem",
+        "content": "Advanced to next problem."
+      },
+      {
+        "timestamp": "2026-04-24T13:43:30.257457",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (conversation_completion, difficulty 3)."
+      }
+    ],
+    "session_started_at": "2026-04-24T13:38:38.630661"
+  },
+  "sess_1777302390653": {
+    "problem": "English: I want to go to the store.",
+    "task_type": "translation",
+    "difficulty_score": 2,
+    "attempts": [
+      "i dont know",
+      "quiero",
+      "i dont know",
+      "kfjdklsa;fj",
+      "jdksalf;jadsk"
+    ],
+    "uploaded_content": "",
+    "problems_completed": 0,
+    "student_name": "katie",
+    "problem_id": "prob_991f188358",
+    "problem_started_at": "2026-04-27T15:06:42.284214",
+    "total_attempts": 5,
+    "conversation_history": [
+      {
+        "timestamp": "2026-04-27T15:06:42.284276",
+        "role": "system",
+        "event_type": "problem_start",
+        "content": "New problem started (translation, difficulty 2)."
+      },
+      {
+        "timestamp": "2026-04-27T15:07:03.928348",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "i dont know"
+      },
+      {
+        "timestamp": "2026-04-27T15:07:07.942078",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "It's okay to feel unsure; recognizing that you don't know is the first step! What do you think the verb \"want\" would translate to in Spanish? Give it another shot!"
+      },
+      {
+        "timestamp": "2026-04-27T15:07:17.557758",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "quiero"
+      },
+      {
+        "timestamp": "2026-04-27T15:07:22.453453",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "Great job with \"quiero\"! You've correctly identified the verb for \"I want.\" Can you think about how to express the action of going to the store in Spanish? Try again!"
+      },
+      {
+        "timestamp": "2026-04-27T15:07:29.789644",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "i dont know"
+      },
+      {
+        "timestamp": "2026-04-27T15:07:33.908344",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your honesty in saying you don't know; it's great that you're still engaging with the problem! What do you think the verb \"want\" translates to in Spanish? Give it another try!"
+      },
+      {
+        "timestamp": "2026-04-27T15:07:40.693451",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "kfjdklsa;fj"
+      },
+      {
+        "timestamp": "2026-04-27T15:07:45.135424",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "I appreciate your effort in trying to express something, even if it\u2019s not related to the task! What do you think the main idea of the sentence \"I want to go to the store\" is? Please give it another shot with what you think the translation might be."
+      },
+      {
+        "timestamp": "2026-04-27T15:07:50.190827",
+        "role": "student",
+        "event_type": "attempt",
+        "content": "jdksalf;jadsk"
+      },
+      {
+        "timestamp": "2026-04-27T15:07:55.504312",
+        "role": "tutor",
+        "event_type": "feedback",
+        "content": "You've put in real effort on this one \u2014 let's review it together now."
+      },
+      {
+        "timestamp": "2026-04-27T15:07:55.504347",
+        "role": "tutor",
+        "event_type": "consolidation",
+        "content": "Consolidation: Great effort on your attempts! You correctly identified the verb \"quiero\" in Attempt 2, which means \"I want.\" However, you missed the complete translation of the phrase \"I want to go to the store.\" The main issue is that the full structure of the sentence was not included, specifically the infinitive verb \"ir\" (to go) and the noun \"tienda\" (store). \n\nCorrect answer: Quiero ir a la tienda.\n\nIn Spanish, when expressing a desire to do something, you use the verb \"querer\" followed by the infinitive form of the action verb. So, \"quiero\" (I want) is followed by \"ir\" (to go) to complete the thought. Keep practicing, and you'll get the hang of it!"
+      }
+    ],
+    "session_started_at": "2026-04-27T15:06:42.284252"
   }
 }

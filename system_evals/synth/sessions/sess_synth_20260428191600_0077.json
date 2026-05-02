@@ -1,0 +1,128 @@
+{
+  "problem": "English: She is happy.",
+  "task_type": "translation",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Jamie",
+  "problem_id": "prob_synth_7a99117f35",
+  "problem_started_at": "2026-04-28T19:18:04.849623+00:00",
+  "total_attempts": 6,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T19:16:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-28T19:16:14.193841+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer com\u00ed la cena con mi familia."
+    },
+    {
+      "timestamp": "2026-04-28T19:16:17.323041+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T19:16:22.835727+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T19:16:22.835727+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-28T19:16:32.239471+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "estoy"
+    },
+    {
+      "timestamp": "2026-04-28T19:16:37.229615+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"estoy\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-28T19:16:54.399129+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "estoy muy feliza hoy"
+    },
+    {
+      "timestamp": "2026-04-28T19:16:59.413441+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"estoy\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-28T19:17:16.674398+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Estoy muy feliz hoy."
+    },
+    {
+      "timestamp": "2026-04-28T19:17:21.393651+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T19:17:23.905490+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T19:17:23.905490+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-28T19:17:39.299696+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella feliz"
+    },
+    {
+      "timestamp": "2026-04-28T19:17:43.778917+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-28T19:17:57.326007+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella est\u00e1 felizo"
+    },
+    {
+      "timestamp": "2026-04-28T19:18:00.332133+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ella feliz\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-28T19:18:04.849623+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T19:16:00+00:00",
+  "_synthetic": {
+    "profile": "fast_finisher",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

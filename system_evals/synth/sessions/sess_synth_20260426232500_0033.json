@@ -1,0 +1,224 @@
+{
+  "problem": "English: My name is Maria.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Robin",
+  "problem_id": "prob_synth_8dc4084c0d",
+  "problem_started_at": "2026-04-26T23:35:51.404397+00:00",
+  "total_attempts": 13,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T23:25:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-26T23:25:57.169629+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es enferma hoy (idk)"
+    },
+    {
+      "timestamp": "2026-04-26T23:26:00.829076+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"ella esta enferma\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-26T23:26:28.001585+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es enferma hoy"
+    },
+    {
+      "timestamp": "2026-04-26T23:26:33.633354+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ella esta enferma\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T23:27:22.725955+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 enferma hoy."
+    },
+    {
+      "timestamp": "2026-04-26T23:27:27.648962+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T23:27:33.049667+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T23:27:33.049667+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-26T23:28:50.068084+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi brother lleguemos a tiempo"
+    },
+    {
+      "timestamp": "2026-04-26T23:28:52.756022+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T23:29:38.423820+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi hermano llega a tiempo"
+    },
+    {
+      "timestamp": "2026-04-26T23:29:43.041911+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T23:30:33.969168+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi hermano llega a tiempo"
+    },
+    {
+      "timestamp": "2026-04-26T23:30:39.860390+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T23:31:36.639796+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi hermano lleguemos a tiempo"
+    },
+    {
+      "timestamp": "2026-04-26T23:31:42.613847+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T23:32:29.832188+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "idk"
+    },
+    {
+      "timestamp": "2026-04-26T23:32:33.130672+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-26T23:32:33.429539+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"espero que\". However, the main issue was the verb conjugation did not match the subject's person/number. \n\nCorrect answer: Espero que mi hermano llegue a tiempo.\n\nRemember: match the verb ending to the subject (yo \u2192 -o, t\u00fa \u2192 -as/-es, \u00e9l/ella \u2192 -a/-e)."
+    },
+    {
+      "timestamp": "2026-04-26T23:32:37.682101+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T23:32:37.682101+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-26T23:33:05.843012+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "my name is maria"
+    },
+    {
+      "timestamp": "2026-04-26T23:33:08.704537+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"llamo maria\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-26T23:33:47.403765+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-26T23:33:51.142465+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-26T23:34:14.588694+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo llamo maria"
+    },
+    {
+      "timestamp": "2026-04-26T23:34:20.111708+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"llamo maria\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T23:34:50.079593+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "idk"
+    },
+    {
+      "timestamp": "2026-04-26T23:34:53.601059+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-26T23:35:42.992835+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "llamo maria (idk)"
+    },
+    {
+      "timestamp": "2026-04-26T23:35:47.451213+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-26T23:35:47.947942+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"llamo maria\". However, the main issue was English words appeared in what should be a fully Spanish response. \n\nCorrect answer: Me llamo Maria.\n\nRemember: translate every content word \u2014 keep the response fully in Spanish."
+    },
+    {
+      "timestamp": "2026-04-26T23:35:51.404397+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T23:25:00+00:00",
+  "_synthetic": {
+    "profile": "novice_stuck",
+    "n_problems": 3,
+    "consolidation_in_last_problem": true
+  }
+}

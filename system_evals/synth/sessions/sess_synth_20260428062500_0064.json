@@ -1,0 +1,98 @@
+{
+  "problem": "English: She washes her hands every morning.",
+  "task_type": "translation",
+  "difficulty_score": 3,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Reese",
+  "problem_id": "prob_synth_8f851655c4",
+  "problem_started_at": "2026-04-28T06:29:07.395776+00:00",
+  "total_attempts": 6,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T06:25:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-28T06:25:41.904125+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella se lavo las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T06:25:47.308302+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-28T06:26:26.699892+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella se lavo las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T06:26:30.418225+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T06:27:09.229490+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T06:27:13.321147+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-28T06:28:13.720967+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T06:28:18.233141+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T06:28:58.624348+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T06:29:03.079555+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-28T06:29:03.355981+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"lava las manos\". However, the main issue was the verb conjugation did not match the subject's person/number. \n\nCorrect answer: Ella se lava las manos cada ma\u00f1ana.\n\nRemember: match the verb ending to the subject (yo \u2192 -o, t\u00fa \u2192 -as/-es, \u00e9l/ella \u2192 -a/-e)."
+    },
+    {
+      "timestamp": "2026-04-28T06:29:07.395776+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T06:25:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 1,
+    "consolidation_in_last_problem": true
+  }
+}

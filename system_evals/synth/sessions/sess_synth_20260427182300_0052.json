@@ -1,0 +1,254 @@
+{
+  "problem": "Complete the conversation:\nA: \u00bfQu\u00e9 hiciste ayer?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Reese",
+  "problem_id": "prob_synth_3bf11720c6",
+  "problem_started_at": "2026-04-27T18:36:04.034197+00:00",
+  "total_attempts": 16,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T18:23:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-27T18:24:16.600168+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-27T18:24:22.553440+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T18:25:05.004831+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "want ir tienda"
+    },
+    {
+      "timestamp": "2026-04-27T18:25:08.612173+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-27T18:25:56.749021+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "I want ir a la store"
+    },
+    {
+      "timestamp": "2026-04-27T18:26:01.457636+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-27T18:26:29.397867+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i give up"
+    },
+    {
+      "timestamp": "2026-04-27T18:26:32.994816+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T18:27:29.981214+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la equipo"
+    },
+    {
+      "timestamp": "2026-04-27T18:27:35.145390+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-27T18:27:35.271263+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"quiero ir\". However, the main issue was the student gave up before exploring the structure of the prompt. \n\nCorrect answer: Quiero ir a la tienda.\n\nRemember: even an educated guess based on the prompt's vocabulary helps you learn."
+    },
+    {
+      "timestamp": "2026-04-27T18:27:41.858165+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T18:27:41.858165+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-27T18:28:27.213256+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la semana pasada visitamos a nuestras abuelos"
+    },
+    {
+      "timestamp": "2026-04-27T18:28:32.140593+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T18:29:14.484685+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos abuelos"
+    },
+    {
+      "timestamp": "2026-04-27T18:29:18.746363+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T18:30:10.205042+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-27T18:30:13.289613+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T18:30:54.580618+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos abuelos"
+    },
+    {
+      "timestamp": "2026-04-27T18:30:59.628030+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T18:31:56.497696+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la semana pasada visitamos nuestros abuelos"
+    },
+    {
+      "timestamp": "2026-04-27T18:32:00.515524+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-27T18:32:00.874575+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"visitamos abuelos\". However, the main issue was the article or adjective did not agree with the noun's gender. \n\nCorrect answer: La semana pasada visitamos a nuestros abuelos.\n\nRemember: noun gender drives the article and adjective ending (el libro, la casa)."
+    },
+    {
+      "timestamp": "2026-04-27T18:32:03.677312+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T18:32:03.677312+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-27T18:32:42.920394+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "go al cine con mi hermana"
+    },
+    {
+      "timestamp": "2026-04-27T18:32:46.751282+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-27T18:33:17.277501+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-27T18:33:20.662085+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T18:34:11.961323+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-27T18:34:14.493889+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-27T18:35:21.430393+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer fui cine con mi hermana"
+    },
+    {
+      "timestamp": "2026-04-27T18:35:26.246219+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T18:35:54.544418+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer voy al cine"
+    },
+    {
+      "timestamp": "2026-04-27T18:35:58.510308+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-27T18:35:58.964688+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"ayer fui\". However, the main issue was the wrong tense was used for the time reference in the prompt. \n\nCorrect answer: Ayer fui al cine con mi hermana.\n\nRemember: the preterite tense expresses completed past actions (com\u00ed, fui, hice)."
+    },
+    {
+      "timestamp": "2026-04-27T18:36:04.034197+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T18:23:00+00:00",
+  "_synthetic": {
+    "profile": "novice_stuck",
+    "n_problems": 3,
+    "consolidation_in_last_problem": true
+  }
+}

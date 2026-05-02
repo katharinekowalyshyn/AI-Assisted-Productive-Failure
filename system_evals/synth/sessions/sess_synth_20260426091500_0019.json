@@ -1,0 +1,164 @@
+{
+  "problem": "Find and correct the error(s): La libro es interesante.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Phoenix",
+  "problem_id": "prob_synth_cb9d8c40f4",
+  "problem_started_at": "2026-04-26T09:19:33.059876+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T09:15:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-26T09:15:22.795343+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la semana pasada visitamos nuestros abuelos"
+    },
+    {
+      "timestamp": "2026-04-26T09:15:27.776262+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"visitamos abuelos\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-26T09:15:49.197032+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos nuestros abuelos"
+    },
+    {
+      "timestamp": "2026-04-26T09:15:52.780569+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T09:16:13.351598+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos abuelos"
+    },
+    {
+      "timestamp": "2026-04-26T09:16:16.298876+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"visitamos abuelos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T09:16:35.699356+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos nuestros abuelos"
+    },
+    {
+      "timestamp": "2026-04-26T09:16:40.460443+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T09:16:45.511374+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T09:16:45.511374+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-26T09:17:17.485630+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me gusta ir al parque."
+    },
+    {
+      "timestamp": "2026-04-26T09:17:22.667177+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T09:17:25.819208+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T09:17:25.819208+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-26T09:17:48.609651+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la libro es interesante"
+    },
+    {
+      "timestamp": "2026-04-26T09:17:52.641508+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T09:18:09.247117+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la libro es interesante"
+    },
+    {
+      "timestamp": "2026-04-26T09:18:15.140677+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T09:18:49.747161+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "el libro"
+    },
+    {
+      "timestamp": "2026-04-26T09:18:54.880530+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T09:19:20.474067+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "El libro es interesante."
+    },
+    {
+      "timestamp": "2026-04-26T09:19:26.353655+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T09:19:33.059876+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T09:15:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

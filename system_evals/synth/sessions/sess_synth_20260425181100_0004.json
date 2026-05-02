@@ -1,0 +1,92 @@
+{
+  "problem": "English: I hope that my brother arrives on time.",
+  "task_type": "translation",
+  "difficulty_score": 5,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Quinn",
+  "problem_id": "prob_synth_34a9780adb",
+  "problem_started_at": "2026-04-25T18:12:25.595427+00:00",
+  "total_attempts": 4,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-25T18:11:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-25T18:11:11.258141+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "lava las manos"
+    },
+    {
+      "timestamp": "2026-04-25T18:11:14.136476+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"lava las manos\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-25T18:11:33.135960+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "lava las manos"
+    },
+    {
+      "timestamp": "2026-04-25T18:11:38.641036+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-25T18:11:41.838473+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-25T18:11:41.838473+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-25T18:11:57.004933+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que"
+    },
+    {
+      "timestamp": "2026-04-25T18:12:01.750119+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-25T18:12:13.081691+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi hermano llegar\u00e1 a tiempo"
+    },
+    {
+      "timestamp": "2026-04-25T18:12:17.960004+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-25T18:12:25.595427+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-25T18:11:00+00:00",
+  "_synthetic": {
+    "profile": "fast_finisher",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

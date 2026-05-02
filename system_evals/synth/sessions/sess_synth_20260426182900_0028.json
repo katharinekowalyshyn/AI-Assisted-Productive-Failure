@@ -1,0 +1,176 @@
+{
+  "problem": "Find and correct the error(s): Ella es enferma hoy.",
+  "task_type": "error_correction",
+  "difficulty_score": 3,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Taylor",
+  "problem_id": "prob_synth_c7b32de408",
+  "problem_started_at": "2026-04-26T18:36:55.987822+00:00",
+  "total_attempts": 10,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T18:29:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-26T18:29:59.110116+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la semana pasada visitamos a nuestras abuelos (idk)"
+    },
+    {
+      "timestamp": "2026-04-26T18:30:02.544596+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T18:30:39.839731+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la semana pasada visitamos a nuestras abuelos (idk)"
+    },
+    {
+      "timestamp": "2026-04-26T18:30:42.379756+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T18:31:50.142143+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la semana pasada visitamos a nuestras abuelos (idk)"
+    },
+    {
+      "timestamp": "2026-04-26T18:31:55.066833+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"visitamos abuelos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T18:32:31.775813+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-26T18:32:34.834822+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-26T18:33:05.238207+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos nuestros abuelos"
+    },
+    {
+      "timestamp": "2026-04-26T18:33:10.154223+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-26T18:33:10.491643+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"visitamos abuelos\". However, the main issue was the article or adjective did not agree with the noun's gender. \n\nCorrect answer: La semana pasada visitamos a nuestros abuelos.\n\nRemember: noun gender drives the article and adjective ending (el libro, la casa)."
+    },
+    {
+      "timestamp": "2026-04-26T18:33:18.135457+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T18:33:18.135457+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-26T18:33:41.978153+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-26T18:33:46.987366+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-26T18:34:40.082383+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella son enferma hoy"
+    },
+    {
+      "timestamp": "2026-04-26T18:34:42.900679+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T18:35:33.844017+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es enferma hoy"
+    },
+    {
+      "timestamp": "2026-04-26T18:35:38.140384+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T18:36:07.761163+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es enferma hoy"
+    },
+    {
+      "timestamp": "2026-04-26T18:36:12.234852+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T18:36:51.229026+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es enferma hoy (idk)"
+    },
+    {
+      "timestamp": "2026-04-26T18:36:53.805223+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-26T18:36:53.969729+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"ella esta enferma\". However, the main issue was the student gave up before exploring the structure of the prompt. \n\nCorrect answer: Ella est\u00e1 enferma hoy.\n\nRemember: even an educated guess based on the prompt's vocabulary helps you learn."
+    },
+    {
+      "timestamp": "2026-04-26T18:36:55.987822+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T18:29:00+00:00",
+  "_synthetic": {
+    "profile": "novice_stuck",
+    "n_problems": 2,
+    "consolidation_in_last_problem": true
+  }
+}

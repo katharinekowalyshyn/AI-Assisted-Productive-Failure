@@ -1,0 +1,200 @@
+{
+  "problem": "English: I want to go to the store.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Morgan",
+  "problem_id": "prob_synth_15521e8715",
+  "problem_started_at": "2026-04-25T16:10:20.528887+00:00",
+  "total_attempts": 12,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-25T16:02:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-25T16:02:35.807310+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo mis manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-25T16:02:39.926508+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"me lavo las manos\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-25T16:02:56.303478+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-25T16:03:00.729617+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me lavo las manos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-25T16:03:42.682456+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo mis manos cada ma\u00f1ana (idk)"
+    },
+    {
+      "timestamp": "2026-04-25T16:03:47.464963+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me lavo las manos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-25T16:04:44.874400+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo me lavo las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-25T16:04:50.344835+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-25T16:04:53.342702+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-25T16:04:53.342702+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-25T16:05:23.921222+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "si, espero que es divertido"
+    },
+    {
+      "timestamp": "2026-04-25T16:05:26.625914+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-25T16:05:45.603406+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "si, creo que es divertido"
+    },
+    {
+      "timestamp": "2026-04-25T16:05:48.303484+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-25T16:06:18.953186+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "si, espero que es divertido (idk)"
+    },
+    {
+      "timestamp": "2026-04-25T16:06:23.213162+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-25T16:07:09.368169+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "S\u00ed, espero que sea divertido."
+    },
+    {
+      "timestamp": "2026-04-25T16:07:14.847868+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-25T16:07:17.258996+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-25T16:07:17.258996+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-25T16:07:56.424501+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "I want ir a la store"
+    },
+    {
+      "timestamp": "2026-04-25T16:08:01.431172+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"quiero ir\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-25T16:08:35.912358+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-25T16:08:40.671611+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-25T16:09:20.942783+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la store"
+    },
+    {
+      "timestamp": "2026-04-25T16:09:24.549403+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"quiero ir\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-25T16:10:13.458522+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Quiero ir a la tienda."
+    },
+    {
+      "timestamp": "2026-04-25T16:10:17.929000+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-25T16:10:20.528887+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-25T16:02:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

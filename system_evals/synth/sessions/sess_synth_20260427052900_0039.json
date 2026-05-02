@@ -1,0 +1,44 @@
+{
+  "problem": "English: I have two brothers.",
+  "task_type": "translation",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Cameron",
+  "problem_id": "prob_synth_30447b56e8",
+  "problem_started_at": "2026-04-27T05:29:37.438337+00:00",
+  "total_attempts": 1,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T05:29:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-27T05:29:28.749260+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-27T05:29:31.441860+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T05:29:37.438337+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T05:29:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "problem": "English: Last week we visited our grandparents.",
+  "task_type": "translation",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Devon",
+  "problem_id": "prob_synth_86def8966b",
+  "problem_started_at": "2026-04-27T11:13:52.893410+00:00",
+  "total_attempts": 7,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T11:11:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-27T11:11:11.519024+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "my name is maria"
+    },
+    {
+      "timestamp": "2026-04-27T11:11:16.470987+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-27T11:11:31.986994+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me llamo Maria is"
+    },
+    {
+      "timestamp": "2026-04-27T11:11:35.145812+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-27T11:11:56.139941+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me llamo Maria is"
+    },
+    {
+      "timestamp": "2026-04-27T11:12:00.537377+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-27T11:12:22.064006+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me llamo Maria."
+    },
+    {
+      "timestamp": "2026-04-27T11:12:25.378188+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T11:12:28.691042+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T11:12:28.691042+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-27T11:12:53.900008+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-27T11:12:58.866445+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T11:13:26.228319+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos nuestros abuelos (idk)"
+    },
+    {
+      "timestamp": "2026-04-27T11:13:31.740662+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"visitamos abuelos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-27T11:13:41.434303+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "La semana pasada visitamos a nuestros abuelos."
+    },
+    {
+      "timestamp": "2026-04-27T11:13:45.241871+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T11:13:52.893410+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T11:11:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

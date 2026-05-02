@@ -1,0 +1,188 @@
+{
+  "problem": "Find and correct the error(s): Yo tienes dos hermanos.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Quinn",
+  "problem_id": "prob_synth_49da03047d",
+  "problem_started_at": "2026-04-28T10:16:40.788617+00:00",
+  "total_attempts": 11,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T10:11:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-28T10:11:29.946894+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la libro"
+    },
+    {
+      "timestamp": "2026-04-28T10:11:34.501113+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T10:11:53.731579+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la store"
+    },
+    {
+      "timestamp": "2026-04-28T10:11:57.680541+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T10:12:25.198674+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Quiero ir a la tienda."
+    },
+    {
+      "timestamp": "2026-04-28T10:12:28.519869+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T10:12:32.029751+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T10:12:32.029751+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-28T10:12:53.749985+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella est\u00e1 felizo (idk)"
+    },
+    {
+      "timestamp": "2026-04-28T10:12:59.184797+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"ella feliz\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-28T10:13:31.518466+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es feliz"
+    },
+    {
+      "timestamp": "2026-04-28T10:13:37.221919+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-28T10:14:03.868688+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es feliz"
+    },
+    {
+      "timestamp": "2026-04-28T10:14:08.003865+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T10:14:28.892344+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella est\u00e1 felizo"
+    },
+    {
+      "timestamp": "2026-04-28T10:14:34.712045+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T10:14:58.417557+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 feliz."
+    },
+    {
+      "timestamp": "2026-04-28T10:15:02.985465+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T10:15:07.724726+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T10:15:07.724726+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-28T10:15:42.441665+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-28T10:15:47.595692+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"yo tengo\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-28T10:16:13.241106+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-28T10:16:16.944703+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-28T10:16:30.034020+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-28T10:16:34.255781+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T10:16:40.788617+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T10:11:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

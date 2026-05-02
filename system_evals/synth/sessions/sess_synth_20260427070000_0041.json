@@ -1,0 +1,68 @@
+{
+  "problem": "Complete the conversation:\nA: \u00bfQu\u00e9 haces los fines de semana?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Robin",
+  "problem_id": "prob_synth_ce3182f239",
+  "problem_started_at": "2026-04-27T07:01:22.724732+00:00",
+  "total_attempts": 3,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T07:00:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-27T07:00:24.807630+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta"
+    },
+    {
+      "timestamp": "2026-04-27T07:00:27.642150+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"me gusta\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-27T07:00:47.428136+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta ir el parque"
+    },
+    {
+      "timestamp": "2026-04-27T07:00:51.999771+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me gusta\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-27T07:01:10.916982+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me gusta ir al parque."
+    },
+    {
+      "timestamp": "2026-04-27T07:01:14.939422+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T07:01:22.724732+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T07:00:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

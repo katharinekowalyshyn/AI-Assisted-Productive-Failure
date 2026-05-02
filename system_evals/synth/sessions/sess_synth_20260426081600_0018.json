@@ -1,0 +1,80 @@
+{
+  "problem": "Find and correct the error(s): Ayer ella come pizza con sus amigas.",
+  "task_type": "error_correction",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Sam",
+  "problem_id": "prob_synth_5e23b9dbbe",
+  "problem_started_at": "2026-04-26T08:18:36.656264+00:00",
+  "total_attempts": 4,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T08:16:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-26T08:16:29.416272+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella come pizza con sus amigas"
+    },
+    {
+      "timestamp": "2026-04-26T08:16:34.172605+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"ella comio\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-26T08:17:15.213992+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella come pizza con sus amigas"
+    },
+    {
+      "timestamp": "2026-04-26T08:17:19.866521+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T08:17:42.500509+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella come pizza con sus amigas"
+    },
+    {
+      "timestamp": "2026-04-26T08:17:47.771871+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ella comio\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T08:18:25.723300+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer ella comi\u00f3 pizza con sus amigas."
+    },
+    {
+      "timestamp": "2026-04-26T08:18:29.797368+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T08:18:36.656264+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T08:16:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

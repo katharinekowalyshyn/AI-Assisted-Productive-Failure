@@ -1,0 +1,80 @@
+{
+  "problem": "Find and correct the error(s): Yo tienes dos hermanos.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Drew",
+  "problem_id": "prob_synth_cc8c33f5b6",
+  "problem_started_at": "2026-04-29T04:17:53.661366+00:00",
+  "total_attempts": 4,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T04:15:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-29T04:15:32.019481+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "idk"
+    },
+    {
+      "timestamp": "2026-04-29T04:15:34.771598+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-29T04:16:07.814381+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-29T04:16:13.489507+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-29T04:16:48.626297+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-29T04:16:51.975686+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T04:17:41.070613+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-29T04:17:46.736931+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T04:17:53.661366+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T04:15:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

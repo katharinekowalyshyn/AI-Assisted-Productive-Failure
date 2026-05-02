@@ -1,0 +1,242 @@
+{
+  "problem": "Find and correct the error(s): Yo tienes dos hermanos.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Maya",
+  "problem_id": "prob_synth_a36cb0e554",
+  "problem_started_at": "2026-04-29T08:24:22.556720+00:00",
+  "total_attempts": 15,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T08:14:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-29T08:14:36.485994+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es feliz"
+    },
+    {
+      "timestamp": "2026-04-29T08:14:40.874712+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-29T08:14:52.429011+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella feliz"
+    },
+    {
+      "timestamp": "2026-04-29T08:14:56.959429+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T08:15:35.147062+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es feliz"
+    },
+    {
+      "timestamp": "2026-04-29T08:15:40.283169+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T08:16:06.130477+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "idk"
+    },
+    {
+      "timestamp": "2026-04-29T08:16:10.392958+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-29T08:17:04.697192+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella es feliz (idk)"
+    },
+    {
+      "timestamp": "2026-04-29T08:17:08.167201+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-29T08:17:08.245717+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"ella feliz\". However, the main issue was ser and estar were confused \u2014 they are not interchangeable. \n\nCorrect answer: Ella est\u00e1 feliz.\n\nRemember: use 'ser' for permanent traits, 'estar' for states/locations."
+    },
+    {
+      "timestamp": "2026-04-29T08:17:12.317076+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T08:17:12.317076+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-29T08:17:44.808997+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo mis manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-29T08:17:49.046148+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"me lavo las manos\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-29T08:18:39.296336+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me lavo las manos"
+    },
+    {
+      "timestamp": "2026-04-29T08:18:43.618743+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me lavo las manos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T08:19:11.537660+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo las manos cada ma\u00f1ana (idk)"
+    },
+    {
+      "timestamp": "2026-04-29T08:19:15.932682+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T08:20:16.395474+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me lavo las manos"
+    },
+    {
+      "timestamp": "2026-04-29T08:20:20.554141+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-29T08:20:42.054115+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo me lavo las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-29T08:20:45.574424+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T08:20:47.952121+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T08:20:47.952121+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-29T08:21:27.921941+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tengo"
+    },
+    {
+      "timestamp": "2026-04-29T08:21:33.381239+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"yo tengo\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-29T08:22:01.722239+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-29T08:22:04.804510+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T08:22:48.601777+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-29T08:22:53.593120+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T08:23:31.156341+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-29T08:23:36.134730+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T08:24:16.790825+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-29T08:24:19.855216+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T08:24:22.556720+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T08:14:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

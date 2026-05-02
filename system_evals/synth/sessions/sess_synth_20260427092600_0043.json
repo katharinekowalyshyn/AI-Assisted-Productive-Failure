@@ -1,0 +1,80 @@
+{
+  "problem": "English: She washes her hands every morning.",
+  "task_type": "translation",
+  "difficulty_score": 3,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Quinn",
+  "problem_id": "prob_synth_1d34747fd9",
+  "problem_started_at": "2026-04-27T09:28:12.892307+00:00",
+  "total_attempts": 4,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T09:26:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-27T09:26:16.298267+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava sus manos"
+    },
+    {
+      "timestamp": "2026-04-27T09:26:22.288332+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"lava las manos\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-27T09:26:54.373758+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-27T09:26:57.324528+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T09:27:17.344546+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava sus manos"
+    },
+    {
+      "timestamp": "2026-04-27T09:27:20.273393+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-27T09:28:02.529675+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella se lava las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-27T09:28:06.545722+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T09:28:12.892307+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T09:26:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

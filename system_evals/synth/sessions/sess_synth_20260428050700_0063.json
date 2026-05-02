@@ -1,0 +1,146 @@
+{
+  "problem": "English: Yesterday I ate dinner with my family.",
+  "task_type": "translation",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Alex",
+  "problem_id": "prob_synth_f6c84c48cd",
+  "problem_started_at": "2026-04-28T05:11:42.854503+00:00",
+  "total_attempts": 8,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T05:07:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-28T05:07:27.905572+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "el libro"
+    },
+    {
+      "timestamp": "2026-04-28T05:07:33.213623+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T05:08:06.868763+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la libra es interesante"
+    },
+    {
+      "timestamp": "2026-04-28T05:08:10.595575+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"el libro\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-28T05:08:38.755770+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "El libro es interesante."
+    },
+    {
+      "timestamp": "2026-04-28T05:08:43.936276+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T05:08:51.396788+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T05:08:51.396788+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-28T05:09:29.855391+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer ate la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T05:09:32.980910+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-28T05:10:00.780264+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T05:10:04.353550+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T05:10:36.765687+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer ate la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T05:10:41.975368+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-28T05:11:15.222153+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T05:11:20.029643+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T05:11:35.455960+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comemos la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T05:11:39.519042+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-28T05:11:39.883732+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"ayer comi\". However, the main issue was a required preposition (a/de/en) was missing or wrong. \n\nCorrect answer: Ayer com\u00ed la cena con mi familia.\n\nRemember: Spanish requires 'a' before destinations after 'ir' (voy a la tienda)."
+    },
+    {
+      "timestamp": "2026-04-28T05:11:42.854503+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T05:07:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 2,
+    "consolidation_in_last_problem": true
+  }
+}

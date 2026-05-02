@@ -1,0 +1,92 @@
+{
+  "problem": "Complete the conversation:\nA: \u00bfC\u00f3mo te llamas?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Avery",
+  "problem_id": "prob_synth_d0b124907b",
+  "problem_started_at": "2026-04-26T15:25:18.331037+00:00",
+  "total_attempts": 5,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T15:23:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-26T15:23:31.364920+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "llamo carlos"
+    },
+    {
+      "timestamp": "2026-04-26T15:23:35.240261+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-26T15:23:57.311748+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "my name is carlos"
+    },
+    {
+      "timestamp": "2026-04-26T15:24:02.399366+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T15:24:19.483854+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo llamo carlos"
+    },
+    {
+      "timestamp": "2026-04-26T15:24:23.767853+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T15:24:43.480700+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me llamo"
+    },
+    {
+      "timestamp": "2026-04-26T15:24:48.461289+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T15:25:12.014070+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me llamo Carlos."
+    },
+    {
+      "timestamp": "2026-04-26T15:25:15.673409+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T15:25:18.331037+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T15:23:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

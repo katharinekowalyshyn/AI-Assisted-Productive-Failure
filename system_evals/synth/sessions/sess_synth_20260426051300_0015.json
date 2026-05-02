@@ -1,0 +1,188 @@
+{
+  "problem": "Find and correct the error(s): Ayer ella come pizza con sus amigas.",
+  "task_type": "error_correction",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Sage",
+  "problem_id": "prob_synth_1154f69894",
+  "problem_started_at": "2026-04-26T05:20:26.422039+00:00",
+  "total_attempts": 11,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T05:13:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-26T05:13:37.688944+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos brothers"
+    },
+    {
+      "timestamp": "2026-04-26T05:13:42.274880+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T05:13:59.850425+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-26T05:14:05.354846+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-26T05:14:52.782517+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-26T05:14:58.077315+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"yo tengo\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T05:15:32.101381+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-26T05:15:36.915083+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"yo tengo\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T05:16:18.284315+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-26T05:16:23.543825+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T05:16:29.076943+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T05:16:29.076943+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-26T05:17:11.015370+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 enferma hoy."
+    },
+    {
+      "timestamp": "2026-04-26T05:17:13.959025+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T05:17:18.484788+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T05:17:18.484788+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-26T05:17:43.438687+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i give up"
+    },
+    {
+      "timestamp": "2026-04-26T05:17:48.340028+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-26T05:18:24.674488+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella come pizza con sus amigas"
+    },
+    {
+      "timestamp": "2026-04-26T05:18:29.667893+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T05:19:08.342679+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "idk"
+    },
+    {
+      "timestamp": "2026-04-26T05:19:12.971720+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-26T05:19:49.800431+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella comio"
+    },
+    {
+      "timestamp": "2026-04-26T05:19:52.742102+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T05:20:17.856591+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer ella comi\u00f3 pizza con sus amigas."
+    },
+    {
+      "timestamp": "2026-04-26T05:20:21.388733+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T05:20:26.422039+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T05:13:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "problem": "English: I want to go to the store.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Sage",
+  "problem_id": "prob_synth_a5c5633a8a",
+  "problem_started_at": "2026-04-29T13:03:15.093701+00:00",
+  "total_attempts": 7,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T13:00:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-29T13:00:31.130093+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tiene dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-29T13:00:34.622733+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-29T13:00:58.564774+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-29T13:01:04.008590+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-29T13:01:16.860404+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-29T13:01:21.299110+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T13:01:25.042646+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T13:01:25.042646+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-29T13:01:45.239435+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir tienda"
+    },
+    {
+      "timestamp": "2026-04-29T13:01:49.225900+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T13:02:17.521621+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la libro"
+    },
+    {
+      "timestamp": "2026-04-29T13:02:20.996435+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T13:02:46.565572+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir la tienda"
+    },
+    {
+      "timestamp": "2026-04-29T13:02:52.366860+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T13:03:03.003170+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir a la libro"
+    },
+    {
+      "timestamp": "2026-04-29T13:03:07.168562+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-29T13:03:15.093701+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T13:00:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "problem": "Complete the conversation:\nA: Quiero que vengas a la fiesta. \u00bfPuedes venir?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 5,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Casey",
+  "problem_id": "prob_synth_356da4a971",
+  "problem_started_at": "2026-04-27T03:16:23.616154+00:00",
+  "total_attempts": 7,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T03:13:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-27T03:13:18.147779+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me gusta ir al parque."
+    },
+    {
+      "timestamp": "2026-04-27T03:13:21.370948+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T03:13:24.612604+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T03:13:24.612604+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-27T03:13:47.681075+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo me lavo las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-27T03:13:51.313863+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T03:13:57.538186+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T03:13:57.538186+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-27T03:14:32.301519+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que"
+    },
+    {
+      "timestamp": "2026-04-27T03:14:37.291401+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"espero que\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-27T03:15:03.156790+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "si, espero que es divertido"
+    },
+    {
+      "timestamp": "2026-04-27T03:15:07.369896+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T03:15:20.386520+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que"
+    },
+    {
+      "timestamp": "2026-04-27T03:15:25.083865+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-27T03:15:39.258828+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que"
+    },
+    {
+      "timestamp": "2026-04-27T03:15:44.839266+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"espero que\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-27T03:16:13.207362+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "S\u00ed, espero que sea divertido."
+    },
+    {
+      "timestamp": "2026-04-27T03:16:17.117340+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T03:16:23.616154+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T03:13:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

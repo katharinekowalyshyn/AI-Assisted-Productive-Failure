@@ -1,0 +1,176 @@
+{
+  "problem": "English: My name is Maria.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Morgan",
+  "problem_id": "prob_synth_d9a28b2875",
+  "problem_started_at": "2026-04-29T01:31:56.498463+00:00",
+  "total_attempts": 10,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T01:22:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-29T01:22:56.452803+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-29T01:23:01.044531+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-29T01:24:06.125825+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i don't know"
+    },
+    {
+      "timestamp": "2026-04-29T01:24:11.170226+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-29T01:25:11.903332+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "I have dos brothers"
+    },
+    {
+      "timestamp": "2026-04-29T01:25:14.995109+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"tengo dos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T01:26:06.386986+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "tengo dos las hermanos"
+    },
+    {
+      "timestamp": "2026-04-29T01:26:11.184106+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T01:27:03.775231+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "tengo dos"
+    },
+    {
+      "timestamp": "2026-04-29T01:27:07.279086+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-29T01:27:07.366216+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"tengo dos\". However, the main issue was the student gave up before exploring the structure of the prompt. \n\nCorrect answer: Tengo dos hermanos.\n\nRemember: even an educated guess based on the prompt's vocabulary helps you learn."
+    },
+    {
+      "timestamp": "2026-04-29T01:27:12.399793+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T01:27:12.399793+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-29T01:27:37.831218+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-29T01:27:41.871866+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-29T01:28:32.818415+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "my name is maria"
+    },
+    {
+      "timestamp": "2026-04-29T01:28:36.526180+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T01:29:45.215131+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me llamo Maria is"
+    },
+    {
+      "timestamp": "2026-04-29T01:29:50.359325+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"llamo maria\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T01:30:51.207710+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo llamo maria"
+    },
+    {
+      "timestamp": "2026-04-29T01:30:55.374522+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-29T01:31:45.803218+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me llamo Maria is"
+    },
+    {
+      "timestamp": "2026-04-29T01:31:50.914745+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-29T01:31:51.303338+00:00",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Good effort across your attempts. You correctly used elements like \"llamo maria\". However, the main issue was the student gave up before exploring the structure of the prompt. \n\nCorrect answer: Me llamo Maria.\n\nRemember: even an educated guess based on the prompt's vocabulary helps you learn."
+    },
+    {
+      "timestamp": "2026-04-29T01:31:56.498463+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T01:22:00+00:00",
+  "_synthetic": {
+    "profile": "novice_stuck",
+    "n_problems": 2,
+    "consolidation_in_last_problem": true
+  }
+}

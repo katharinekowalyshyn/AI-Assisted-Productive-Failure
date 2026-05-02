@@ -1,0 +1,152 @@
+{
+  "problem": "English: I want to go to the store.",
+  "task_type": "translation",
+  "difficulty_score": 1,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Skyler",
+  "problem_id": "prob_synth_1720f8ac5c",
+  "problem_started_at": "2026-04-28T04:31:57.370694+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T04:28:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-28T04:28:36.829659+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta"
+    },
+    {
+      "timestamp": "2026-04-28T04:28:41.436730+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"me gusta\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-28T04:29:02.049463+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta ir el parque"
+    },
+    {
+      "timestamp": "2026-04-28T04:29:05.705250+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me gusta\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-28T04:29:23.684299+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-28T04:29:27.869607+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-28T04:29:42.267909+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta ir parque"
+    },
+    {
+      "timestamp": "2026-04-28T04:29:47.033316+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-28T04:30:13.438918+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me gusta ir al parque."
+    },
+    {
+      "timestamp": "2026-04-28T04:30:16.017479+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T04:30:18.276345+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T04:30:18.276345+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 1)."
+    },
+    {
+      "timestamp": "2026-04-28T04:30:36.191798+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "want ir a la equipo"
+    },
+    {
+      "timestamp": "2026-04-28T04:30:40.377637+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"quiero ir\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-28T04:30:59.772690+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir la tienda"
+    },
+    {
+      "timestamp": "2026-04-28T04:31:05.178963+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T04:31:34.280990+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero ir"
+    },
+    {
+      "timestamp": "2026-04-28T04:31:37.417585+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T04:31:48.170121+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Quiero ir a la tienda."
+    },
+    {
+      "timestamp": "2026-04-28T04:31:51.257147+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T04:31:57.370694+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T04:28:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

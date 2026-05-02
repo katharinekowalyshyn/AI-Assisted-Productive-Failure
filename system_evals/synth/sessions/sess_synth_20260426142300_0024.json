@@ -1,0 +1,164 @@
+{
+  "problem": "Find and correct the error(s): Yo tienes dos hermanos.",
+  "task_type": "error_correction",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Phoenix",
+  "problem_id": "prob_synth_6a04c5585a",
+  "problem_started_at": "2026-04-26T14:28:12.700304+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T14:23:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-26T14:23:29.809924+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi brother lleguemos a tiempo"
+    },
+    {
+      "timestamp": "2026-04-26T14:23:33.606815+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-26T14:24:03.282197+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi hermano lleguemos a tiempo"
+    },
+    {
+      "timestamp": "2026-04-26T14:24:06.211024+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T14:24:34.893652+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que"
+    },
+    {
+      "timestamp": "2026-04-26T14:24:38.261368+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"espero que\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T14:25:21.585647+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que"
+    },
+    {
+      "timestamp": "2026-04-26T14:25:27.110220+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T14:25:58.141283+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Espero que mi hermano llegue a tiempo."
+    },
+    {
+      "timestamp": "2026-04-26T14:26:01.510229+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T14:26:08.702074+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T14:26:08.702074+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-26T14:26:27.582930+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me gusta ir al parque."
+    },
+    {
+      "timestamp": "2026-04-26T14:26:32.753855+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T14:26:37.743448+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T14:26:37.743448+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-26T14:26:59.494315+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tienes dos hermanos"
+    },
+    {
+      "timestamp": "2026-04-26T14:27:03.229448+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"yo tengo\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-26T14:27:26.116722+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo tengo"
+    },
+    {
+      "timestamp": "2026-04-26T14:27:31.566696+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T14:28:07.151121+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo tengo dos hermanos."
+    },
+    {
+      "timestamp": "2026-04-26T14:28:10.651240+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T14:28:12.700304+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T14:23:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

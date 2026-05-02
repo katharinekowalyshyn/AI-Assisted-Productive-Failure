@@ -1,0 +1,152 @@
+{
+  "problem": "English: Yesterday I ate dinner with my family.",
+  "task_type": "translation",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Devon",
+  "problem_id": "prob_synth_fb70eceb44",
+  "problem_started_at": "2026-04-29T06:28:21.477757+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T06:22:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-29T06:22:38.903199+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "no idea"
+    },
+    {
+      "timestamp": "2026-04-29T06:22:41.925460+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know. What would you guess based on what you know about Spanish verbs? Try again."
+    },
+    {
+      "timestamp": "2026-04-29T06:23:11.025887+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta"
+    },
+    {
+      "timestamp": "2026-04-29T06:23:16.755243+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me gusta\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T06:23:51.847371+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusta"
+    },
+    {
+      "timestamp": "2026-04-29T06:23:56.604384+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T06:24:33.515794+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me gusto ir al parque (idk)"
+    },
+    {
+      "timestamp": "2026-04-29T06:24:38.174662+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-29T06:25:20.540240+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Me gusta ir al parque."
+    },
+    {
+      "timestamp": "2026-04-29T06:25:23.191851+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T06:25:29.634352+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T06:25:29.634352+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-29T06:25:58.936925+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer ate la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-29T06:26:04.556703+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"ayer comi\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-29T06:26:43.043392+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-29T06:26:47.191858+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-29T06:27:32.274344+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comemos la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-29T06:27:35.530922+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-29T06:28:14.113634+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer com\u00ed la cena con mi familia."
+    },
+    {
+      "timestamp": "2026-04-29T06:28:17.236847+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T06:28:21.477757+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T06:22:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

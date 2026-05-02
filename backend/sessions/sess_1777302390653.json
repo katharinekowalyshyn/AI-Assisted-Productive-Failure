@@ -1,0 +1,93 @@
+{
+  "problem": "English: I want to go to the store.",
+  "task_type": "translation",
+  "difficulty_score": 2,
+  "attempts": [
+    "i dont know",
+    "quiero",
+    "i dont know",
+    "kfjdklsa;fj",
+    "jdksalf;jadsk"
+  ],
+  "uploaded_content": "",
+  "problems_completed": 0,
+  "student_name": "katie",
+  "problem_id": "prob_991f188358",
+  "problem_started_at": "2026-04-27T15:06:42.284214",
+  "total_attempts": 5,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T15:06:42.284276",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-27T15:07:03.928348",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i dont know"
+    },
+    {
+      "timestamp": "2026-04-27T15:07:07.942078",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure; recognizing that you don't know is the first step! What do you think the verb \"want\" would translate to in Spanish? Give it another shot!"
+    },
+    {
+      "timestamp": "2026-04-27T15:07:17.557758",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "quiero"
+    },
+    {
+      "timestamp": "2026-04-27T15:07:22.453453",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great job with \"quiero\"! You've correctly identified the verb for \"I want.\" Can you think about how to express the action of going to the store in Spanish? Try again!"
+    },
+    {
+      "timestamp": "2026-04-27T15:07:29.789644",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i dont know"
+    },
+    {
+      "timestamp": "2026-04-27T15:07:33.908344",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your honesty in saying you don't know; it's great that you're still engaging with the problem! What do you think the verb \"want\" translates to in Spanish? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T15:07:40.693451",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "kfjdklsa;fj"
+    },
+    {
+      "timestamp": "2026-04-27T15:07:45.135424",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I appreciate your effort in trying to express something, even if it\u2019s not related to the task! What do you think the main idea of the sentence \"I want to go to the store\" is? Please give it another shot with what you think the translation might be."
+    },
+    {
+      "timestamp": "2026-04-27T15:07:50.190827",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "jdksalf;jadsk"
+    },
+    {
+      "timestamp": "2026-04-27T15:07:55.504312",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You've put in real effort on this one \u2014 let's review it together now."
+    },
+    {
+      "timestamp": "2026-04-27T15:07:55.504347",
+      "role": "tutor",
+      "event_type": "consolidation",
+      "content": "Consolidation: Great effort on your attempts! You correctly identified the verb \"quiero\" in Attempt 2, which means \"I want.\" However, you missed the complete translation of the phrase \"I want to go to the store.\" The main issue is that the full structure of the sentence was not included, specifically the infinitive verb \"ir\" (to go) and the noun \"tienda\" (store). \n\nCorrect answer: Quiero ir a la tienda.\n\nIn Spanish, when expressing a desire to do something, you use the verb \"querer\" followed by the infinitive form of the action verb. So, \"quiero\" (I want) is followed by \"ir\" (to go) to complete the thought. Keep practicing, and you'll get the hang of it!"
+    }
+  ],
+  "session_started_at": "2026-04-27T15:06:42.284252"
+}

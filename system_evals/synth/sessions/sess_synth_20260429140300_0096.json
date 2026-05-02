@@ -1,0 +1,164 @@
+{
+  "problem": "English: Last week we visited our grandparents.",
+  "task_type": "translation",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Skyler",
+  "problem_id": "prob_synth_39f947721c",
+  "problem_started_at": "2026-04-29T14:07:43.339237+00:00",
+  "total_attempts": 9,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T14:03:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-29T14:03:27.624959+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella se lava las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-29T14:03:32.755593+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T14:03:39.361026+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T14:03:39.361026+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-29T14:04:06.177285+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo mis manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-29T14:04:10.625618+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T14:04:39.213162+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-29T14:04:43.220546+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T14:05:05.045671+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo mis manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-29T14:05:10.050702+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-29T14:05:35.963082+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo me lavo las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-29T14:05:40.180020+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T14:05:45.502723+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-29T14:05:45.502723+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-29T14:06:00.165634+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "la semana pasada visitamos nuestros abuelos"
+    },
+    {
+      "timestamp": "2026-04-29T14:06:02.764148+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"visitamos abuelos\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-29T14:06:33.058784+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos abuelos"
+    },
+    {
+      "timestamp": "2026-04-29T14:06:38.392221+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"visitamos abuelos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T14:07:08.904032+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "visitamos abuelos"
+    },
+    {
+      "timestamp": "2026-04-29T14:07:14.082211+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-29T14:07:32.895850+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "La semana pasada visitamos a nuestros abuelos."
+    },
+    {
+      "timestamp": "2026-04-29T14:07:38.867659+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T14:07:43.339237+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T14:03:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}

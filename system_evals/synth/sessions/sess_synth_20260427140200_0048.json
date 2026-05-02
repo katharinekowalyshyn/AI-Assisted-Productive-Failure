@@ -1,0 +1,44 @@
+{
+  "problem": "Complete the conversation:\nA: Quiero que vengas a la fiesta. \u00bfPuedes venir?\nB: ___",
+  "task_type": "conversation_completion",
+  "difficulty_score": 5,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Quinn",
+  "problem_id": "prob_synth_f0dc121e91",
+  "problem_started_at": "2026-04-27T14:02:31.099967+00:00",
+  "total_attempts": 1,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T14:02:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-27T14:02:23.718320+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "S\u00ed, espero que sea divertido."
+    },
+    {
+      "timestamp": "2026-04-27T14:02:28.193183+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T14:02:31.099967+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T14:02:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

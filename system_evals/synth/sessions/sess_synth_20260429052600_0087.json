@@ -1,0 +1,80 @@
+{
+  "problem": "Find and correct the error(s): Yo lavo las manos cada ma\u00f1ana.",
+  "task_type": "error_correction",
+  "difficulty_score": 3,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 1,
+  "student_name": "Taylor",
+  "problem_id": "prob_synth_6f1467c647",
+  "problem_started_at": "2026-04-29T05:27:43.235670+00:00",
+  "total_attempts": 4,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-29T05:26:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-29T05:26:26.020531+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-29T05:26:28.870418+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-29T05:26:43.318135+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "yo lavo las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-29T05:26:45.872841+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-29T05:27:01.867045+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "me lavo las manos"
+    },
+    {
+      "timestamp": "2026-04-29T05:27:04.649574+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"me lavo las manos\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-29T05:27:31.133034+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Yo me lavo las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-29T05:27:35.914179+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-29T05:27:43.235670+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-29T05:26:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 1,
+    "consolidation_in_last_problem": false
+  }
+}

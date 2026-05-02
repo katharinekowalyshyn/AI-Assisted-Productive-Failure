@@ -1,0 +1,140 @@
+{
+  "problem": "English: Yesterday I ate dinner with my family.",
+  "task_type": "translation",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Jordan",
+  "problem_id": "prob_synth_f22b96fecc",
+  "problem_started_at": "2026-04-26T00:12:17.728312+00:00",
+  "total_attempts": 8,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-26T00:08:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (error_correction, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-26T00:08:25.755193+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella come pizza con sus amigas"
+    },
+    {
+      "timestamp": "2026-04-26T00:08:28.539349+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"ella comio\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-26T00:08:54.995087+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella comio"
+    },
+    {
+      "timestamp": "2026-04-26T00:08:57.504452+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T00:09:25.309605+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer ella come pizza con sus amigas"
+    },
+    {
+      "timestamp": "2026-04-26T00:09:30.222404+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T00:09:53.734266+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer ella comi\u00f3 pizza con sus amigas."
+    },
+    {
+      "timestamp": "2026-04-26T00:09:58.708611+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-26T00:10:04.926536+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-26T00:10:04.926536+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-26T00:10:35.537754+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comi"
+    },
+    {
+      "timestamp": "2026-04-26T00:10:39.102073+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-26T00:11:12.922969+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-26T00:11:17.151252+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ayer comi\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-26T00:11:38.829271+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comi"
+    },
+    {
+      "timestamp": "2026-04-26T00:11:43.422399+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-26T00:12:07.366318+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer com\u00ed la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-26T00:12:09.956845+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-26T00:12:17.728312+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-26T00:08:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

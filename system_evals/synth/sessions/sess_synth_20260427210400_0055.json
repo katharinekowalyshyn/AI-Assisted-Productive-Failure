@@ -1,0 +1,128 @@
+{
+  "problem": "English: She is happy.",
+  "task_type": "translation",
+  "difficulty_score": 2,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Jamie",
+  "problem_id": "prob_synth_f172553692",
+  "problem_started_at": "2026-04-27T21:06:59.008048+00:00",
+  "total_attempts": 7,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-27T21:04:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-27T21:04:23.537725+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comi"
+    },
+    {
+      "timestamp": "2026-04-27T21:04:27.480910+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-27T21:04:38.228274+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia (idk)"
+    },
+    {
+      "timestamp": "2026-04-27T21:04:43.499515+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T21:05:03.957615+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comi"
+    },
+    {
+      "timestamp": "2026-04-27T21:05:09.573003+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-27T21:05:29.591054+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "i give up"
+    },
+    {
+      "timestamp": "2026-04-27T21:05:33.284044+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "It's okay to feel unsure \u2014 let's break it down. What single word in the prompt feels hardest? Give it another try!"
+    },
+    {
+      "timestamp": "2026-04-27T21:05:40.183576+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-27T21:05:40.183576+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 2)."
+    },
+    {
+      "timestamp": "2026-04-27T21:05:57.892740+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella feliz"
+    },
+    {
+      "timestamp": "2026-04-27T21:06:01.976604+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Great start with \"ella feliz\" \u2014 that's a solid try! What were you thinking when you chose those words? Give it another go!"
+    },
+    {
+      "timestamp": "2026-04-27T21:06:27.308140+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella feliz"
+    },
+    {
+      "timestamp": "2026-04-27T21:06:31.002890+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-27T21:06:50.347789+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella est\u00e1 feliz."
+    },
+    {
+      "timestamp": "2026-04-27T21:06:54.764706+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-27T21:06:59.008048+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-27T21:04:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

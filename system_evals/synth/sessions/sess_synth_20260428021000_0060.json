@@ -1,0 +1,140 @@
+{
+  "problem": "English: I hope that my brother arrives on time.",
+  "task_type": "translation",
+  "difficulty_score": 5,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 2,
+  "student_name": "Robin",
+  "problem_id": "prob_synth_8d31811a74",
+  "problem_started_at": "2026-04-28T02:15:25.621437+00:00",
+  "total_attempts": 8,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T02:10:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-28T02:10:42.952467+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comi"
+    },
+    {
+      "timestamp": "2026-04-28T02:10:48.066106+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-28T02:11:19.112081+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comemos la cena con mi familia (idk)"
+    },
+    {
+      "timestamp": "2026-04-28T02:11:22.655279+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T02:12:11.271998+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ayer com\u00ed la cena con mi familia."
+    },
+    {
+      "timestamp": "2026-04-28T02:12:17.122869+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T02:12:19.189770+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T02:12:19.189770+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-28T02:12:50.600414+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi hermano lleguemos a tiempo"
+    },
+    {
+      "timestamp": "2026-04-28T02:12:53.791376+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-28T02:13:22.095378+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que"
+    },
+    {
+      "timestamp": "2026-04-28T02:13:26.300544+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T02:13:52.000227+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi brother llega a tiempo"
+    },
+    {
+      "timestamp": "2026-04-28T02:13:55.321092+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T02:14:41.983997+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que mi hermano llegar\u00e1 a tiempo"
+    },
+    {
+      "timestamp": "2026-04-28T02:14:46.652302+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T02:15:17.130185+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Espero que mi hermano llegue a tiempo."
+    },
+    {
+      "timestamp": "2026-04-28T02:15:21.787384+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T02:15:25.621437+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T02:10:00+00:00",
+  "_synthetic": {
+    "profile": "novice_persistent",
+    "n_problems": 2,
+    "consolidation_in_last_problem": false
+  }
+}

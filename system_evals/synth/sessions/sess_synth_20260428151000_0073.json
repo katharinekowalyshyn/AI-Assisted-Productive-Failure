@@ -1,0 +1,212 @@
+{
+  "problem": "English: Yesterday I ate dinner with my family.",
+  "task_type": "translation",
+  "difficulty_score": 4,
+  "attempts": [],
+  "uploaded_content": "",
+  "problems_completed": 3,
+  "student_name": "Quinn",
+  "problem_id": "prob_synth_7046b1622a",
+  "problem_started_at": "2026-04-28T15:16:42.521754+00:00",
+  "total_attempts": 13,
+  "conversation_history": [
+    {
+      "timestamp": "2026-04-28T15:10:00+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 3)."
+    },
+    {
+      "timestamp": "2026-04-28T15:10:16.652378+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella se lavo las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T15:10:19.908028+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-28T15:10:55.445386+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava sus manos"
+    },
+    {
+      "timestamp": "2026-04-28T15:10:59.806200+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T15:11:32.174382+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella se lavo las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T15:11:35.350300+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T15:11:42.778125+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ella lava las manos cada ma\u00f1ana"
+    },
+    {
+      "timestamp": "2026-04-28T15:11:47.232607+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-28T15:12:03.960037+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "Ella se lava las manos cada ma\u00f1ana."
+    },
+    {
+      "timestamp": "2026-04-28T15:12:09.071416+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice work \u2014 that's correct! Click 'Next Exercise' when you're ready to continue."
+    },
+    {
+      "timestamp": "2026-04-28T15:12:15.669117+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T15:12:15.669117+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (conversation_completion, difficulty 5)."
+    },
+    {
+      "timestamp": "2026-04-28T15:12:43.731720+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "espero que"
+    },
+    {
+      "timestamp": "2026-04-28T15:12:49.473234+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice effort on your first attempt! What tense or form do you think this needs? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T15:13:27.753766+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "si, creo que es divertido"
+    },
+    {
+      "timestamp": "2026-04-28T15:13:31.513796+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good thinking. What about the article or preposition \u2014 are you sure of it? Have another go."
+    },
+    {
+      "timestamp": "2026-04-28T15:13:48.899928+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "si, creo que es divertido"
+    },
+    {
+      "timestamp": "2026-04-28T15:13:53.942024+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T15:14:21.548845+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "si, creo que es divertido"
+    },
+    {
+      "timestamp": "2026-04-28T15:14:26.134015+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "You're getting closer. What grammatical detail might still be off? Give it another try."
+    },
+    {
+      "timestamp": "2026-04-28T15:14:34.094487+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    },
+    {
+      "timestamp": "2026-04-28T15:14:34.094487+00:00",
+      "role": "system",
+      "event_type": "problem_start",
+      "content": "New problem started (translation, difficulty 4)."
+    },
+    {
+      "timestamp": "2026-04-28T15:15:05.867260+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer com\u00ed la cena mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T15:15:11.579846+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Good attempt \u2014 you're engaging with the prompt. What part feels least certain to you? Take another shot."
+    },
+    {
+      "timestamp": "2026-04-28T15:15:40.992577+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comi"
+    },
+    {
+      "timestamp": "2026-04-28T15:15:43.762782+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T15:16:10.075578+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia (idk)"
+    },
+    {
+      "timestamp": "2026-04-28T15:16:15.465546+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "I see you're refining your answer \u2014 what's making you change your mind on \"ayer comi\"? Try again!"
+    },
+    {
+      "timestamp": "2026-04-28T15:16:35.714215+00:00",
+      "role": "student",
+      "event_type": "attempt",
+      "content": "ayer comiste la cena con mi familia"
+    },
+    {
+      "timestamp": "2026-04-28T15:16:40.297524+00:00",
+      "role": "tutor",
+      "event_type": "feedback",
+      "content": "Nice progress! Can you think about whether the verb form matches the subject? Try once more."
+    },
+    {
+      "timestamp": "2026-04-28T15:16:42.521754+00:00",
+      "role": "system",
+      "event_type": "next_problem",
+      "content": "Advanced to next problem."
+    }
+  ],
+  "session_started_at": "2026-04-28T15:10:00+00:00",
+  "_synthetic": {
+    "profile": "intermediate_steady",
+    "n_problems": 3,
+    "consolidation_in_last_problem": false
+  }
+}
